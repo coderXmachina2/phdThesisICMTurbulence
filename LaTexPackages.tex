@@ -7,6 +7,10 @@
 %There are essential packages that are contained within the uqthesis.cls which are integral to the template - These must not be deleted.  A list of these packages can be found in the README.tet file
 
 %The packages below are optional, please add or alter as required.
+\usepackage{amsmath} % For proper math formatting
+\usepackage{xspace}  % For smart spacing after commands
+
+\newcommand{\LCDM}{$\Lambda$CDM\xspace}
 
 \usepackage{cite}				 %Allows abbreviated numerical citations.
 \usepackage{pdfpages}			 %Allows you to include full-page pdfs.
@@ -38,7 +42,7 @@
 \usepackage{amsmath}             %ATypesetting theorems (AMS style).
 \usepackage{amssymb}             %Provided an extended symbol collection.
 \usepackage[utf8]{inputenc}      %Allowed all displayable utf8 characters to be available as input.
-\usepackage{fancyhdr}            %Extensive control of page headers and footers.
+%\usepackage{fancyhdr}            %Extensive control of page headers and footers.
 \usepackage{blindtext}           %Produced 'blind' text for testing.
 \usepackage{tikz}                %To create graphic elements.
 \usepackage[figuresright]{rotating}	%Allows large tables to be rotated to landscape.

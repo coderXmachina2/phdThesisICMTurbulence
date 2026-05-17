@@ -2,22 +2,32 @@
 \changetocdepth {2}
 \contentsline {section}{Abstract}{ii}{section*.1}%
 \contentsline {chapter}{Contents}{xi}{chapter*.17}%
-\contentsline {chapter}{List of Figures}{xii}{chapter*.18}%
-\contentsline {chapter}{List of Tables}{xiii}{chapter*.19}%
+\contentsline {chapter}{List of Figures}{xiii}{chapter*.18}%
+\contentsline {chapter}{List of Tables}{xiv}{chapter*.19}%
 \contentsline {chapter}{List of Abbreviations and Symbols}{xv}{chapter*.21}%
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Galaxy Clusters}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Observables}{1}{section.1.2}%
-\contentsline {chapter}{\chapternumberline {2}Abbreviated title}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introduction}{3}{section.2.1}%
-\contentsline {chapter}{\chapternumberline {3}Conclusion}{5}{chapter.3}%
-\contentsline {appendix}{\chapternumberline {A}Appendix}{7}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Name of Appendix-1}{7}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Name of Appendix-2}{7}{section.A.2}%
-\contentsline {appendix}{\chapternumberline {B}Example of Citations}{9}{appendix.B}%
-\contentsline {appendix}{\chapternumberline {C}Example of Code}{11}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Find the greatest number from a list of numbers in \textit {Python}}{11}{section.C.1}%
-\contentsline {appendix}{\chapternumberline {D}Example of Equations}{13}{appendix.D}%
-\contentsline {appendix}{\chapternumberline {E}Example of Figures}{15}{appendix.E}%
-\contentsline {appendix}{\chapternumberline {F}Example of Flow Charts}{17}{appendix.F}%
-\contentsline {appendix}{\chapternumberline {G}Example of Tables}{19}{appendix.G}%
+\contentsline {section}{\numberline {1.2}Observables}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Radio Sunyaev Zeldovich effect}{2}{subsection.1.2.1}%
+\contentsline {section}{\numberline {1.3}The cluster environment}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Turbulence theory}{2}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Objectives moving forward}{2}{section.1.5}%
+\contentsline {chapter}{\chapternumberline {2}Assumptions and Transfer Effects}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Smooth SB model}{5}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Smooth SB model}{5}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Smooth SB model}{5}{subsection.2.1.2}%
+\contentsline {chapter}{\chapternumberline {3}Abbreviated title}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{7}{section.3.1}%
+\contentsline {chapter}{\chapternumberline {4}Abbreviated title}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{9}{section.4.1}%
+\contentsline {chapter}{\chapternumberline {5}Conclusion}{11}{chapter.5}%
+\contentsline {appendix}{\chapternumberline {A}Appendix}{13}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Name of Appendix-1}{13}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Name of Appendix-2}{13}{section.A.2}%
+\contentsline {appendix}{\chapternumberline {B}Example of Citations}{15}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {C}Example of Code}{17}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Find the greatest number from a list of numbers in \textit {Python}}{17}{section.C.1}%
+\contentsline {appendix}{\chapternumberline {D}Example of Equations}{19}{appendix.D}%
+\contentsline {appendix}{\chapternumberline {E}Example of Figures}{21}{appendix.E}%
+\contentsline {appendix}{\chapternumberline {F}Example of Flow Charts}{23}{appendix.F}%
+\contentsline {appendix}{\chapternumberline {G}Example of Tables}{25}{appendix.G}%

@@ -1,5 +1,4 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'MainThesis.blg'
-[55] biber:342> INFO - === Tue May  5, 2026, 20:19:21
-[185] Utils.pm:468> ERROR - Cannot find 'MainThesis.bcf'!
-[186] Biber.pm:137> INFO - ERRORS: 1
+[54] biber:342> INFO - === Sun May 17, 2026, 20:42:11
+[65] Biber.pm:421> INFO - Reading 'MainThesis.bcf'
