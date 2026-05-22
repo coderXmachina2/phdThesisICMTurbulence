@@ -1,34 +1,107 @@
 \chapter[Introduction]{Scientific Landscape}
 \label{Chap:scientificLandscape}
 \epigraph{``If you wish to create a Universe from scratch, the final ingredient would be clusters of galaxies.''}{— [Afiq Hamid 2025]}
-\section{Galaxy Clusters}
+\section{Galaxy Clusters}\label{Chap:scientificLandscapeGalaxyClusters}
 It has been said that mass and time are among the most fundamental parameters in all of astrophysical science. This thesis is principally an exploration of the former through the study of the most massive virialized objects known to exist in the Universe: galaxy clusters.
 
-Galaxy clusters occupy a unique position within the hierarchy of cosmic structures. They represent the endpoint of cosmic structure formation, populating the nodes that connect the filaments of the cosmic web \textcolor{red}{[ref]}. The composition of galaxy clusters is dominated by  a hitherto enigmatic, collisionless dark matter component (80\%), while the remaining baryonic component consists primarily of the intracluster medium, a diffuse and turbulent plasma (15\%), and the luminous member galaxies that play host to stars, planets, and people (5\%) \textcolor{red}{[ref]}.
+Galaxy clusters occupy a unique position within the hierarchy of cosmic structures. They represent the endpoint of cosmic structure formation, populating the nodes that connect the filaments of the cosmic web \textcolor{red}{[ref]}. The matter composition of galaxy clusters is dominated by a hitherto enigmatic, collisionless dark matter (DM) component ($\sim80\%$), while the remaining baryonic constituents are made up of the intracluster medium (ICM), a diffuse and turbulent plasma ($\sim15\%$), with the luminous member galaxies — themselves home to most of the stars, planets, and people within the cluster — make up the small residual ($\sim5\%$) \textcolor{red}{[ref]}.
 
-% You dont think like this is really hard core for starters at this point?
-% I mean I get the incentive but fak dude it can appear jarring.
-As massive virialized structures ($10^{14} - 10^{15} M_{\odot}$) the abundance of clusters can be used as probes for cosmology via the cluster mass function (CMF) which has the form:
+Structurally the dark matter component dictates the overall potential well, setting the stage for all of the baryonic interactions \textcolor{red}{[ref]}. At the base of this immense potential well sits the largest member galaxy called the brightest cluster galaxy (BCG), that accounts for $0.5$--$2\%$ of the cluster baryons. The BCG commonly hosts an active galactic nucleus (AGN), a powerful source of energetic feedback attributed to super massive black hole (SMBH) activity at the origin \textcolor{red}{[ref]}. Understanding AGN physics is of broad interest in modern astrophysics, spanning diverse research interests from exotic accretion processes to high powered jet emission \textcolor{red}{[ref]}, \textcolor{red}{[ref]}, and while not the primary focus of this work, AGN feedback has some implications for the stirring of turbulence within the ICM.
+\newpage
+Permeating the space between the member galaxies in a cluster is the ICM. It is a hot ($T \sim 10^7$--$10^8$ K), diffuse ($n_e \sim 10^{-3}$--$10^{-1}$ cm$^{-3}$), optically thin, volume-filling plasma. The ICM is threaded by a weak but dynamically relevant magnetic field ($\sim1$--$10\,\mu$G), detectable via Faraday rotation measures \textcolor{red}{[ref]}. As the primary atmosphere of the cluster, the ICM plays an important role in various dynamical processes therein.
 
-\[ \frac{dn}{dM} = f(\sigma_{M}) \frac{ \bar{\rho}_{m}(z = 0)}{M}  \frac{d \ln \sigma_{M}^{-1}}{d M} \]
+\begin{itemize}
+	\item \textbf{\textit{AGN thermostat}} The ICM regulates the cooling of gas towards the cluster core — a process that, if left unchecked, would produce excess star formation rates in the BCG. In the absence of a heating mechanism, the dense core would radiate energy efficiently and cool on timescales far shorter than the cluster age, driving a so-called cooling flow \textcolor{red}{[ref]}. This cooling is now understood to be moderated by a self-regulating feedback loop: as gas cools and accretes onto the BCG it fuels the central AGN, which injects energy back into the ICM via jets and lobes, suppressing further cooling \textcolor{red}{[ref]}. The ICM therefore acts as both the fuel supply and the calorimeter of this baryonic cycle.
+	\item \textbf{\textit{Star formation in member galaxies}} The ICM plays an influential role on the evolution and star formation rates of its member galaxies through quenching mechanisms and ram-pressure stripping (RPS). As the satellite galaxies fall into the cluster potential well, contact with the ICM removes internal cold gas reservoirs from the galaxies quenching star formation on relatively shorter timescales especially as the infalling galaxy approaches the denser core ($t \sim 0.3$ Gyr) \textcolor{red}{[ref]}. Conversely, on longer timescales ($t \sim 3$ Gyr) strangulation targets the outer hot gas halo and prevents new gas from cooling \textcolor{red}{[ref]}, \textcolor{red}{[ref]}.
+	\item \textbf{\textit{Cluster mass bias}} Cluster mass measurements can be used as cosmological probes of the large scale matter distribution of the Universe constraining several important parameters of the \LCDM cosmology model \textcolor{red}{[ref]}. Since the DM component cannot be directly observed by any present means, the ICM provides the primary observational avenue of constraining cluster masses via complementary multi wavelength approaches. However, the approaches are primarily dependent on the assumption that the ICM gas density is in approximate hydrostatic equilibrium (HE) within the DM potential well \textcolor{red}{[ref]}. 	
 
-where $\bar{\rho} (z = 0)$ is the present day mean matter density of the universe, $\sigma_{M}$ characterizes the variance of density perturbations smoothed at a given mass scale $M$, and $f(\sigma)$ describes the non-linear collapse behaviour of dark matter halos. Considering parameters of the \LCDM cosmology model, even small variations in cosmological parameters such as $\Omega_m$ or $\sigma_8$ may therefore induce measurable changes in the abundance of massive clusters \textcolor{red}{[ref]}. 
+\end{itemize}
 
-In practice empirical inference of the CMF is not a direct process but often carried out through a variety multi spectral traces of tracers that probe distinct physical components of the system. Hence the study of galaxy clusters relies on a multi spectral approach. \textcolor{blue}{It is however, its not all sunshine and roses. Be warned that this thing is not measured directly. There are multiple empirical methods that attempt to constrain it each with its own advantages and limitations.}
+The observational leverage we have on all three of the aforementioned processes is mediated through how the ICM manifests across the electromagnetic spectrum. The following section details the primary observational windows through which the ICM is studied in order to derive constraints on the cluster mass, and introduces the key physical quantities and input assumptions that underpin the work done in later chapters.
 
-\section{Observables}
+\newpage
+\section{Observables}\label{Chap:scientificLandscapeObservables}
 
-Galaxy clusters appear differently based on the way they are observed. \textcolor{blue}{The idea of clustering had been hinted at before prior to the works of George Abell but it was not until }CluseInitially seen in optical by George Abell which. Zwicky did some stuff too. Abell found the richness score, this helps comology how? Then revealed in X rays with satellites and then in radio SZ, this uncovered a wealth of findings such as the ICM. This work will focus on the SZ.
+Optical light as the oldest astronomical window was used to initially identify and catalog the first groups and clusters \textcolor{red}{[ref]}. It remains a viable avenue to evaluate the matter content of galaxy clusters via gravitational lensing \textcolor{red}{[ref]} and velocity dispersion of member galaxies  \textcolor{red}{[ref]}. However the windows of most relevance towards the mapping of the internal thermodynamics states of the ICM are namely the X-ray and millimeter-wave radio respectively. 
 
-\subsection{Radio Sunyaev Zeldovich effect}
+\subsection{X ray}\label{Chap:scientificLandscapeObservablesXray}
 
-The radio SZ . Is a distortion in the 
+The X-ray window played a vital role in the initial discovery and characterisation of the ICM. To date the ICM of galaxy clusters remain among the brightest X-ray sources on the sky. As unvirialized gas falls into the cluster potential well it is shock heated to temperatures of $T \sim 10^7$--$10^8$ K, producing emission predominantly via thermal bremsstrahlung (free-free emission), in which electrons are deflected by ions and radiate photons in the process. The X-ray surface brightness $S_\mathrm{X}$ of the ICM electrons is proportional to the line-of-sight emission integral \textcolor{red}{[ref]},
 
-\section{The cluster environment}
+\begin{equation}
+	S_\mathrm{X} \propto \int n_e n_p \, \Lambda(T) \, \mathrm{d}z 
+	\approx \int n_e^2 \, \Lambda(T) \, \mathrm{d}z,
+	\label{eq:Sx}
+\end{equation}
+
+where $n_e$ and $n_p$ are the electron and proton number densities respectively, $\Lambda(T)$ is the plasma cooling function, and the integral is taken along the line of sight $z$. Since the emissivity scales as $n_e^2$, X-ray observations are particularly sensitive to the dense cluster core, making them well suited for detailed high resolution studies of the inner ICM. However, this sensitivity can be a double-edged sword as the $n_e^2$ dependence also means that $S_\mathrm{X}$ can be biased by an unknown gas clumping factor $C_\rho$ arising from inhomogeneous gas distributions in the core \textcolor{red}{[ref]}.
+
+Since the sound crossing time (represented by the time it takes for pressure fluctuations to travel across a region in the ICM)  within an Abell radius of 3 Mpc is only 0.1 - 0.3 of the Hubble time (the timescale of the cluster formation and evolution), it is generally assumed that the ICM will settle into a state of approximate HE:
+
+\begin{equation}
+	\frac{1}{\rho_g}\frac{dP}{dr} = -\frac{d\phi}{dr} = 
+	-\frac{GM(<r)}{r^2},
+\end{equation}
+
+where $M(<r)$ is the total mass enclosed within radius $r$, $\phi$ is the gravitational potential, $\rho_g$ is the gas density, and $P$ is Pressure. This local hydrostatic balance contributes
+to the cluster’s broader virialized state and provides a foundational framework through which X-ray observations can be used to infer cluster mass. There has been a good consensus between traditional X-ray methods in finding the true mass with maximum root mean square (RMS) deviation ranging from 5 \% to 20 \% \textcolor{red}{[ref]} \textcolor{red}{[ref]}. \textcolor{blue}{[However all in not sunshine and roses in the X ray cluster model. Especially when we take a larger picture that clusters are often caught red handed in the act of violent mergers and internal baryon spirals that would make van Gogh look like childs play.]}.
+
+\newpage
+Another important concept that emerged from the X ray regime is the empirical $\beta$-model. By applying an approximation for a self-gravitating collisionless system (originally developed for globular clusters by \textcolor{red}{[ref]}) to a radial model of galaxy and gas distribution in equilibrium within the same potential \textcolor{red}{[ref]} derived the analytic isothermal radial $\beta$ model of the ICM.:
+
+\begin{equation}
+n_{gas}(r) = n_0 \left[ 1 + \left( \frac{r}{r_c} \right)^2 \right]^{-\frac{3}{2}\beta},
+\end{equation}
+
+where $r_{c}$ is the radius of the cluster core and $\beta \sim \frac{2}{3}$ is known as the canonical $\beta$ value \textcolor{red}{[ref]}. The profile describes a flat central core 
+transitioning to a power-law decline at large radii. Its broad applicability across the cluster population follows naturally from the self-similar nature of galaxy clusters — that is, clusters are structurally similar objects when scaled by their mass. While modern high-resolution observations and hydrodynamical simulations have revealed limitations of the model — particularly in its assumptions of isothermality and spherical symmetry, and its inability to capture the complexity of merging or dynamically disturbed systems — it remains a robust and widely used first approximation for the ICM radial gas density distribution \textcolor{red}{[ref]}.
+
+\subsection{Radio Sunyaev-Zel’dovich effect}\label{Chap:scientificLandscapeObservablesRSZ}
+
+The thermal Sunyaev Zel'dovich effect heceforth tSZ is a secondary scattering anisotropy of the cosmic microwave background (CMB). As a result of inverse Compton scattering, Energy levels of incoming photons change via Compton scattering when radio observations appear distorted as either holes or extended sources depending on whether there is a deficit in the number of photons (a decrement of thermodynamic temperature).
 
 
+
+\begin{equation}
+	y = \frac{\sigma}{m_{e}c^{2}} \int P dl,
+\end{equation}
+
+It is a line of sight projection
+
+
+Figure 1 shows the bla bla bla. It is a composite image of X ray and tSZ.
+
+%This is integrated mass. An additional input to get the mass estimation is the Ideal Gas law. Rearranging the HE equation gets us us the integrated mass. %The probe two different things
+
+%\begin{equation}
+%M(<r) = -\frac{k_B r}{G \mu m_p}  T(r) \left( \frac{d\ln\rho_g(r)}{d\ln r} + \frac{d\ln T(r)}{d\ln r} \right)
+%\end{equation}
+%\\
+%Another important idea that came out of the X ray regime is beta model.
+
+
+
+%\section{Mass cal methods}
+%The abundance of clusters can be used as probes for cosmology via the cluster mass function (CMF) which has the form:
+
+%\[ \frac{dn}{dM} = f(\sigma_{M}) \frac{ \bar{\rho}_{m}(z = 0)}{M}  \frac{d \ln \sigma_{M}^{-1}}{d M} \]
+
+%where $\bar{\rho} (z = 0)$ is the present day mean matter density of the universe, $\sigma_{M}$ characterizes the variance of density perturbations smoothed at a given mass scale $M$, and $f(\sigma)$ describes the non-linear collapse behaviour of DM halos. Considering parameters of the \LCDM cosmology model, even small variations in cosmological parameters such as $\Omega_m$ or $\sigma_8$ may therefore induce measurable changes in the abundance of massive clusters \textcolor{red}{[ref]}. 
+
+%In practice the inference of the CMF through empirical means is not a direct process but is often carried out through a variety of tracers that probe distinct physical components of the system. Hence the study of galaxy clusters relies on a multi spectral approach sourced from different observables each with their own unique attributes and systematics. Then we have to talk about the bias.
+
+\section{Astrophysical Turbulence Scenarios }\label{Chap:scientificLandscapePhysicalSourceTurb}
+
+Mergers to AGN feedback. All the A. Simonescu stuff. The physical things that create turbulence. Physical scenarios
 
 \section{Turbulence theory}
 
+Energy injection on large scale, scale invariant cascade, and dissipation into heat at small scales. What type of turbulence. This section is all the stuff we have not really delved deep to explore yet.
+
+\section{Turbulence inference pipeline}
+
+This traces all the works done to date. From KG16 to Romero and Pitszi to Saxena.
 
 \section{Objectives moving forward}
+
+Our science Objectives.

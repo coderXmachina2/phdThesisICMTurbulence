@@ -8,10 +8,10 @@
 %Use this command (above) to suppress the header from the preceding chapter.
 
 \noindent
-Hello I am here. The following publication has been incorporated as Chapter~\ref{Chap:Assumptions}.
+The following publication has been incorporated as Chapter~\ref{Chap:Assumptions}.
 
 \noindent
-1.~\cite{DumyCitationKey} \textbf{Your Name}, Co-author 1, and Final Author, \href{linktoyourpaper}{Title of your paper}, \textit{Journal} Issue, Number, Year
+1.~\cite{DumyCitationKey} \textbf{A. Hamid}, Co-author 1, and Final Author, \href{linktoyourpaper}{Non parametric model and simulation of SZ surface brightness}, \textit{Journal} Issue, Number, Year
 
 
 If your task breakdown requires further clarification, do so here. Do not exceed a single page.
@@ -21,30 +21,51 @@ If your task breakdown requires further clarification, do so here. Do not exceed
 % ***************************************************
 %This is an internal chapter of the thesis.
 %If you have a long title, you can supply an abbreviated version to print in the Table of Contents using the optional argument to the \chapter command.
-\chapter[Assumptions and Transfer Effects]{Assumptions and Transfer Effects in SZ Surface Brightness Fluctuation Analysis}\label{Chap:assumptionsTitle}	%CREATE YOUR OWN LABEL.
+\chapter[Assumptions and Transfer Effects]{Primary Assumptions and Transfer Effects in SZ Surface Brightness Fluctuation Analysis}\label{Chap:assumptionsTitle}
+
+\epigraph{``Real galaxy clusters exhibit a troubling awareness of our assumptions.''}{}
+
 \pagestyle{headings}
 
 % ********* Enter your text below this line: ********
-In this chapter I discuss the key principles of what goes into the turbulence inference pipeline.
+In this chapter I discuss the key assumptions and inputs that go into the typical turbulence inference pipeline discussing their necessity and limitations.
 
-% ***************************************************
-
-
-\section{Smooth SB model}\label{Chap:smoothSBModel}	%CREATE YOUR OWN LABEL.
+\section{Smooth SB model}\label{Chap:assumptionSmoothSBModel}
 
 % ********* Enter your text below this line: ********
-The smooth SB model is a 2D picture of the cluster sans any turbulence. It is essentially a picture of cluster in the state of HE. Consider the Reynolds decomposition for turbulence.
+As previously mentioned the first step in order to isolate turbulence from SB data the first step is defining some smooth model. The smooth SB model is a 2D picture of the cluster sans any turbulence. It is essentially a picture of cluster in the state of HE. Consider the Reynolds decomposition for turbulence.
 
-\[ S_{\mathrm{obs}}(\theta) = \bar{S}(\theta) + \delta S(\theta) \]
+\[S_{\mathrm{obs}}(\theta) = \bar{S}(\theta) + \delta S(\theta) \]
 
-Where $ S_{\mathrm{obs}}(\theta)$ is the observed surface brightness, $\bar{S}(\theta)$ is the smooth SB model, and $\delta S(\theta)$ is a small fluctuations term.
+Where $ S_{\mathrm{obs}}(\theta)$ is the observed surface brightness, $\bar{S}(\theta)$ is the smooth SB model, and $\delta S(\theta)$ is a small fluctuating component. What you get when you try to find .The challenge is in the method to define 
 
-How has smooth models been defined before?
+How have smooth models been defined before? Usually some kind of sphere or ellipse tied to a parameter.
 
-What is the problem of these models. We can do elliptical as well. Whati s problem with that.
+What is the problem of these models. We can do elliptical as well. What is problem with that.
 
-\subsection{Smooth SB model}\label{Chap:assumptionsBody}
+\subsection{Spherical Symmetry}\label{Chap:assumptionsSmoothSBModelSphericalSymmetry}
 % ***************************************************
+\textcolor{red}{In actuality this phenomena is nothing new. You are not the first to probe it. It has been known to have contributed error a small amount according to Pratt the error budget for this is roughly 1 percent. Haram you write a paper and thesis about cluster without citing the Buote papers. Read those papers, rabbit hole a bit, and cite here.}
 
-\subsection{Smooth SB model}\label{Chap:assumptionsBody}
+Galaxy clusters are not spherical, but almost everyone treats them as if they are, because it's computationally far simpler. The question is — how much does this matter, and for what observables? 
+
+This is the shit that you gotta curve fit to: This is the zeroth order model. Extension to the zeroth order model is spherical and elliptical averaging.
+
+\begin{equation}
+	S_X(b) = S_0 \left[ 1 + \left( \frac{b}{r_c} \right)^2 \right]^{-3\beta + 0.5}
+\end{equation}
+
+But how we do this is the 
+
+\section{Turbulent Parameters}\label{Chap:assumptionsParametric}
+
+So once we have the raw fluctuations. we would then take the power spectrum. Then we deproject the power spectrum. We don't really know the parameters. Suffice to say that shit is complex. You have multi scale, multi layer, multi mach numbers. How does one even know what the injection is? Here is some theory at least one page to prove it.
+
+\section{Deprojection Process}\label{Chap:assumptions}
+
+Everything we see is a two dimensional deprojection of a three dimensional phenomena. There is an Abel transfrom used for 
+
+\section{Masking and Apodization}\label{Chap:assumptionsBody}
+
+Commonly is a Gaussian window.
 % ***************************************************
