@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.4.7)  22 MAY 2026 14:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.4.7)  2 JUN 2026 14:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1471,10 +1471,17 @@ LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-(./MainThesis.aux (./Appendix/Appendix.aux) (./Examples/ExampleOfCitations.aux)
+(./MainThesis.aux
+
+LaTeX Warning: Label `eq:P3DkPitszi' multiply defined.
+
+(./Appendix/Appendix.aux) (./Examples/ExampleOfCitations.aux)
 (./Examples/ExampleOfCode.aux) (./Examples/ExampleOfEquations.aux)
-(./Examples/ExampleOfFigures.aux) (./Examples/ExampleOfFlowCharts.aux)
-(./Examples/ExampleOfTables.aux))
+(./Examples/ExampleOfFigures.aux
+
+LaTeX Warning: Label `Fig:1' multiply defined.
+
+) (./Examples/ExampleOfFlowCharts.aux) (./Examples/ExampleOfTables.aux))
 \openout1 = `MainThesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
@@ -1649,12 +1656,12 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 5
 
 (/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 Package xypdf Info: Line width: 0.47987pt on input line 59.
-<VUWLogo.jpg, id=163, 2509.375pt x 851.18pt>
+<VUWLogo.jpg, id=179, 2509.375pt x 851.18pt>
 File: VUWLogo.jpg Graphic file (type jpg)
 <use VUWLogo.jpg>
 Package pdftex.def Info: VUWLogo.jpg  used on input line 63.
 (pdftex.def)             Requested size: 313.94705pt x 106.48814pt.
-<OrcidLogo.jpg, id=164, 401.5803pt x 401.5803pt>
+<OrcidLogo.jpg, id=180, 401.5803pt x 401.5803pt>
 File: OrcidLogo.jpg Graphic file (type jpg)
 <use OrcidLogo.jpg>
 Package pdftex.def Info: OrcidLogo.jpg  used on input line 63.
@@ -1896,81 +1903,167 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 ] (./MainThesis.toc [11
 
-]) [12] (./MainThesis.lof) [13
+]) [12] (./MainThesis.lof)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] (./MainThesis.lot) [14
+ [13
 
-] (./PreliminaryAndBackPages/Symbols.tex
+]
+[14] (./MainThesis.lot) [15
+
+] (./PreliminaryAndBackPages/Symbols.tex [16
+
+]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
-)) [15
+))
+[17] [18
 
-] [16
-
-]
-(./Chapter1/scientificLandscape.tex
+] (./Chapter1/scientificLandscape.tex
 Chapter 1.
 [1
 
-] [2] [3] [4]) (./Chapter2/assumptions&TransferEffects.tex [5]
+] [2] [3]
+<Chapter1/imgs/1567218868444-COMA_ROSATvsPLANCK.pdf, id=401, 1355.0625pt x 1334
+.9875pt>
+File: Chapter1/imgs/1567218868444-COMA_ROSATvsPLANCK.pdf Graphic file (type pdf
+)
+<use Chapter1/imgs/1567218868444-COMA_ROSATvsPLANCK.pdf>
+Package pdftex.def Info: Chapter1/imgs/1567218868444-COMA_ROSATvsPLANCK.pdf  us
+ed on input line 82.
+(pdftex.def)             Requested size: 483.0pt x 475.84888pt.
+ [4] [5
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 
+      <./Chapter1/imgs/1567218868444-COMA_ROSATvsPLANCK.pdf>]
+Underfull \vbox (badness 1033) has occurred while \output is active []
 
-LaTeX Warning: Reference `Chap:Assumptions' on page 6 undefined on input line 1
-1.
+ [6]
+Underfull \vbox (badness 1210) has occurred while \output is active []
+
+ [7]
+[8]
+<Chapter1/imgs/clusters/bulletCluster_sq.jpg, id=436, 1003.75pt x 1003.75pt>
+File: Chapter1/imgs/clusters/bulletCluster_sq.jpg Graphic file (type jpg)
+<use Chapter1/imgs/clusters/bulletCluster_sq.jpg>
+Package pdftex.def Info: Chapter1/imgs/clusters/bulletCluster_sq.jpg  used on i
+nput line 154.
+(pdftex.def)             Requested size: 202.86005pt x 202.86005pt.
+<Chapter1/imgs/clusters/Macsj0717_sq.jpg, id=437, 1003.75pt x 1003.75pt>
+File: Chapter1/imgs/clusters/Macsj0717_sq.jpg Graphic file (type jpg)
+<use Chapter1/imgs/clusters/Macsj0717_sq.jpg>
+Package pdftex.def Info: Chapter1/imgs/clusters/Macsj0717_sq.jpg  used on input
+ line 159.
+(pdftex.def)             Requested size: 202.86005pt x 202.86005pt.
+<Chapter1/imgs/clusters/elgordoCluster_sq.jpg, id=438, 1003.75pt x 1003.75pt>
+File: Chapter1/imgs/clusters/elgordoCluster_sq.jpg Graphic file (type jpg)
+<use Chapter1/imgs/clusters/elgordoCluster_sq.jpg>
+Package pdftex.def Info: Chapter1/imgs/clusters/elgordoCluster_sq.jpg  used on 
+input line 165.
+(pdftex.def)             Requested size: 202.86005pt x 202.86005pt.
+<Chapter1/imgs/clusters/musketBall_sq.jpg, id=439, 1003.75pt x 1003.75pt>
+File: Chapter1/imgs/clusters/musketBall_sq.jpg Graphic file (type jpg)
+<use Chapter1/imgs/clusters/musketBall_sq.jpg>
+Package pdftex.def Info: Chapter1/imgs/clusters/musketBall_sq.jpg  used on inpu
+t line 170.
+(pdftex.def)             Requested size: 202.86005pt x 202.86005pt.
+ [9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.178 \clearpage
+                 <./Chapter1/imgs/clusters/bulletCluster_sq.jpg> <./Chapter1/im
+gs/clusters/Macsj0717_sq.jpg> <./Chapter1/imgs/clusters/elgordoCluster_sq.jpg> 
+<./Chapter1/imgs/clusters/musketBall_sq.jpg>] [10
 
 
-LaTeX Warning: Citation `DumyCitationKey' on page 6 undefined on input line 14.
+]
+<Chapter1/imgs/tCascade.pdf, id=451, 795.72281pt x 565.36218pt>
+File: Chapter1/imgs/tCascade.pdf Graphic file (type pdf)
+<use Chapter1/imgs/tCascade.pdf>
+Package pdftex.def Info: Chapter1/imgs/tCascade.pdf  used on input line 216.
+(pdftex.def)             Requested size: 411.50774pt x 292.37683pt.
+ [11
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.253 \section
+              {Objectives moving forward} <./Chapter1/imgs/tCascade.pdf>])
+(./Chapter2/assumptions&TransferEffects.tex [12] [13
+
+]
+
+LaTeX Warning: Reference `Chap:Assumptions' on page 14 undefined on input line 
+11.
 
 
-[6
+LaTeX Warning: Citation `DumyCitationKey' on page 14 undefined on input line 14
+.
+
+[14
 
 ]
 Chapter 2.
-[7
-
-]) (./Chapter3/Chapter3.tex [8] [9
+[15
 
 ]
+LaTeX Font Info:    Trying to load font information for U+eus on input line 73.
 
-LaTeX Warning: Citation `DumyCitationKey' on page 10 undefined on input line 14
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueus.fd
+File: ueus.fd 2013/01/14 v3.01 Euler Script
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-eus.cfg
+File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
+) [16])
+(./Chapter3/MethodsAndProcedures.tex [17]
+
+LaTeX Warning: Citation `DumyCitationKey' on page 18 undefined on input line 14
 .
 
-[10
+[18
 
 ]
 Chapter 3.
-) (./Chapter4/Chapter4.tex [11
+) (./Chapter4/Chapter4.tex [19
+
+] [20] [21
 
 ]
 
-LaTeX Warning: Citation `DumyCitationKey' on page 12 undefined on input line 14
+LaTeX Warning: Citation `DumyCitationKey' on page 22 undefined on input line 14
 .
 
-[12
+[22
 
 ]
 Chapter 4.
-) (./Conclusion/Conclusion.tex [13
+) (./Conclusion/Conclusion.tex [23
 
-] [14
+] [24
 
 ]
 Chapter 5.
-) (./MainThesis.bbl) [15]
+) (./MainThesis.bbl) [25]
 \openout2 = `./Appendix/Appendix.aux'.
 
- (./Appendix/Appendix.tex [16
+ (./Appendix/Appendix.tex [26
 
 
 ]
 Appendix A.
-) [17]
+) [27]
 \openout2 = `./Examples/ExampleOfCitations.aux'.
 
- (./Examples/ExampleOfCitations.tex [18
+ (./Examples/ExampleOfCitations.tex [28
 
 
 
@@ -1978,45 +2071,45 @@ Appendix A.
 ]
 Appendix B.
 
-LaTeX Warning: Citation `Cawvey2017' on page 19 undefined on input line 7.
+LaTeX Warning: Citation `Cawvey2017' on page 29 undefined on input line 7.
 
 
-LaTeX Warning: Citation `Pakzad2018' on page 19 undefined on input line 7.
+LaTeX Warning: Citation `Pakzad2018' on page 29 undefined on input line 7.
 
 
-LaTeX Warning: Citation `Adachi2007' on page 19 undefined on input line 7.
+LaTeX Warning: Citation `Adachi2007' on page 29 undefined on input line 7.
 
 
-LaTeX Warning: Citation `J.Fenwick2010' on page 19 undefined on input line 7.
+LaTeX Warning: Citation `J.Fenwick2010' on page 29 undefined on input line 7.
 
 
-LaTeX Warning: Citation `PeerlingPhD1999' on page 19 undefined on input line 7.
+LaTeX Warning: Citation `PeerlingPhD1999' on page 29 undefined on input line 7.
 
 
 
-LaTeX Warning: Citation `Panis2004' on page 19 undefined on input line 7.
+LaTeX Warning: Citation `Panis2004' on page 29 undefined on input line 7.
 
-) [19]
+) [29]
 \openout2 = `./Examples/ExampleOfCode.aux'.
 
- (./Examples/ExampleOfCode.tex [20
+ (./Examples/ExampleOfCode.tex [30
 
 
 
 
 ]
 Appendix C.
-) [21]
+) [31]
 \openout2 = `./Examples/ExampleOfEquations.aux'.
 
- (./Examples/ExampleOfEquations.tex [22
+ (./Examples/ExampleOfEquations.tex [32
 
 
 
 
 ]
 Appendix D.
-) [23
+) [33
 pdfTeX warning (ext4): destination with the same identifier (name{equation.D.4}
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -2025,19 +2118,19 @@ l.148 \include{./Examples/ExampleOfEquations}
                                              ]
 \openout2 = `./Examples/ExampleOfFigures.aux'.
 
- (./Examples/ExampleOfFigures.tex [24
+ (./Examples/ExampleOfFigures.tex [34
 
 
 
 
 ]
 Appendix E.
-<Examples/FigureUQ.jpeg, id=445, 1284.8pt x 856.19875pt>
+<Examples/FigureUQ.jpeg, id=575, 1284.8pt x 856.19875pt>
 File: Examples/FigureUQ.jpeg Graphic file (type jpg)
 <use Examples/FigureUQ.jpeg>
 Package pdftex.def Info: Examples/FigureUQ.jpeg  used on input line 15.
 (pdftex.def)             Requested size: 483.0pt x 321.87067pt.
-) [25
+) [35
 pdfTeX warning (ext4): destination with the same identifier (name{figure.E.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -2047,14 +2140,14 @@ l.149 \include{./Examples/ExampleOfFigures}
 \openout2 = `./Examples/ExampleOfFlowCharts.aux'.
 
 
-(./Examples/ExampleOfFlowCharts.tex [26
+(./Examples/ExampleOfFlowCharts.tex [36
 
 
 
 
 ]
 Appendix F.
-) [27
+) [37
 pdfTeX warning (ext4): destination with the same identifier (name{figure.F.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -2063,25 +2156,25 @@ l.150 \include{./Examples/ExampleOfFlowCharts}
                                               ]
 \openout2 = `./Examples/ExampleOfTables.aux'.
 
- (./Examples/ExampleOfTables.tex [28
+ (./Examples/ExampleOfTables.tex [38
 
 
 
 
 ]
 Appendix G.
-) [29
+) [39
 pdfTeX warning (ext4): destination with the same identifier (name{table.G.1}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.151 \include{./Examples/ExampleOfTables}
                                           ] (./PreliminaryAndBackPages/Back.tex
-[30
+[40
 
 
 
-]) [31]
+]) [41]
 \tf@toc=\write8
 \openout8 = `MainThesis.toc'.
 
@@ -2103,15 +2196,18 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `MainThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9289940A12F2BB2E3E2ED14B926ABEB3;6134.
+(rerunfilecheck)             Checksum: 5150EF72897F56648398A7F14CDB1469;7319.
  ) 
 Here is how much of TeX's memory you used:
- 35862 strings out of 467533
- 636876 string characters out of 5422139
- 1228404 words of memory out of 5000000
- 63512 multiletter control sequences out of 15000+600000
- 696519 words of font info for 351 fonts, out of 8000000 for 9000
+ 36016 strings out of 467533
+ 640594 string characters out of 5422139
+ 1233912 words of memory out of 5000000
+ 63595 multiletter control sequences out of 15000+600000
+ 700603 words of font info for 376 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,15n,107p,3315b,908s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
@@ -2119,16 +2215,18 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/urw/times/utmri8a.pfb>
-Output written on MainThesis.pdf (47 pages, 1820654 bytes).
+t/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/sy
+mbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
+w/times/utmri8a.pfb>
+Output written on MainThesis.pdf (59 pages, 3245766 bytes).
 PDF statistics:
- 562 PDF objects out of 1000 (max. 8388607)
- 481 compressed objects within 5 object streams
- 127 named destinations out of 1000 (max. 500000)
- 87892 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 706 PDF objects out of 1000 (max. 8388607)
+ 600 compressed objects within 6 object streams
+ 159 named destinations out of 1000 (max. 500000)
+ 87954 words of extra memory for PDF output out of 89155 (max. 10000000)
 

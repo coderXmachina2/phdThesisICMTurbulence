@@ -16,40 +16,45 @@ The following publication has been incorporated as Chapter~\ref{Chap:Assumptions
 
 If your task breakdown requires further clarification, do so here. Do not exceed a single page.
 
-% ***************************************************
-% Example of an internal chapter
-% ***************************************************
-%This is an internal chapter of the thesis.
-%If you have a long title, you can supply an abbreviated version to print in the Table of Contents using the optional argument to the \chapter command.
-\chapter[Assumptions and Transfer Effects]{Primary Assumptions and Transfer Effects in SZ Surface Brightness Fluctuation Analysis}\label{Chap:assumptionsTitle}
+\chapter[Assumptions and Systematics of Turbulence Inference]{Assumptions and Systematics in ICM Turbulence Inference from Surface Brightness Fluctuations}\label{Chap:assumptionsTitle}
 
 \epigraph{``Real galaxy clusters exhibit a troubling awareness of our assumptions.''}{}
 
 \pagestyle{headings}
 
 % ********* Enter your text below this line: ********
-In this chapter I discuss the key assumptions and inputs that go into the typical turbulence inference pipeline discussing their necessity and limitations.
+The inference of turbulent pressure support from surface brightness observations is not a direct measurement — it is the end product of a chain of modelling steps, each of which introduces assumptions about the geometry, thermodynamic state, and statistical properties of the ICM. This chapter provides a structured examination of the key assumptions and inputs that constitute the turbulence inference pipeline from surface brightness data. 
+
+
 
 \section{Smooth SB model}\label{Chap:assumptionSmoothSBModel}
 
 % ********* Enter your text below this line: ********
-As previously mentioned the first step in order to isolate turbulence from SB data the first step is defining some smooth model. The smooth SB model is a 2D picture of the cluster sans any turbulence. It is essentially a picture of cluster in the state of HE. Consider the Reynolds decomposition for turbulence.
+The first step in the turbulence inference pipeline is the 
+construction of a smooth model $\bar{S}(\theta)$ of the cluster 
+surface brightness. The conceptual foundation for this decomposition 
+traces back to the Reynolds decomposition of turbulent fluid 
+mechanics, in which any instantaneous flow quantity is separated 
+into a mean component and a fluctuating perturbation about that 
+mean. Applied to the observed surface brightness 
+$S_\mathrm{obs}(\theta)$, this decomposition takes the form:
 
-\[S_{\mathrm{obs}}(\theta) = \bar{S}(\theta) + \delta S(\theta) \]
+\[S_{\mathrm{obs}}(\theta) = \bar{S}(\theta) + \delta S(\theta)\]
+\\
+Where $ S_{\mathrm{obs}}(\theta)$ is the observed surface brightness, $\bar{S}(\theta)$ is the smooth SB model, and $\delta S(\theta)$ is a small fluctuating component. The physical interpretation is that $\bar{S}(\theta)$ encodes the large-scale, slowly varying emission of the ICM in approximate hydrostatic equilibrium, while $\delta S(\theta)$ captures perturbations about that equilibrium — arising from turbulent density and pressure fluctuations,
 
-Where $ S_{\mathrm{obs}}(\theta)$ is the observed surface brightness, $\bar{S}(\theta)$ is the smooth SB model, and $\delta S(\theta)$ is a small fluctuating component. What you get when you try to find .The challenge is in the method to define 
+This technique was first applied on Coma cluster in X ray. Any structure in the cluster that is not captured by $\bar{S}(\theta)$ will be absorbed into $\delta S(\theta)$ and misidentified as a turbulent fluctuation. The question is, is it a splotch ($\beta$ model), a pancake (averaged empirical sphere), an egg (averaged empirical ellipse), a series of nested eggs (isocontour fit), or strained spagetti (Low Pass Filtered image) 
 
-How have smooth models been defined before? Usually some kind of sphere or ellipse tied to a parameter.
-
-What is the problem of these models. We can do elliptical as well. What is problem with that.
 
 \subsection{Spherical Symmetry}\label{Chap:assumptionsSmoothSBModelSphericalSymmetry}
 % ***************************************************
-\textcolor{red}{In actuality this phenomena is nothing new. You are not the first to probe it. It has been known to have contributed error a small amount according to Pratt the error budget for this is roughly 1 percent. Haram you write a paper and thesis about cluster without citing the Buote papers. Read those papers, rabbit hole a bit, and cite here.}
+\textcolor{red}{In actuality this phenomena is nothing new. You are not the first to probe it. And by probe I mean quantify the amount of error that arises from this assumption. It has been known to have contributed error a small amount according to Pratt the error budget for this is roughly 1 percent. Haram you write a paper and thesis about cluster without citing the Buote papers. Read those papers, rabbit hole a bit, and cite here.}
 
 Galaxy clusters are not spherical, but almost everyone treats them as if they are, because it's computationally far simpler. The question is — how much does this matter, and for what observables? 
 
-This is the shit that you gotta curve fit to: This is the zeroth order model. Extension to the zeroth order model is spherical and elliptical averaging.
+Deviations from spherical symmetry, such as intrinsic flattening and substructure, will necessarily introduce scatter, and possibly biases, into spherically averaged global scaling relations used in cosmological studies.
+
+This is the shit that you gotta curve fit to: This is the zeroth order model. This creates the flat beta. Extension to the zeroth order model is spherical and elliptical averaging. That is how you get empirical.
 
 \begin{equation}
 	S_X(b) = S_0 \left[ 1 + \left( \frac{b}{r_c} \right)^2 \right]^{-3\beta + 0.5}
@@ -59,13 +64,47 @@ But how we do this is the
 
 \section{Turbulent Parameters}\label{Chap:assumptionsParametric}
 
-So once we have the raw fluctuations. we would then take the power spectrum. Then we deproject the power spectrum. We don't really know the parameters. Suffice to say that shit is complex. You have multi scale, multi layer, multi mach numbers. How does one even know what the injection is? Here is some theory at least one page to prove it.
+The ratio of density to Pressure is 1 which is pretty remarkable. However this is conditional on the thermodynamic state.
 
-\section{Deprojection Process}\label{Chap:assumptions}
+So once we have the raw fluctuations. we would then take the power spectrum. Then we deproject the power spectrum. We do not really know the true parameters. Suffice to say that shit is complex. 
 
-Everything we see is a two dimensional deprojection of a three dimensional phenomena. There is an Abel transfrom used for 
+You have multi scale, multi layer, multi mach numbers. How does one even know what the injection scale rea;;y is? Here is some theory at least one page to prove it.
+
+\textbf{Kolmogorov turbulence} \textcolor{red}{[ref]} applies in the subsonic, weakly compressible limit ($\mathcal{M} \ll 1$) where density fluctuations are small and the $E(k) \propto k^{-5/3}$ spectrum holds. For the bulk ICM with $\mathcal{M}_{3D} \lesssim 0.5$ this is a reasonable zeroth-order approximation \textcolor{red}{[ref]}.
+
+\textbf{Burgers turbulence} \textcolor{red}{[ref]} applies in the supersonic, shock-dominated limit ($\mathcal{M} \gg 1$) where the flow is dominated by discontinuous shocks rather than smooth eddies. The energy spectrum steepens to $E(k) \propto k^{-2}$. While the bulk ICM is subsonic, merger-driven shocks can locally reach this regime, particularly at cluster outskirts and along merger axes.
+
+\textbf{Iroshnikov--Kraichnan (IK) turbulence} \textcolor{red}{[ref]} generalises the Kolmogorov framework to isotropic MHD. The presence of a mean magnetic field introduces Alfvén wave propagation as an additional timescale competing with the eddy turnover time, modifying the energy spectrum to $E(k) \propto k^{-3/2}$. Given that the ICM is magnetised at the level of $\sim 1$--$10\,\mu$G, MHD effects cannot be neglected entirely.
+
+\textbf{Goldreich--Sridhar (GS) turbulence} \textcolor{red}{[ref]} extends the MHD description to the anisotropic case, where turbulent eddies are elongated along the local magnetic field direction. In this framework the cascade is critically balanced between the eddy turnover time and the Alfvén wave period, and the energy spectrum along and perpendicular to the field differs. This anisotropy is particularly relevant for the interpretation of ICM turbulence in the presence of stratification and ordered magnetic field geometries.
+
+PITSZI:
+
+\begin{equation}
+	P_{3D}(k) = \sigma_{P}^2 \frac{ {k_{3D}^2} \exp{(-\frac{1}{k_{3D}^2 L_{inj}^2})}  \exp{( -k_{3D}^2 L_{diss}^2 )}  }{\int 4\pi k_{3D}^{\alpha + 2} \exp{(-\frac{1}{k_{3D}^2 L_{inj}^2})} \exp{( -k_{3D}^2 L_{diss}^2 )} dk_{3D}     }
+	\label{eq:P3DkPitszi}
+\end{equation}
+
+\begin{equation}
+	P_{3D}(k) = \sigma_{P}^2 \frac{ {k_{3D}^2} \exp{(-\frac{1}{k_{3D}^2 L_{inj}^2})}  \exp{( -k_{3D}^2 L_{diss}^2 )}  }{\int 4\pi k_{3D}^{\alpha + 2} \exp{(-\frac{1}{k_{3D}^2 L_{inj}^2})} \exp{( -k_{3D}^2 L_{diss}^2 )} dk_{3D}     }
+	\label{eq:P3DkPitszi}
+\end{equation}
+
+\section{Deprojection Process}\label{Chap:assumptionsDeprojection}
+The ratio of density to Pressure is 1 which is pretty remarkable. However this is conditional.
+
+Everything we see is a two dimensional deprojection of a three dimensional phenomena. This invariable leads to some of information. Projection is simply an integral.
+
+ There is an Abel transfrom used for 
 
 \section{Masking and Apodization}\label{Chap:assumptionsBody}
 
-Commonly is a Gaussian window.
+Masking is the filling of image pixels with a certain value. We do this in cluster science to isolate the ontarget shape away from the background. It is also a tendency to mask the core because the core is centrally condensed.
+
+Apodization is the smooth tapering of the edges to prevent wringing. Roll off too quickly and you look like a hard edge. The question is what roll off is best roll off. 
+% ***************************************************
+
+\section{Instrumental Beam Effects}\label{Chap:assumptionsBeamSmoothing}
+
+Whenever the sky is observed with a radio telescope some amount of blur is applied to the image. This is analogous to an effect of convolution with a 2D Gaussian. 
 % ***************************************************

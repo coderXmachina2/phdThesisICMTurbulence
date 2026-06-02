@@ -1,5 +1,8 @@
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Multiwavelength composite of the Coma cluster (Abell 1656). Top left: Planck tSZ Compton $y$ map. Top right: ROSAT soft X-ray surface brightness. In both upper panels the X-ray contours are superimposed on the tSZ image to illustrate the complementary spatial coverage of the two windows. Bottom panels show each overlaid on the Digitised Sky Survey optical image, revealing the member galaxy distribution. Image credit: ESA/LFI \& HFI Consortia; Max-Planck-Institut f\"{u}r extraterrestrische Physik; NASA, ESA, and the Digitised Sky Survey 2 \textcolor {red}{[ref]} \textcolor {red}{[ref]}.}}{5}{figure.1.1}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces A gallery of dynamically disturbed galaxy clusters representing extreme violations of hydrostatic equilibrium. \textit {Top left:} The Bullet Cluster (1E~0657-56), the archetypal binary merger. Chandra X-ray emission (pink) traces the shocked ICM stripped from the collisionless dark matter (blue, lensing reconstruction), providing the first direct observational evidence for dark matter.\textcolor {red}{[ref]}. \textit {Top right:} MACS~J0717.5+3745, the result of a quadruple cluster collision fed by a 13~Mpc cosmic web filament.Chandra X-ray (blue), VLA radio (red), and HST optical (background) reveal an extraordinarily complex thermodynamic structure \textcolor {red}{[ref]}. \textit {Bottom left:} El Gordo (ACT-CL~J0102-4915), the most massive known merging cluster at $z \sim 0.87$. Chandra X-ray emission (blue) is overlaid on a JWST infrared composite, with gravitational lensing arcs visible in the background field \textcolor {red}{[ref]}. \textit {Bottom right:} The Musket Ball Cluster (DLSCL~J0916.2+2951), a post-merger system caught further along in its evolution than the Bullet Cluster. The clear spatial offset between the hot gas (red) and dark matter (blue) illustrates the different collisional cross-sections of baryonic and dark matter \textcolor {red}{[ref]}.}}{9}{figure.1.2}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces The three-dimensional velocity power spectrum $P_v k^2$ as a function of wavenumber $k$, illustrating the Kolmogorov turbulent energy cascade. Energy is injected at the driving scale $2\pi /L$, transferred through the inertial range with the characteristic $\propto \dot {\epsilon }^{2/3}k^{-5/3}$ scaling, and dissipated at the viscous scale $2\pi /\lambda _\mathrm {visc}$. In the ICM context, the injection scale corresponds to the dominant energy driver — merger shocks, sloshing, or AGN activity — while the dissipation scale is set by the effective viscosity of the weakly collisional plasma.}}{11}{figure.1.3}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
@@ -9,7 +12,7 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {E.1}{\ignorespaces The University Of Queensland}}{25}{figure.E.1}%
+\contentsline {figure}{\numberline {E.1}{\ignorespaces The University Of Queensland}}{35}{figure.E.1}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {F.1}{\ignorespaces Flow Chart}}{27}{figure.F.1}%
+\contentsline {figure}{\numberline {F.1}{\ignorespaces Flow Chart}}{37}{figure.F.1}%
 \addvspace {10pt}
