@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.4.7)  2 JUN 2026 14:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.4.7)  5 JUN 2026 14:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1656,12 +1656,12 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 5
 
 (/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 Package xypdf Info: Line width: 0.47987pt on input line 59.
-<VUWLogo.jpg, id=179, 2509.375pt x 851.18pt>
+<VUWLogo.jpg, id=183, 2509.375pt x 851.18pt>
 File: VUWLogo.jpg Graphic file (type jpg)
 <use VUWLogo.jpg>
 Package pdftex.def Info: VUWLogo.jpg  used on input line 63.
 (pdftex.def)             Requested size: 313.94705pt x 106.48814pt.
-<OrcidLogo.jpg, id=180, 401.5803pt x 401.5803pt>
+<OrcidLogo.jpg, id=184, 401.5803pt x 401.5803pt>
 File: OrcidLogo.jpg Graphic file (type jpg)
 <use OrcidLogo.jpg>
 Package pdftex.def Info: OrcidLogo.jpg  used on input line 63.
@@ -1928,20 +1928,20 @@ Chapter 1.
 [1
 
 ] [2] [3]
-<Chapter1/imgs/1567218868444-COMA_ROSATvsPLANCK.pdf, id=401, 1355.0625pt x 1334
+<Chapter1/imgs/1567218868444-COMA_ROSATvsPLANCK.pdf, id=406, 1355.0625pt x 1334
 .9875pt>
 File: Chapter1/imgs/1567218868444-COMA_ROSATvsPLANCK.pdf Graphic file (type pdf
 )
 <use Chapter1/imgs/1567218868444-COMA_ROSATvsPLANCK.pdf>
 Package pdftex.def Info: Chapter1/imgs/1567218868444-COMA_ROSATvsPLANCK.pdf  us
-ed on input line 82.
+ed on input line 81.
 (pdftex.def)             Requested size: 483.0pt x 475.84888pt.
  [4] [5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.92 
+l.91 
       <./Chapter1/imgs/1567218868444-COMA_ROSATvsPLANCK.pdf>]
 Underfull \vbox (badness 1033) has occurred while \output is active []
 
@@ -1950,55 +1950,57 @@ Underfull \vbox (badness 1210) has occurred while \output is active []
 
  [7]
 [8]
-<Chapter1/imgs/clusters/bulletCluster_sq.jpg, id=436, 1003.75pt x 1003.75pt>
+<Chapter1/imgs/clusters/bulletCluster_sq.jpg, id=441, 1003.75pt x 1003.75pt>
 File: Chapter1/imgs/clusters/bulletCluster_sq.jpg Graphic file (type jpg)
 <use Chapter1/imgs/clusters/bulletCluster_sq.jpg>
 Package pdftex.def Info: Chapter1/imgs/clusters/bulletCluster_sq.jpg  used on i
-nput line 154.
+nput line 153.
 (pdftex.def)             Requested size: 202.86005pt x 202.86005pt.
-<Chapter1/imgs/clusters/Macsj0717_sq.jpg, id=437, 1003.75pt x 1003.75pt>
+<Chapter1/imgs/clusters/Macsj0717_sq.jpg, id=442, 1003.75pt x 1003.75pt>
 File: Chapter1/imgs/clusters/Macsj0717_sq.jpg Graphic file (type jpg)
 <use Chapter1/imgs/clusters/Macsj0717_sq.jpg>
 Package pdftex.def Info: Chapter1/imgs/clusters/Macsj0717_sq.jpg  used on input
- line 159.
+ line 158.
 (pdftex.def)             Requested size: 202.86005pt x 202.86005pt.
-<Chapter1/imgs/clusters/elgordoCluster_sq.jpg, id=438, 1003.75pt x 1003.75pt>
+<Chapter1/imgs/clusters/elgordoCluster_sq.jpg, id=443, 1003.75pt x 1003.75pt>
 File: Chapter1/imgs/clusters/elgordoCluster_sq.jpg Graphic file (type jpg)
 <use Chapter1/imgs/clusters/elgordoCluster_sq.jpg>
 Package pdftex.def Info: Chapter1/imgs/clusters/elgordoCluster_sq.jpg  used on 
-input line 165.
+input line 164.
 (pdftex.def)             Requested size: 202.86005pt x 202.86005pt.
-<Chapter1/imgs/clusters/musketBall_sq.jpg, id=439, 1003.75pt x 1003.75pt>
+<Chapter1/imgs/clusters/musketBall_sq.jpg, id=444, 1003.75pt x 1003.75pt>
 File: Chapter1/imgs/clusters/musketBall_sq.jpg Graphic file (type jpg)
 <use Chapter1/imgs/clusters/musketBall_sq.jpg>
 Package pdftex.def Info: Chapter1/imgs/clusters/musketBall_sq.jpg  used on inpu
-t line 170.
+t line 169.
 (pdftex.def)             Requested size: 202.86005pt x 202.86005pt.
  [9
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.178 \clearpage
+l.177 \clearpage
                  <./Chapter1/imgs/clusters/bulletCluster_sq.jpg> <./Chapter1/im
 gs/clusters/Macsj0717_sq.jpg> <./Chapter1/imgs/clusters/elgordoCluster_sq.jpg> 
 <./Chapter1/imgs/clusters/musketBall_sq.jpg>] [10
 
 
-]
-<Chapter1/imgs/tCascade.pdf, id=451, 795.72281pt x 565.36218pt>
+] [11]
+<Chapter1/imgs/tCascade.pdf, id=462, 795.72281pt x 565.36218pt>
 File: Chapter1/imgs/tCascade.pdf Graphic file (type pdf)
 <use Chapter1/imgs/tCascade.pdf>
-Package pdftex.def Info: Chapter1/imgs/tCascade.pdf  used on input line 216.
+Package pdftex.def Info: Chapter1/imgs/tCascade.pdf  used on input line 226.
 (pdftex.def)             Requested size: 411.50774pt x 292.37683pt.
- [11
+ [12
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.253 \section
-              {Objectives moving forward} <./Chapter1/imgs/tCascade.pdf>])
-(./Chapter2/assumptions&TransferEffects.tex [12] [13
+l.232 \clearpage
+                 <./Chapter1/imgs/tCascade.pdf>])
+(./Chapter2/assumptions&TransferEffects.tex [13
 
 ]
 
@@ -2015,55 +2017,57 @@ LaTeX Warning: Citation `DumyCitationKey' on page 14 undefined on input line 14
 Chapter 2.
 [15
 
-]
-LaTeX Font Info:    Trying to load font information for U+eus on input line 73.
+] [16]
+LaTeX Font Info:    Trying to load font information for U+eus on input line 76.
 
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-eus.cfg
 File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
-) [16])
-(./Chapter3/MethodsAndProcedures.tex [17]
+) [17])
+(./Chapter3/MethodsAndProcedures.tex [18] [19
 
-LaTeX Warning: Citation `DumyCitationKey' on page 18 undefined on input line 14
+]
+
+LaTeX Warning: Citation `DumyCitationKey' on page 20 undefined on input line 14
 .
 
-[18
+[20
 
 ]
 Chapter 3.
-) (./Chapter4/Chapter4.tex [19
+[21
 
-] [20] [21
+]) (./Chapter4/Chapter4.tex [22] [23
 
 ]
 
-LaTeX Warning: Citation `DumyCitationKey' on page 22 undefined on input line 14
+LaTeX Warning: Citation `DumyCitationKey' on page 24 undefined on input line 14
 .
 
-[22
+[24
 
 ]
 Chapter 4.
-) (./Conclusion/Conclusion.tex [23
+) (./Conclusion/Conclusion.tex [25
 
-] [24
+] [26
 
 ]
 Chapter 5.
-) (./MainThesis.bbl) [25]
+) (./MainThesis.bbl) [27]
 \openout2 = `./Appendix/Appendix.aux'.
 
- (./Appendix/Appendix.tex [26
+ (./Appendix/Appendix.tex [28
 
 
 ]
 Appendix A.
-) [27]
+) [29]
 \openout2 = `./Examples/ExampleOfCitations.aux'.
 
- (./Examples/ExampleOfCitations.tex [28
+ (./Examples/ExampleOfCitations.tex [30
 
 
 
@@ -2071,45 +2075,45 @@ Appendix A.
 ]
 Appendix B.
 
-LaTeX Warning: Citation `Cawvey2017' on page 29 undefined on input line 7.
+LaTeX Warning: Citation `Cawvey2017' on page 31 undefined on input line 7.
 
 
-LaTeX Warning: Citation `Pakzad2018' on page 29 undefined on input line 7.
+LaTeX Warning: Citation `Pakzad2018' on page 31 undefined on input line 7.
 
 
-LaTeX Warning: Citation `Adachi2007' on page 29 undefined on input line 7.
+LaTeX Warning: Citation `Adachi2007' on page 31 undefined on input line 7.
 
 
-LaTeX Warning: Citation `J.Fenwick2010' on page 29 undefined on input line 7.
+LaTeX Warning: Citation `J.Fenwick2010' on page 31 undefined on input line 7.
 
 
-LaTeX Warning: Citation `PeerlingPhD1999' on page 29 undefined on input line 7.
+LaTeX Warning: Citation `PeerlingPhD1999' on page 31 undefined on input line 7.
 
 
 
-LaTeX Warning: Citation `Panis2004' on page 29 undefined on input line 7.
+LaTeX Warning: Citation `Panis2004' on page 31 undefined on input line 7.
 
-) [29]
+) [31]
 \openout2 = `./Examples/ExampleOfCode.aux'.
 
- (./Examples/ExampleOfCode.tex [30
+ (./Examples/ExampleOfCode.tex [32
 
 
 
 
 ]
 Appendix C.
-) [31]
+) [33]
 \openout2 = `./Examples/ExampleOfEquations.aux'.
 
- (./Examples/ExampleOfEquations.tex [32
+ (./Examples/ExampleOfEquations.tex [34
 
 
 
 
 ]
 Appendix D.
-) [33
+) [35
 pdfTeX warning (ext4): destination with the same identifier (name{equation.D.4}
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -2118,19 +2122,19 @@ l.148 \include{./Examples/ExampleOfEquations}
                                              ]
 \openout2 = `./Examples/ExampleOfFigures.aux'.
 
- (./Examples/ExampleOfFigures.tex [34
+ (./Examples/ExampleOfFigures.tex [36
 
 
 
 
 ]
 Appendix E.
-<Examples/FigureUQ.jpeg, id=575, 1284.8pt x 856.19875pt>
+<Examples/FigureUQ.jpeg, id=589, 1284.8pt x 856.19875pt>
 File: Examples/FigureUQ.jpeg Graphic file (type jpg)
 <use Examples/FigureUQ.jpeg>
 Package pdftex.def Info: Examples/FigureUQ.jpeg  used on input line 15.
 (pdftex.def)             Requested size: 483.0pt x 321.87067pt.
-) [35
+) [37
 pdfTeX warning (ext4): destination with the same identifier (name{figure.E.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -2140,14 +2144,14 @@ l.149 \include{./Examples/ExampleOfFigures}
 \openout2 = `./Examples/ExampleOfFlowCharts.aux'.
 
 
-(./Examples/ExampleOfFlowCharts.tex [36
+(./Examples/ExampleOfFlowCharts.tex [38
 
 
 
 
 ]
 Appendix F.
-) [37
+) [39
 pdfTeX warning (ext4): destination with the same identifier (name{figure.F.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -2156,25 +2160,25 @@ l.150 \include{./Examples/ExampleOfFlowCharts}
                                               ]
 \openout2 = `./Examples/ExampleOfTables.aux'.
 
- (./Examples/ExampleOfTables.tex [38
+ (./Examples/ExampleOfTables.tex [40
 
 
 
 
 ]
 Appendix G.
-) [39
+) [41
 pdfTeX warning (ext4): destination with the same identifier (name{table.G.1}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.151 \include{./Examples/ExampleOfTables}
                                           ] (./PreliminaryAndBackPages/Back.tex
-[40
+[42
 
 
 
-]) [41]
+]) [43]
 \tf@toc=\write8
 \openout8 = `MainThesis.toc'.
 
@@ -2200,13 +2204,13 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `MainThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 5150EF72897F56648398A7F14CDB1469;7319.
+(rerunfilecheck)             Checksum: 4AF10058FDFE31F4117CF6C78ACFEA43;7286.
  ) 
 Here is how much of TeX's memory you used:
- 36016 strings out of 467533
- 640594 string characters out of 5422139
- 1233912 words of memory out of 5000000
- 63595 multiletter control sequences out of 15000+600000
+ 36023 strings out of 467533
+ 640690 string characters out of 5422139
+ 1235044 words of memory out of 5000000
+ 63598 multiletter control sequences out of 15000+600000
  700603 words of font info for 376 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,15n,107p,3315b,908s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2223,10 +2227,10 @@ mbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on MainThesis.pdf (59 pages, 3245766 bytes).
+Output written on MainThesis.pdf (61 pages, 3250579 bytes).
 PDF statistics:
- 706 PDF objects out of 1000 (max. 8388607)
- 600 compressed objects within 6 object streams
- 159 named destinations out of 1000 (max. 500000)
- 87954 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 723 PDF objects out of 1000 (max. 8388607)
+ 614 compressed objects within 7 object streams
+ 163 named destinations out of 1000 (max. 500000)
+ 87962 words of extra memory for PDF output out of 89155 (max. 10000000)
 

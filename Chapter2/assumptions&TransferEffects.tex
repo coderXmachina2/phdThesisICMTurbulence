@@ -23,32 +23,34 @@ If your task breakdown requires further clarification, do so here. Do not exceed
 \pagestyle{headings}
 
 % ********* Enter your text below this line: ********
-The inference of turbulent pressure support from surface brightness observations is not a direct measurement — it is the end product of a chain of modelling steps, each of which introduces assumptions about the geometry, thermodynamic state, and statistical properties of the ICM. This chapter provides a structured examination of the key assumptions and inputs that constitute the turbulence inference pipeline from surface brightness data. 
+The inference of turbulent pressure support from surface brightness observations is not a direct measurement — it is the end product of a chain of modelling steps, each of which introduces assumptions about the geometry, thermodynamic state, and statistical properties of the ICM. This chapter aims to provide a structured examination of some of the simplifying assumptions, key inputs, and systematics that constitute the pipeline to date. 
 
-
-
-\section{Smooth SB model}\label{Chap:assumptionSmoothSBModel}
+\section{ICM Smooth Model}\label{Chap:assumptionSmoothSBModel}
 
 % ********* Enter your text below this line: ********
-The first step in the turbulence inference pipeline is the 
-construction of a smooth model $\bar{S}(\theta)$ of the cluster 
-surface brightness. The conceptual foundation for this decomposition 
-traces back to the Reynolds decomposition of turbulent fluid 
-mechanics, in which any instantaneous flow quantity is separated 
-into a mean component and a fluctuating perturbation about that 
-mean. Applied to the observed surface brightness 
-$S_\mathrm{obs}(\theta)$, this decomposition takes the form:
+The first step in the turbulence inference pipeline is the construction of a smooth model $\bar{S}(\theta)$ of the cluster. The conceptual foundation for this procedure traces its origin to Reynolds decomposition in fluid mechanics, in which an instantaneous flow quantity is separated into a mean component and a fluctuating perturbation about the mean \textcolor{red}{[ref]}. Applied to the observed surface brightness $S_\mathrm{obs}(\theta)$, this decomposition takes the form:
 
 \[S_{\mathrm{obs}}(\theta) = \bar{S}(\theta) + \delta S(\theta)\]
 \\
-Where $ S_{\mathrm{obs}}(\theta)$ is the observed surface brightness, $\bar{S}(\theta)$ is the smooth SB model, and $\delta S(\theta)$ is a small fluctuating component. The physical interpretation is that $\bar{S}(\theta)$ encodes the large-scale, slowly varying emission of the ICM in approximate hydrostatic equilibrium, while $\delta S(\theta)$ captures perturbations about that equilibrium — arising from turbulent density and pressure fluctuations,
+Where $ S_{\mathrm{obs}}(\theta)$ is the observed surface brightness, $\bar{S}(\theta)$ is the smooth surface brightness model, and $\delta S(\theta)$ is the small scale fluctuations. The physical interpretation is that $\bar{S}(\theta)$ encodes the large-scale, slowly varying emission of the ICM in approximate HE, while $\delta S(\theta)$ captures perturbations about that equilibrium — any deviations would then be a result of turbulent density and pressure fluctuations. Rearranging the equation, the fluctuation residual map is simply:
 
-This technique was first applied on Coma cluster in X ray. Any structure in the cluster that is not captured by $\bar{S}(\theta)$ will be absorbed into $\delta S(\theta)$ and misidentified as a turbulent fluctuation. The question is, is it a splotch ($\beta$ model), a pancake (averaged empirical sphere), an egg (averaged empirical ellipse), a series of nested eggs (isocontour fit), or strained spagetti (Low Pass Filtered image) 
+\begin{equation}
+	\delta S(\theta) = S_\mathrm{obs}(\theta) - \bar{S}(\theta).
+	\label{eq:residuals}
+\end{equation}
+\\
+It is from the statistical properties of $\delta S(\theta)$ that constraints on the downstream constraints of turbulence are ultimately derived from. The challenge at this early stage is that the design of the smooth model can determine the size of fluctuations that are propagated into the power spectrum. A model that is too simplistic (overly smooth) embeds real cluster structure in $\delta{S}(\theta)$ as spurious fluctuations thus overestimating turbulence. A model that is too complex (underly smooth) absorbs real turbulence into $\bar{S}(\theta)$ thus underestimating turbulence.
 
+Work with $S_{\mathrm{X}}$ has shown example demonstrations where changing the input $\bar{S}(\theta)$ changes the magnitude of fluctuations in the corresponding power spectrum. A land mark early exploration by \textcolor{red}{[ref]} showed that a two dimensional $\beta$-model altered the recovered amplitude of the longest-wavelength perturbations by up to a factor of two relative to a spherically symmetric model. The sensitivity to model choice showed the greatest significance at scales $\geq$ 300 kpc. That is not to say that unlimited flexibility either. \textcolor{red}{[ref]} approached the construction of $\bar{S}$ by fitting a series of logarithmically spaced ellipses to the X-ray isophotes of the cool-core cluster AWM$\sim$7, finding radial surface brightness depressions in the model-subtracted residuals that were absent in simulations — a result sensitive to the assumed elliptical geometry of the model.
+
+Common trends of the things that matter
+
+%\subsection{Centroid Location}\label{Chap:assumptionsSmoothSBModelCentroidLocation}
+% *******
 
 \subsection{Spherical Symmetry}\label{Chap:assumptionsSmoothSBModelSphericalSymmetry}
 % ***************************************************
-\textcolor{red}{In actuality this phenomena is nothing new. You are not the first to probe it. And by probe I mean quantify the amount of error that arises from this assumption. It has been known to have contributed error a small amount according to Pratt the error budget for this is roughly 1 percent. Haram you write a paper and thesis about cluster without citing the Buote papers. Read those papers, rabbit hole a bit, and cite here.}
+Spherical symmetry is the physical property where an object or a region of space remains completely unchanged when rotated about its center. \textcolor{red}{In actuality this phenomena is nothing new. You are not the first to probe it. And by probe I mean quantify the amount of error that arises from this assumption. It has been known to have contributed error a small amount according to Pratt the error budget for this is roughly 1 percent. Haram you write a paper and thesis about cluster without citing the Buote papers. Read those papers, rabbit hole a bit, and cite here.}
 
 Galaxy clusters are not spherical, but almost everyone treats them as if they are, because it's computationally far simpler. The question is — how much does this matter, and for what observables? 
 
@@ -60,13 +62,14 @@ This is the shit that you gotta curve fit to: This is the zeroth order model. Th
 	S_X(b) = S_0 \left[ 1 + \left( \frac{b}{r_c} \right)^2 \right]^{-3\beta + 0.5}
 \end{equation}
 
-But how we do this is the 
+Do the averaging thing and zeroth order perfectly smooth here. Then make a plot of model and fluctuations to show large deviations.
 
 \section{Turbulent Parameters}\label{Chap:assumptionsParametric}
 
-The ratio of density to Pressure is 1 which is pretty remarkable. However this is conditional on the thermodynamic state.
 
 So once we have the raw fluctuations. we would then take the power spectrum. Then we deproject the power spectrum. We do not really know the true parameters. Suffice to say that shit is complex. 
+
+Normalization (amplitude $A_{\delta}$ ) of the X-ray density power spectrum is linearly related to the turbulent Mach number. The ratio of density to Pressure is 1 which is pretty remarkable. However this is conditional on the thermodynamic state.
 
 You have multi scale, multi layer, multi mach numbers. How does one even know what the injection scale rea;;y is? Here is some theory at least one page to prove it.
 
@@ -99,7 +102,7 @@ Everything we see is a two dimensional deprojection of a three dimensional pheno
 
 \section{Masking and Apodization}\label{Chap:assumptionsBody}
 
-Masking is the filling of image pixels with a certain value. We do this in cluster science to isolate the ontarget shape away from the background. It is also a tendency to mask the core because the core is centrally condensed.
+Masking is the filling of image pixels with a certain value. We do this in cluster science to isolate the ontarget shape away from the background. It is also a tendency to mask the core because the core is centrally condensed. Images with gaps commonly cause problems. In X ray they mask alot of point sources. That is why we have Arevalo methods. In our case masking also happens but its a large mask on the outskirts and the inside as well.
 
 Apodization is the smooth tapering of the edges to prevent wringing. Roll off too quickly and you look like a hard edge. The question is what roll off is best roll off. 
 % ***************************************************
@@ -108,3 +111,7 @@ Apodization is the smooth tapering of the edges to prevent wringing. Roll off to
 
 Whenever the sky is observed with a radio telescope some amount of blur is applied to the image. This is analogous to an effect of convolution with a 2D Gaussian. 
 % ***************************************************
+
+%It is almost as if, turbulence is in the eye of the smooth model which should not be the case. This technique was first applied on Coma cluster in X ray \textcolor{red}{[ref]}. I agree that 
+
+%The question that we are trying to ask is that in order to get the best match fit we are trying to answer the question, is it a splotch ($\beta$ model), a pancake (averaged empirical sphere), an egg (averaged empirical ellipse), a series of nested eggs (isocontour fit), or strained spagetti (Low Pass Filtered image)

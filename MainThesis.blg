@@ -1,4 +1,4 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'MainThesis.blg'
-[54] biber:342> INFO - === Tue Jun  2, 2026, 14:59:07
-[66] Biber.pm:421> INFO - Reading 'MainThesis.bcf'
+[58] biber:342> INFO - === Fri Jun  5, 2026, 14:01:26
+[70] Biber.pm:421> INFO - Reading 'MainThesis.bcf'
