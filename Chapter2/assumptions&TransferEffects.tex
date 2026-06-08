@@ -16,16 +16,75 @@ The following publication has been incorporated as Chapter~\ref{Chap:Assumptions
 
 If your task breakdown requires further clarification, do so here. Do not exceed a single page.
 
-\chapter[Assumptions and Systematics of Turbulence Inference]{Assumptions and Systematics in ICM Turbulence Inference from Surface Brightness Fluctuations}\label{Chap:assumptionsTitle}
+\chapter[Assumptions and Systematics of Turbulence Inference]{Assumptions and Systematics in  Turbulence Inference from ICM Surface Brightness Fluctuations}\label{Chap:assumptionsTitle}
 
 \epigraph{``Real galaxy clusters exhibit a troubling awareness of our assumptions.''}{}
 
 \pagestyle{headings}
 
 % ********* Enter your text below this line: ********
-The inference of turbulent pressure support from surface brightness observations is not a direct measurement — it is the end product of a chain of modelling steps, each of which introduces assumptions about the geometry, thermodynamic state, and statistical properties of the ICM. This chapter aims to provide a structured examination of some of the simplifying assumptions, key inputs, and systematics that constitute the pipeline to date. 
+The inference of turbulent pressure support from surface brightness data is not a direct measurement — it is the end product of a chain of modeling steps, each of which introduces assumptions about the geometry, thermodynamic state, and statistical properties of the ICM. The difficulty of this methodology is that of error propagation as uncertainties at each stage do not add independently; they compound. This chapter aims to provide a structured examination of some of the procedural steps, simplifying assumptions, and systematics that constitute the present methodology. 
 
-\section{ICM Smooth Model}\label{Chap:assumptionSmoothSBModel}
+\section{The Inference Chain: An End to End Overview}\label{Chap:assumptionsummaryPipeline}
+
+Before examining each step in detail, the complete pipeline of how to go from surface brightness to hydrostatic mass bias is first outlined to establish the flow of logic and motivate the structure of the discussion that follows. Taken apart the procedure can be summarized into an eight-step process:
+
+\begin{enumerate}
+	
+	\item \textbf{Construct the smooth ICM brightness model.} A  model of the underlying, unperturbed surface brightness distribution is constructed to represent the large-scale, azimuthally averaged structure	of the ICM emission. A $\beta$-model is the conventional choice though more flexible alternatives do exist. This model defines the operational boundary between the mean cluster and fluctuations, and its accuracy propagates into every downstream step.
+	
+	\item \textbf{Subtract the smooth model to obtain the fluctuation map.} 
+	The smooth brightness model is subtracted from the observed surface brightness image to isolate the residual emission. The map is normalised by the smooth model to produce a fractional fluctuation field, removing	the steep radial brightness gradient and rendering fluctuations at all cluster radii directly comparable.
+	
+	\item \textbf{Mask, normalise, and apply a weight map.} Point sources, chip gaps, and other data artefacts are masked prior to spectral analysis. A spatial weight map is then applied to define the region of interest, suppress spectral leakage at the map boundaries, and optionally up- or down-weight radial zones. The design of this weight map introduces a large-scale cutoff in the measurable spatial frequency range.
+	
+	\item \textbf{Compute the two-dimensional power spectrum.} A two-dimensional Fourier transform of the weighted fluctuation map is computed and azimuthally averaged to yield the omnidirectional power spectrum as a function of angular spatial frequency. This step characterises the distribution of fluctuation power across spatial scales in the plane of the sky, and requires corrections for the instrumental beam and noise.
+	
+	\item \textbf{Deproject the 2D power spectrum into 3D.} The observed two-dimensional power spectrum is a projection of the underlying three-dimensional density fluctuation field, weighted by the ICM emissivity along the line of sight. An analytical deprojection is applied to recover the three-dimensional power spectrum, requiring a model for the cluster's line-of-sight emissivity profile and invoking an assumption of statistical isotropy.
+	
+	\item \textbf{Compute the characteristic amplitude spectrum.} From the three-dimensional power spectrum, the dimensionless characteristic 	amplitude is computed as a function of spatial scale. This quantity represents the RMS fractional density fluctuation per logarithmic wavenumber interval, and is the key observable that bridges the measured power spectrum to the physical turbulent state of the ICM.
+	
+	\item \textbf{Infer the three-dimensional turbulent Mach number.} The peak of the characteristic amplitude spectrum is converted to a three-dimensional turbulent Mach number via a proportionality relation calibrated from numerical simulations of ICM turbulence. This step carries the assumption that the observed fluctuations are of turbulent origin, and the result is sensitive to the choice of simulation calibration and the assumed thermodynamic regime of the perturbations.
+	
+	\item \textbf{Compute the non-thermal pressure fraction and hydrostatic mass bias.} The three-dimensional Mach number is used to estimate the non-thermal pressure contribution from ICM bulk and turbulent motions. This yields the hydrostatic mass bias: the fractional underestimate of the true cluster mass incurred when hydrostatic equilibrium is assumed and turbulent pressure support is neglected.
+	
+\end{enumerate}
+
+%We will have to go deeper into it with all the subsequent sections
+
+%\begin{enumerate}
+%	
+%	\item \textbf{Construct the smooth ICM brightness model.} A model of the underlying, unperturbed surface brightness distribution is built to match the cluster surface brightness. Conventionally it  involves fitting a parametric model ($\beta$-model for example) to capture the large-scale, azimuthally averaged structure of ICM emission. 
+	
+%	\item \textbf{Subtract the smooth model to obtain the fluctuation map.} The smooth brightness model is subtracted from the observed surface brightness image. This step produces a map of fluctuations that encode any deviations of the ICM gas from HE.
+	
+%	\item \textbf{Mask, normalize, and apply weight map.} Point sources, dusty galaxies, and other data artefacts are masked. The fluctuation map is usually normalized to establish reference levels relative to the unpurturbed cluster. Spatial weight maps are applied to emphasis certain areas of the cluster over others and suppress spectral leakage prior to Fourier analysis.
+	
+%	\item \textbf{Compute the two-dimensional power spectrum.} A two-dimensional Fourier transform of the processed fluctuation map is computed, and the resulting power spectrum is estimated. This step characterizes the POS fluctuation power across spatial scales. 
+	
+%	\item \textbf{Deproject the 2D power spectrum into 3D.} The two-dimensional power spectrum is analytically deprojected into a three-dimensional form. The deprojection process requires an additional model to be defined that accounts for the cluster width and depth. 
+	
+%	\item \textbf{Compute the characteristic amplitude spectrum.} The dimensionless characteristic amplitude spectrum of the three-dimensional power spectrum is computed. This quantity provides a physically intuitive measure of the fractional density fluctuation of the power per logarithmic interval.
+	
+%	\item \textbf{Infer the three-dimensional turbulent Mach number.} The peak of the characteristic amplitude spectrum, is related to turbulent velocity dispersion in the ICM via proportionality between fluctuations and the three-dimensional (volumetric) Mach number.
+	
+%	\item \textbf{Compute the hydrostatic mass bias.} The three dimensional Mach number is used to estimate the non-thermal pressure contribution from ICM motions. This yields the hydrostatic mass bias defined as the fractional underestimate of the true cluster mass under assumption of HE and no turbulent pressure support.
+	
+%\end{enumerate}
+
+%Under the assumption that the ICM fluctuations are statistically isotropic and homogeneous within the sampled volume, the two-dimensional projected power spectrum is deprojected analytically into the three-dimensional power spectrum $P_{3\mathrm{D}}(k)$. This step requires an explicit model for the geometry and line-of-sight depth of the emitting volume.
+
+% $P_{2\mathrm{D}}(k_\perp)$ is estimated as a function of angular spatial frequency $k_\perp$. 
+
+%projected LOS integrated %Use this in the actual description.
+
+%The accuracy of this model sets the baseline against which all fluctuations are derived from downstream in the pipeline.
+
+ % $A(k) = \sqrt{4\pi k^3 P_{3\mathrm{D}}(k)}$ 
+ 
+The next sections will elaborate all these processes grouped into different sections according to their relevance.
+ 
+\section{Smooth brightness model and fluctuations}\label{Chap:assumptionSmoothSBModel}
 
 % ********* Enter your text below this line: ********
 The first step in the turbulence inference pipeline is the construction of a smooth model $\bar{S}(\theta)$ of the cluster. The conceptual foundation for this procedure traces its origin to Reynolds decomposition in fluid mechanics, in which an instantaneous flow quantity is separated into a mean component and a fluctuating perturbation about the mean \textcolor{red}{[ref]}. Applied to the observed surface brightness $S_\mathrm{obs}(\theta)$, this decomposition takes the form:
@@ -64,14 +123,37 @@ This is the shit that you gotta curve fit to: This is the zeroth order model. Th
 
 Do the averaging thing and zeroth order perfectly smooth here. Then make a plot of model and fluctuations to show large deviations.
 
-\section{Turbulent Parameters}\label{Chap:assumptionsParametric}
+\section{From Image to Power Spectrum}\label{Chap:assumptionsImageToPowerSpectrum}
+
+\subsection{Masking and Apodization}\label{Chap:assumptionsBody}
+
+Masking is the filling of image pixels with a certain value. We do this in cluster science to isolate the ontarget shape away from the background. It is also a tendency to mask the core because the core is centrally condensed. For the outskirts there may be different areas have different amount of non thermal pressure support.
+
+Images with gaps commonly cause problems. In X ray they mask alot of point sources. That is why we have Arevalo methods that build on $\delta$ variance. In our case masking also happens but its a large mask on the outskirts and the inside as well.
+
+Apodization is the smooth tapering of the edges to prevent wringing. Roll off too quickly and you look like a hard edge. The question is what roll off is best roll off. 
+
+\subsection{Instrumental Beam Effects}\label{Chap:assumptionsBeamSmoothing}
+
+Whenever the sky is observed with a radio telescope some amount of blur is applied to the image. This is analogous to an effect of convolution with a 2D Gaussian. 
+
+\section{From 2D to 3D: The Projection Problem}\label{Chap:assumptionsParametric}
+
+\subsection{Deprojection Process}\label{Chap:assumptionsDeprojection}
+The ratio of density to Pressure is 1 which is pretty remarkable. However this is conditional.
+
+Everything we see is a two dimensional deprojection of a three dimensional phenomena. This invariable leads to some of information. Projection is simply an integral.
+
+There is an Abel transfrom used for 
+
+\section{From Fluctuations to Turbulence: Physical Interpretation}\label{Chap:assumptionsFromFluctsToTurb}
 
 
-So once we have the raw fluctuations. we would then take the power spectrum. Then we deproject the power spectrum. We do not really know the true parameters. Suffice to say that shit is complex. 
 
-Normalization (amplitude $A_{\delta}$ ) of the X-ray density power spectrum is linearly related to the turbulent Mach number. The ratio of density to Pressure is 1 which is pretty remarkable. However this is conditional on the thermodynamic state.
 
-You have multi scale, multi layer, multi mach numbers. How does one even know what the injection scale rea;;y is? Here is some theory at least one page to prove it.
+Normalization (amplitude $A_{\delta}$ ) of the X-ray density power spectrum is linearly related to the turbulent Mach number. The ratio of density to Pressure is 1 which is pretty remarkable. However this is conditional on the thermodynamic state. 
+
+You have multi scale, multi layer, multi mach numbers. How does one even know what the injection scale really is? Here is some theory at least one page to prove it. Suffice to say that shit is complex. 
 
 \textbf{Kolmogorov turbulence} \textcolor{red}{[ref]} applies in the subsonic, weakly compressible limit ($\mathcal{M} \ll 1$) where density fluctuations are small and the $E(k) \propto k^{-5/3}$ spectrum holds. For the bulk ICM with $\mathcal{M}_{3D} \lesssim 0.5$ this is a reasonable zeroth-order approximation \textcolor{red}{[ref]}.
 
@@ -93,23 +175,12 @@ PITSZI:
 	\label{eq:P3DkPitszi}
 \end{equation}
 
-\section{Deprojection Process}\label{Chap:assumptionsDeprojection}
-The ratio of density to Pressure is 1 which is pretty remarkable. However this is conditional.
+\section{Propagation and Compounding of Systematic Uncertainties}\label{Chap:assumptionsPropagationandCompoundingof SystematicUncertainties}
 
-Everything we see is a two dimensional deprojection of a three dimensional phenomena. This invariable leads to some of information. Projection is simply an integral.
 
- There is an Abel transfrom used for 
-
-\section{Masking and Apodization}\label{Chap:assumptionsBody}
-
-Masking is the filling of image pixels with a certain value. We do this in cluster science to isolate the ontarget shape away from the background. It is also a tendency to mask the core because the core is centrally condensed. Images with gaps commonly cause problems. In X ray they mask alot of point sources. That is why we have Arevalo methods. In our case masking also happens but its a large mask on the outskirts and the inside as well.
-
-Apodization is the smooth tapering of the edges to prevent wringing. Roll off too quickly and you look like a hard edge. The question is what roll off is best roll off. 
 % ***************************************************
 
-\section{Instrumental Beam Effects}\label{Chap:assumptionsBeamSmoothing}
 
-Whenever the sky is observed with a radio telescope some amount of blur is applied to the image. This is analogous to an effect of convolution with a 2D Gaussian. 
 % ***************************************************
 
 %It is almost as if, turbulence is in the eye of the smooth model which should not be the case. This technique was first applied on Coma cluster in X ray \textcolor{red}{[ref]}. I agree that 
