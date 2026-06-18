@@ -16,7 +16,7 @@ The following publication has been incorporated as Chapter~\ref{Chap:Assumptions
 
 If your task breakdown requires further clarification, do so here. Do not exceed a single page.
 
-\chapter[Assumptions and Systematics of Turbulence Inference]{Assumptions and Systematics in  Turbulence Inference from ICM Surface Brightness Fluctuations}\label{Chap:assumptionsTitle}
+\chapter[Assumptions and Systematics of Turbulence Inference]{Assumptions and systematics in turbulence inference from ICM surface brightness fluctuations}\label{Chap:assumptionsTitle}
 
 \epigraph{``Real galaxy clusters exhibit a troubling awareness of our assumptions.''}{}
 
@@ -31,122 +31,268 @@ Before examining each step in detail, the complete pipeline of how to go from su
 
 \begin{enumerate}
 	
-	\item \textbf{Construct the smooth ICM brightness model.} A  model of the underlying, unperturbed surface brightness distribution is constructed to represent the large-scale, azimuthally averaged structure	of the ICM emission. A $\beta$-model is the conventional choice though more flexible alternatives do exist. This model defines the operational boundary between the mean cluster and fluctuations, and its accuracy propagates into every downstream step.
+	\item \textbf{Construct the smooth ICM brightness model.} A  model of the underlying, unperturbed surface brightness distribution is constructed to represent the mean structure of the ICM emission. A $\beta$-model is the conventional choice though more flexible alternatives do exist. This model defines the working boundary between the mean cluster and fluctuations hence the accuracy of the smooth model propagates into every downstream step.
 	
-	\item \textbf{Subtract the smooth model to obtain the fluctuation map.} 
-	The smooth brightness model is subtracted from the observed surface brightness image to isolate the residual emission. The map is normalised by the smooth model to produce a fractional fluctuation field, removing	the steep radial brightness gradient and rendering fluctuations at all cluster radii directly comparable.
+	\item \textbf{Subtract and normalise the fluctuation map.} 
+	The smooth brightness model is subtracted from the observed surface brightness image to isolate the residual emission. The residual emission map is typically normalised by the smooth model to produce a fractional fluctuation field. This step adapts for the typically decaying radial brightness gradient of the cluster and renders fluctuations at all radii directly comparable.
 	
-	\item \textbf{Mask, normalise, and apply a weight map.} Point sources, chip gaps, and other data artefacts are masked prior to spectral analysis. A spatial weight map is then applied to define the region of interest, suppress spectral leakage at the map boundaries, and optionally up- or down-weight radial zones. The design of this weight map introduces a large-scale cutoff in the measurable spatial frequency range.
+	\item \textbf{Mask, and apply a weight map.} Point sources, dusty regions, and other data artefacts are masked prior to spectral analysis. A spatial weight map is then applied to define the region of interest, suppress spectral leakage at the map boundaries, and optionally up or down weight radial zones. 
 	
-	\item \textbf{Compute the two-dimensional power spectrum.} A two-dimensional Fourier transform of the weighted fluctuation map is computed and azimuthally averaged to yield the omnidirectional power spectrum as a function of angular spatial frequency. This step characterises the distribution of fluctuation power across spatial scales in the plane of the sky, and requires corrections for the instrumental beam and noise.
+	\item \textbf{Compute the two-dimensional power spectrum.} A two-dimensional Fourier transform of the weighted fluctuation map is computed as a function of angular spatial frequency. This step characterises the distribution of fluctuation power across spatial scales in the POS, and additionally requires consideration of the instrumental beam and noise.
 	
-	\item \textbf{Deproject the 2D power spectrum into 3D.} The observed two-dimensional power spectrum is a projection of the underlying three-dimensional density fluctuation field, weighted by the ICM emissivity along the line of sight. An analytical deprojection is applied to recover the three-dimensional power spectrum, requiring a model for the cluster's line-of-sight emissivity profile and invoking an assumption of statistical isotropy.
+	\item \textbf{Deproject the 2D power spectrum into 3D.} The observed two-dimensional power spectrum is a projection of the underlying three-dimensional fluctuation field. An analytical deprojection kernel is applied to recover the three-dimensional power spectrum. This step requires a model for the cluster LOS pressure profile for tSZ and emissivity of X-ray.
 	
-	\item \textbf{Compute the characteristic amplitude spectrum.} From the three-dimensional power spectrum, the dimensionless characteristic 	amplitude is computed as a function of spatial scale. This quantity represents the RMS fractional density fluctuation per logarithmic wavenumber interval, and is the key observable that bridges the measured power spectrum to the physical turbulent state of the ICM.
+	\item \textbf{Compute the characteristic amplitude spectrum.} The dimensionless characteristic 	amplitude spectrum is computed from the three-dimensional power spectrum. This quantity represents the RMS fractional density fluctuation per logarithmic Fourier bin, and is the key observable that links the measured power spectrum to physical turbulent states in the ICM.
 	
-	\item \textbf{Infer the three-dimensional turbulent Mach number.} The peak of the characteristic amplitude spectrum is converted to a three-dimensional turbulent Mach number via a proportionality relation calibrated from numerical simulations of ICM turbulence. This step carries the assumption that the observed fluctuations are of turbulent origin, and the result is sensitive to the choice of simulation calibration and the assumed thermodynamic regime of the perturbations.
+	\item \textbf{Infer the three-dimensional turbulent Mach number.} The peak of the characteristic amplitude spectrum is converted to a three-dimensional volmumetric Mach number via a proportional linear relation calibrated via numerical simulations. The linear relation is heavily reliant on the thermodynamic state of the ICM.
 	
 	\item \textbf{Compute the non-thermal pressure fraction and hydrostatic mass bias.} The three-dimensional Mach number is used to estimate the non-thermal pressure contribution from ICM bulk and turbulent motions. This yields the hydrostatic mass bias: the fractional underestimate of the true cluster mass incurred when hydrostatic equilibrium is assumed and turbulent pressure support is neglected.
 	
 \end{enumerate}
-
-%We will have to go deeper into it with all the subsequent sections
-
-%\begin{enumerate}
-%	
-%	\item \textbf{Construct the smooth ICM brightness model.} A model of the underlying, unperturbed surface brightness distribution is built to match the cluster surface brightness. Conventionally it  involves fitting a parametric model ($\beta$-model for example) to capture the large-scale, azimuthally averaged structure of ICM emission. 
-	
-%	\item \textbf{Subtract the smooth model to obtain the fluctuation map.} The smooth brightness model is subtracted from the observed surface brightness image. This step produces a map of fluctuations that encode any deviations of the ICM gas from HE.
-	
-%	\item \textbf{Mask, normalize, and apply weight map.} Point sources, dusty galaxies, and other data artefacts are masked. The fluctuation map is usually normalized to establish reference levels relative to the unpurturbed cluster. Spatial weight maps are applied to emphasis certain areas of the cluster over others and suppress spectral leakage prior to Fourier analysis.
-	
-%	\item \textbf{Compute the two-dimensional power spectrum.} A two-dimensional Fourier transform of the processed fluctuation map is computed, and the resulting power spectrum is estimated. This step characterizes the POS fluctuation power across spatial scales. 
-	
-%	\item \textbf{Deproject the 2D power spectrum into 3D.} The two-dimensional power spectrum is analytically deprojected into a three-dimensional form. The deprojection process requires an additional model to be defined that accounts for the cluster width and depth. 
-	
-%	\item \textbf{Compute the characteristic amplitude spectrum.} The dimensionless characteristic amplitude spectrum of the three-dimensional power spectrum is computed. This quantity provides a physically intuitive measure of the fractional density fluctuation of the power per logarithmic interval.
-	
-%	\item \textbf{Infer the three-dimensional turbulent Mach number.} The peak of the characteristic amplitude spectrum, is related to turbulent velocity dispersion in the ICM via proportionality between fluctuations and the three-dimensional (volumetric) Mach number.
-	
-%	\item \textbf{Compute the hydrostatic mass bias.} The three dimensional Mach number is used to estimate the non-thermal pressure contribution from ICM motions. This yields the hydrostatic mass bias defined as the fractional underestimate of the true cluster mass under assumption of HE and no turbulent pressure support.
-	
-%\end{enumerate}
-
-%Under the assumption that the ICM fluctuations are statistically isotropic and homogeneous within the sampled volume, the two-dimensional projected power spectrum is deprojected analytically into the three-dimensional power spectrum $P_{3\mathrm{D}}(k)$. This step requires an explicit model for the geometry and line-of-sight depth of the emitting volume.
-
-% $P_{2\mathrm{D}}(k_\perp)$ is estimated as a function of angular spatial frequency $k_\perp$. 
-
-%projected LOS integrated %Use this in the actual description.
-
-%The accuracy of this model sets the baseline against which all fluctuations are derived from downstream in the pipeline.
-
- % $A(k) = \sqrt{4\pi k^3 P_{3\mathrm{D}}(k)}$ 
  
-The next sections will elaborate all these processes grouped into different sections according to their relevance.
- 
-\section{Smooth brightness model and fluctuations}\label{Chap:assumptionSmoothSBModel}
+The next sections will elaborate these steps in detail grouped into different sections according to their adjacent relevance.
+\clearpage
+\section{Smooth brightness model and fluctuations}
+\label{Chap:assumptionSmoothSBModel}
 
-% ********* Enter your text below this line: ********
-The first step in the turbulence inference pipeline is the construction of a smooth model $\bar{S}(\theta)$ of the cluster. The conceptual foundation for this procedure traces its origin to Reynolds decomposition in fluid mechanics, in which an instantaneous flow quantity is separated into a mean component and a fluctuating perturbation about the mean \textcolor{red}{[ref]}. Applied to the observed surface brightness $S_\mathrm{obs}(\theta)$, this decomposition takes the form:
-
-\[S_{\mathrm{obs}}(\theta) = \bar{S}(\theta) + \delta S(\theta)\]
-\\
-Where $ S_{\mathrm{obs}}(\theta)$ is the observed surface brightness, $\bar{S}(\theta)$ is the smooth surface brightness model, and $\delta S(\theta)$ is the small scale fluctuations. The physical interpretation is that $\bar{S}(\theta)$ encodes the large-scale, slowly varying emission of the ICM in approximate HE, while $\delta S(\theta)$ captures perturbations about that equilibrium — any deviations would then be a result of turbulent density and pressure fluctuations. Rearranging the equation, the fluctuation residual map is simply:
-
+The first and arguably most consequential step in the pipeline is the construction of a smooth cluster model that separates the large-scale, equilibrium emission of the ICM from the small-scale perturbations that encode turbulent motions. The conceptual foundation for this procedure traces its origin to Reynolds decomposition in fluid mechanics, in which an instantaneous flow quantity is separated into a mean and a fluctuating component \textcolor{red}{[Reynolds ref]}. Applied to the observed ICM surface brightness --- in both X-ray or tSZ --- this decomposition takes the form:
+%
 \begin{equation}
-	\delta S(\theta) = S_\mathrm{obs}(\theta) - \bar{S}(\theta).
-	\label{eq:residuals}
+	S_{\mathrm{obs}}(\boldsymbol{\theta}) = 
+	\bar{S}(\boldsymbol{\theta}) + \delta S(\boldsymbol{\theta}),
+	\label{eq:Reynolds}
 \end{equation}
 \\
-It is from the statistical properties of $\delta S(\theta)$ that constraints on the downstream constraints of turbulence are ultimately derived from. The challenge at this early stage is that the design of the smooth model can determine the size of fluctuations that are propagated into the power spectrum. A model that is too simplistic (overly smooth) embeds real cluster structure in $\delta{S}(\theta)$ as spurious fluctuations thus overestimating turbulence. A model that is too complex (underly smooth) absorbs real turbulence into $\bar{S}(\theta)$ thus underestimating turbulence.
+where $S_{\mathrm{obs}}(\boldsymbol{\theta})$ is the observed surface brightness at projected position $\boldsymbol{\theta}$, $\bar{S}(\boldsymbol{\theta})$ is the smooth model representing the mean emission, and $\delta S(\boldsymbol{\theta})$ are the residual fluctuations. Physically, $\bar{S}$ encodes the slowly varying emission of the ICM in approximate HE, while $\delta S$ captures turbulent perturbations about the equilibrium. The fidelity of $\bar{S}$ therefore determines the amplitude of everything that follows: a model that is too smooth embeds real cluster structure in $\delta{S}(\theta)$, whereas a model that is too complex absorbs real fluctuations into $\bar{S}$ resulting in underestimates the true turbulent power. This circularity is unavoidable, and sets a limit on systematic uncertainty on the inference of turbulence.
 
-Work with $S_{\mathrm{X}}$ has shown example demonstrations where changing the input $\bar{S}(\theta)$ changes the magnitude of fluctuations in the corresponding power spectrum. A land mark early exploration by \textcolor{red}{[ref]} showed that a two dimensional $\beta$-model altered the recovered amplitude of the longest-wavelength perturbations by up to a factor of two relative to a spherically symmetric model. The sensitivity to model choice showed the greatest significance at scales $\geq$ 300 kpc. That is not to say that unlimited flexibility either. \textcolor{red}{[ref]} approached the construction of $\bar{S}$ by fitting a series of logarithmically spaced ellipses to the X-ray isophotes of the cool-core cluster AWM$\sim$7, finding radial surface brightness depressions in the model-subtracted residuals that were absent in simulations — a result sensitive to the assumed elliptical geometry of the model.
+\subsubsection*{The $\beta$-model family}
 
-Common trends of the things that matter
+To the first order, $\bar{S}(\theta)$ can be constructed by fitting a parametric model to the observed image. The conventional choice has been the spherical $\beta$-model \textcolor{red}{[Cavaliere \& Fusco-Femiano 1976]},
+%
+\begin{equation}
+	S(\theta) = S_0 
+	\left[ 1 + \left(\frac{\theta}{\theta_c}\right)^2 \right]^{-3\beta + 1/2},
+	\label{eq:betamodel}
+\end{equation}
+\\
+where $\theta_c$ is the angular radius of the core, $S_0$ is the central surface brightness normalisation, and $\beta$ governs the slope of the outer profile. This functional form closely mirrors the three-dimensional electron density profile in Equation~\ref{eq:3DradialBeta} of which it is the LOS integral of under the conditions of Equation~\ref{eq:Sx}. A similar functional form can be applied in the tSZ regime to adapt to the cluster emission at larger scales, with the generalised Navarro Frank White (gNFW) pressure profile sometimes preferred as an alternative \textcolor{red}{[Nagai et al. 2007]}.
+
+Despite its widespread adoption, the single $\beta$-model remains inflexible in some cases where it cannot simultaneously reproduce the two component emission of a bright compact core and shallower ambient ICM brightness distribution found in cool core clusters \textcolor{red}{[ref]}. Using single $\beta$-model for this type of cluster leaves large, structured residuals in the core that bias the fluctuation map at intermediate to large scales \textcolor{red}{[ref]}, necessitating the double $\beta$-model:
+%
+\begin{equation}
+	S(\theta) = S_0 \left[ 
+	\left(1 + \frac{\theta^2}{\theta_{c,1}^2}\right)^{-3\beta_{1} + 1/2} + 
+	R\left(1 + \frac{\theta^2}{\theta_{c,2}^2}\right)^{-3\beta_{2} + 1/2}
+	\right],
+	\label{eq:doubleBeta}
+\end{equation}
+\\
+where the parameters $\theta_{c,2}$ and $\beta_{2}$ are for the second core angular radius and slope profile, and $R$ is the relative amplitude. This model, allows each brightness component to be accounted for independently \textcolor{red}{[Mohr et al. 1999; Romero et al. 2024]} and is more suited for clusters with excess central emission embedded within an extended envelope over a single $\beta$-model.
+
+Granting even a good radial fit, both the single and double $\beta$-models carry a further limitation: they both assume spherical symmetry under projection. The observed elongation of clusters also reflects their formation history; preferential accretion along large-scale filaments, incomplete virialisation following a merger, or tidal interactions with neighboring structures \textcolor{red}{[Jing \& Suto 2002; Paz et al. 2006]}. When a circular model is applied to an intrinsically elongated cluster, the mismatch between model and data can also produce coherent large-scale residuals such as dipole or quadrupole patterns that bias large scale turbulent power \textcolor{red}{[ref]}. An adaptation for this scenario is an elliptical $\beta$-model which can be expressed as:
+%
+\begin{equation}
+	S(\boldsymbol{\theta}) = S_0 
+	\left(1 + r_e^2(\theta)\right)^{-3\beta + 1/2} + B,
+	\label{eq:ellipticalBeta}
+\end{equation}
+%
+where
+%
+\begin{equation}
+	r_e^2 = \left(\frac{x_{\mathrm{rot}}}{r_c}\right)^2 + 
+	\left(\frac{y_{\mathrm{rot}}}{r_c(1-e)}\right)^2,
+	\label{eq:ellipRadius}
+\end{equation}
+\\
+extends the $\beta$ model to fit the brightness to an elliptical isophotal geometry. Here $r_c$ is the core radius, $e$ is the ellipticity, $x_{\mathrm{rot}}$ and $y_{\mathrm{rot}}$ are sky-plane coordinates rotated by position angle $\phi$ from the angular coordinates basis, and $B$ is an additive offset that absorbs any residual background level. \textcolor{red}{(Saxena et al. 2026)} adopted this realization as a base ellipse model for their analysis of joint eROSITA and Planck/SPT data of A3266, a merging cluster with a visibly elongated morphology X-ray. However, the final model required an additional patching correction to account for any large scale deviation in elliptical symmetry that the purely elliptical model could not capture. \textcolor{blue}{\textcolor{red}{(Heinrich et al. 2024)} also warns that the choice of patching scale is not obvious but steps are taken to ensure that whatever scale chosen, is a working (fiducial) sweet spot tuned by comparing the performance of $(\delta \rho/ \rho)_{k}$ power spectrum.}
+
+Having explored several variants across the literature, the $\beta$ model family retains a common limitation irrespective of its specific implementation: the cluster brightness is described by a single globally smooth functional form. Such models have limited freedom to track multiple brightness scales or adapt to localized departures from self-similarity. While additional flexibility can be introduced through this is often achieved at the cost of increased parameter degeneracy and reduced generality, with modifications being tied to specific morphological classes of clusters.
+%\textcolor{blue}{Having explored some of its variants across the literature, the $\beta$-model family maintains a common limitation regardless of the type: it describes the cluster brightness with a single, globally smooth functional form. The approach has no freedom to track multiple brightness scales simultaneously or to respond to any localized departures from self-similarity. And as can be seen in the discussed cases, even if you wanted to account for some odd structure here and there you end up doing some pretty hand wavy adhoc stuff or in the case of double $\beta$ the complexity ends up catching up with you and end up serving a niche case. Additionally, even if you managed to constrain the relative shape right, there is also the question of centering.  Miscentering by even a few tens of arcseconds generates a dipole residual that mimics injection-scale turbulent power \textcolor{red}{[ref]}.}
+
+A further complication is the selection of cluster centre is itself not uniquely defined. Depending on the analysis, the adopted centre may correspond to the X-ray brightness peak, the emission centroid, the brightest cluster galaxy, the SZ peak, or the minimum of the gravitational potential. Previous studies have shown a dependency where miscentering by even a few tens of arcseconds generates a dipole residual that mimics injection-scale turbulent power \textcolor{red}{[ref]} \textcolor{red}{[ref]}.
+
+\subsubsection*{Bias from spherical symmetry}
+
+Real clusters are intrinsically triaxial ellipsoid structures. \textcolor{red}{[ref]} \textcolor{red}{[ref]}. \textcolor{red}{[Buote \& Humphrey (2012a, b)]}  present a two-paper study investigating the systematic errors introduced by a different type of model where the potential, rather than the underlying mass distribution, is an ellipsoid of constant shape and orientation with X-ray and tSZ observations. This first paper defines the analytical engines and proofs while the second paper attempts to quantify the bias and scatter for a few cluster observables.
+
+% I want to make a summary of these two papers.
+% The papers say that. Across individual clusters the error is high but across large samples the errors do average out.
+
+% ***************************************************
+%The question remains as fertile ground for research. What indeed are the the impacts of the spherical symmetry assumption on doing this type of science.
+
+%A system is said to be spherically symmetric if all its physical properties vary only with the radial distance $r$ from a central point and are entirely independent of the angular coordinates $\theta$ and $\phi$. \textcolor{red}{[Buote \& Humphrey (2012a, b)]}  present a two-paper study investigating the systematic errors introduced by the generalization of spherical symmetry when analysing ellipsoidal galaxy clusters with X-ray and tSZ observations. Galaxy clusters are not spherical, but almost everyone treats them as if they are, because it's computationally far simpler. The question is — how much does this matter, and for what observables? 
+
+%Deviations from spherical symmetry, such as intrinsic flattening and substructure, will necessarily introduce scatter, and possibly biases, into spherically averaged global scaling relations used in cosmological studies.
+
+\subsubsection{Fluctuation map}
+
+With the smooth model defined and the effects of spherical symmetry understood, the residual fluctuation map is obtained by rearranging Equation \ref{eq:Reynolds}:
+%
+\begin{equation}
+	\delta S(\boldsymbol{\theta}) = 
+	S_{\mathrm{obs}}(\boldsymbol{\theta}) - 
+	\bar{S}(\boldsymbol{\theta}).
+	\label{eq:fluctuations}
+\end{equation}
+\\
+Within the space of the residuals, the key question is to evaluate the size of the fluctuations. This is carried out by taking the RMS amplitude:
+%
+\begin{equation}
+	\sigma_{\delta S}^2 = 
+	\langle |\delta S(\boldsymbol{\theta})|^2 \rangle,
+	\label{eq:RMSdef}
+\end{equation}
+\\
+which provides an intuitive summary statistic, and in an ideal noiseless observation it would reflect the true variance of the ICM surface brightness fluctuations. In practice, the observed residual field contains contributions from multiple sources summed in quadrature:
+
+\begin{equation}
+	\sigma_{\delta S}^2 = \sigma_{\mathrm{turb}}^2 + \sigma_{\mathrm{noise}}^2 + \sigma_{\mathrm{sys}}^2,
+	\label{eq:quadratureNoise}
+\end{equation}
+\\
+where $\sigma_{\mathrm{turb}}^2$ is the variance from genuine ICM fluctuations, $\sigma_{\mathrm{noise}}^2$ encompasses detector noise, and background fluctuations, and $\sigma_{\mathrm{sys}}^2$ captures systematic residuals from an imperfectly chosen smooth model. The third term is the most impactful: unlike statistical noise it is correlated with the input smooth model and cannot be reduced by longer integration time.
+
+The RMS amplitude of is therefore a necessary but insufficient diagnostic. Its fundamental limitation is that it is a spatially averaged scalar — it collapses all scale information into a single number. A cluster whose fluctuation power is concentrated at $\sim 10$ kpc scales is indistinguishable from one with identical total variance but power concentrated at $\sim 500$ kpc, even though these two configurations correspond to entirely different physical scenarios. The RMS can confirm that the residual field is non-trivially large, but it cannot characterise the \textit{nature} of that residual. This is the primary motivation for proceeding to the power spectrum, which decomposes the fluctuation variance by spatial scale and allows the injection scale, slope, and amplitude of the turbulent cascade to be measured independently.
+
+In practice, the residual field is normalised by the smooth model to produce the fractional fluctuation field:
+%
+\begin{equation}
+	\frac{\delta S}{\bar{S}}(\boldsymbol{\theta}) = 
+	\frac{S_{\mathrm{obs}}(\boldsymbol{\theta}) - 
+		\bar{S}(\boldsymbol{\theta})}{\bar{S}(\boldsymbol{\theta})},
+	\label{eq:fractionalFluctuations}
+\end{equation}
+\\ %I am not sire any idea about this next part.
+this normalisation has a second consequence that is equally important for the spectral analysis: it substantially compresses the dynamic range of 
+the map. The raw residual $\delta S(\boldsymbol{\theta})$ 
+inherits the steep radial brightness gradient of the ICM — 
+a typical cluster surface brightness drops by several 
+orders of magnitude from centre to $R_{500}$ — so that the 
+central pixels dominate the Fourier transform and the outer 
+cluster contributes negligibly to the recovered power 
+spectrum. Division by $\bar{S}$ reweights the map so that 
+fluctuations at all radii contribute proportionally to the 
+power, enabling the spatial weight map $\omega(\boldsymbol{\theta})$ 
+applied in Step 3 to operate on a field whose variance is 
+already approximately uniform across the image. Bright 
+outliers — unmasked point sources, chip edge artefacts, or 
+a poorly subtracted subcluster — can corrupt this 
+normalisation and dominate the dynamic range of the 
+fractional map; rigorous masking prior to this step is 
+therefore not merely cosmetic but a prerequisite for an 
+unbiased power spectrum.
+
+%Where to put this:
+%Work with $S_{\mathrm{X}}$ has shown example demonstrations where changing the input $\bar{S}(\theta)$ changes the magnitude of fluctuations in the corresponding power spectrum. A land mark early exploration by \textcolor{red}{[ref]} showed that a two dimensional $\beta$-model altered the recovered amplitude of the longest-wavelength perturbations by up to a factor of two relative to a spherically symmetric model. The sensitivity to model choice showed the greatest significance at scales $\geq$ 300 kpc. That is not to say that unlimited flexibility either. \textcolor{red}{[ref]} approached the construction of $\bar{S}$ by fitting a series of logarithmically spaced ellipses to the X-ray isophotes of the cool-core cluster AWM$\sim$7, finding radial surface brightness depressions in the model-subtracted residuals that were absent in simulations — a result sensitive to the assumed elliptical geometry of the model.
+
+%%%%% Clean up %%%%%
+%%%%%It is common to mask the residual mask. This is where we start discussing the masking.
+
+%%%%%\begin{equation}
+%%%%%	\delta S_{w}(\theta) = w(\theta) \frac{\delta S}{\bar{S}}(\boldsymbol{\theta}).
+%%%%%	\label{eq:residuals}
+%%%%%\end{equation}
+%%%%%\\
+%%%%%where $w(\theta)$ is a masking array. Masking is in X-rays is a vitally important thing because of the prevalence of point sources. In SZ we do not suffer so much from point sources although the Cosmic Infrared Background remains persistent throughout. The trend in SZ is to take annular rings. In this case the core is masked to remove spurious leakege of the core behaviour and the outskirts. This is to try to isolate turbulence in different regions of the clusters. 
+
+%%%%%Since we often intend to plug this in to the power spectrum a sharp mask would cause Gibbs phenomenon ringing. This is typically solved wit apodization which is a roll off to the edge of the sharp mask. The problem also with apodization similar to that patching scheme applied to the ellipse model is that the exact best solution is not exact/ obvious ranging from different cluster to cluster and astronomical data space distribution. Here is the parametrization we attempt to make for Coma.
+
+%%%%%\begin{equation}
+%%%%%	M(\theta)=
+%%%%%	\begin{cases}
+%%%%%		0, & \theta < r_{c}, \\[8pt]
+%%%%%		\left[
+%%%%%		1-\exp\!\left(
+%%%%%		-\dfrac{(\theta-r_{c})^2}{0.02}
+%%%%%		\right)
+%%%%%		\right]
+%%%%%		\left[
+%%%%%		1-\exp\!\left(
+%%%%%		-\dfrac{(\theta-R_{200})^2}{0.18}
+%%%%%		\right)
+%%%%%		\right],
+%%%%%		&
+%%%%%		r_{c} \le \theta \le R_{200},
+%%%%%		\\[12pt]
+%%%%%		0, & \theta > R_{200}.
+%%%%%	\end{cases}
+%%%%%	\label{eq:apodizationMask}
+%%%%%\end{equation}
+%%%%% %%%%% %%%%% %%%%%
+
+\subsubsection*{Masking and apodisation}
+
+The fractional fluctuation field is multiplied by a spatial weight map prior to spectral analysis,
+%
+\begin{equation}
+	\delta S_{w}(\boldsymbol{\theta}) = 
+	\omega(\boldsymbol{\theta}) \, 
+	\frac{\delta S}{\bar{S}}(\boldsymbol{\theta}),
+	\label{eq:weightedResiduals}
+\end{equation}
+%
+where $\omega(\boldsymbol{\theta}) \in [0,1]$ is the weight map. In its simplest form $\omega$ is a binary mask, but in practice it performs several functions simultaneously: it excludes contaminated or low signal-to-noise pixels, defines the spatial region over which the power spectrum is estimated, and tapers the map boundaries to suppress spectral leakage.
+
+\paragraph{Point sources and astrophysical contaminants.}
+In X-ray observations, masking is particularly critical due to the high surface density of unresolved and resolved point sources. Unmasked point sources inject power at all spatial frequencies and, if sufficiently bright, can dominate the recovered power spectrum entirely. Point sources are typically identified via source detection algorithms applied to the original image and excised with circular apertures whose radii are scaled to the local point-spread function. The residual contribution from sources below the detection threshold constitutes a faint, approximately Poissonian background that must be estimated and subtracted from the measured power spectrum separately \textcolor{red}{[ref]}.
+
+In SZ observations the point-source contamination is generally less severe, since radio and infrared sources contribute at a lower surface density in the millimetre bands. However, the Cosmic Infrared Background (CIB) — the integrated, unresolved emission from dusty star-forming galaxies at cosmological distances — constitutes a persistent diffuse contaminant whose angular power spectrum overlaps with the scales of interest for ICM fluctuation studies \textcolor{red}{[ref]}. The CIB contribution is typically characterised from Monte Carlo realisations and propagated as an additive noise term in the power spectrum covariance.
+
+\paragraph{Annular region of interest.}
+Beyond point source removal, the weight map defines the spatial region submitted to spectral analysis. It is common practice to restrict the analysis to an annular aperture, excluding both the cluster core and the low signal-to-noise outskirts. The core is excluded because the smooth model is often a poor fit in the innermost regions — where AGN activity, cooling flows, and sharp brightness gradients produce residuals that are not of turbulent origin — and because any model mismatch there would contaminate the fluctuation field at all scales. The outer boundary is set where the surface brightness signal-to-noise falls below a threshold sufficient to recover fluctuations reliably, typically near $R_{500}$ for X-ray observations and somewhat beyond for SZ.
+
+\paragraph{Apodisation.}
+A binary mask with sharp edges is not suitable for Fourier analysis: discontinuities at the mask boundary generate Gibbs ringing that leaks power from large scales into all wavenumber bins, biasing the recovered spectrum. This is mitigated by apodisation — a smooth roll-off that tapers $\omega(\boldsymbol{\theta})$ to zero at both the inner and outer boundaries of the analysis region. The optimal apodisation profile is not universal; it depends on the cluster profile, the analysis scale range, and the signal-to-noise distribution in the specific dataset, and must be validated for each application. Different approaches are used in the literature, ranging from Gaussian tapers to Hanning windows applied in conjunction with the $\Delta$-variance method \textcolor{red}{[Arevalo et al. 	2012; Saxena et al. 2026]}.
+
+An example apodization scheme is seen here:
+%
+\begin{equation}
+	\omega(\boldsymbol{\theta}) =
+	\begin{cases}
+		0, & |\boldsymbol{\theta}| < r_c, \\[10pt]
+		\left[
+		1 - \exp\!\left(
+		-\dfrac{\bigl(|\boldsymbol{\theta}| - r_c\bigr)^2}
+		{\sigma_{\mathrm{in}}^2}
+		\right)
+		\right]
+		\left[
+		1 - \exp\!\left(
+		-\dfrac{\bigl(R_{200} - |\boldsymbol{\theta}|\bigr)^2}
+		{\sigma_{\mathrm{out}}^2}
+		\right)
+		\right],
+		& r_c \leq |\boldsymbol{\theta}| \leq R_{200}, \\[12pt]
+		0, & |\boldsymbol{\theta}| > R_{200},
+	\end{cases}
+	\label{eq:apodizationMask}
+\end{equation}
+%
+where $r_c$ is the core exclusion radius, $R_{200}$ is the outer boundary of the analysis region, and $\sigma_{\mathrm{in}}$ and $\sigma_{\mathrm{out}}$ are the roll-off widths at the inner and outer edges respectively. Each factor independently tapers one boundary: the inner factor rises from zero at $r_c$, the outer factor falls to zero at $R_{200}$, and their product is unity well within the annulus. The roll-off widths $\sigma_{\mathrm{in}}$ and $\sigma_{\mathrm{out}}$ are free parameters tuned to balance suppression of edge ringing against the loss of usable area at each boundary. For the Coma analysis, we adopt $\sigma_{\mathrm{in}}^2 = 0.02$ and $\sigma_{\mathrm{out}}^2 = 0.18$ \textcolor{red}{[in units — specify]}, chosen to provide adequate apodisation over the range of scales probed while retaining sufficient usable area within $R_{200}$.
 
 %\subsection{Centroid Location}\label{Chap:assumptionsSmoothSBModelCentroidLocation}
 % *******
 
-\subsection{Spherical Symmetry}\label{Chap:assumptionsSmoothSBModelSphericalSymmetry}
-% ***************************************************
-Spherical symmetry is the physical property where an object or a region of space remains completely unchanged when rotated about its center. \textcolor{red}{In actuality this phenomena is nothing new. You are not the first to probe it. And by probe I mean quantify the amount of error that arises from this assumption. It has been known to have contributed error a small amount according to Pratt the error budget for this is roughly 1 percent. Haram you write a paper and thesis about cluster without citing the Buote papers. Read those papers, rabbit hole a bit, and cite here.}
+\section{Image Power Spectrum}\label{Chap:assumptionsImageToPowerSpectrum}
 
-Galaxy clusters are not spherical, but almost everyone treats them as if they are, because it's computationally far simpler. The question is — how much does this matter, and for what observables? 
-
-Deviations from spherical symmetry, such as intrinsic flattening and substructure, will necessarily introduce scatter, and possibly biases, into spherically averaged global scaling relations used in cosmological studies.
-
-This is the shit that you gotta curve fit to: This is the zeroth order model. This creates the flat beta. Extension to the zeroth order model is spherical and elliptical averaging. That is how you get empirical.
-
-\begin{equation}
-	S_X(b) = S_0 \left[ 1 + \left( \frac{b}{r_c} \right)^2 \right]^{-3\beta + 0.5}
-\end{equation}
-
-Do the averaging thing and zeroth order perfectly smooth here. Then make a plot of model and fluctuations to show large deviations.
-
-\section{From Image to Power Spectrum}\label{Chap:assumptionsImageToPowerSpectrum}
-
-\subsection{Masking and Apodization}\label{Chap:assumptionsBody}
-
-Masking is the filling of image pixels with a certain value. We do this in cluster science to isolate the ontarget shape away from the background. It is also a tendency to mask the core because the core is centrally condensed. For the outskirts there may be different areas have different amount of non thermal pressure support.
-
-Images with gaps commonly cause problems. In X ray they mask alot of point sources. That is why we have Arevalo methods that build on $\delta$ variance. In our case masking also happens but its a large mask on the outskirts and the inside as well.
-
-Apodization is the smooth tapering of the edges to prevent wringing. Roll off too quickly and you look like a hard edge. The question is what roll off is best roll off. 
+We now enter into the part of methodology where spectral analysis is applied. The fundamental objective of spectral analysis remains unchanged since its inception: to decompose a complex, aggregate system into its constituent, scale-dependent parts. In his foundational experiments with physical optics, Isaac Newton utilized a glass prism as a hardware based dispersion mechanism to decompose monochromatic light into its discrete constituent colours. Astrophysics people utilize numerical Fourier analysis to decompose the content of some astrohpysical image in search of turbulence.
 
 \subsection{Instrumental Beam Effects}\label{Chap:assumptionsBeamSmoothing}
 
 Whenever the sky is observed with a radio telescope some amount of blur is applied to the image. This is analogous to an effect of convolution with a 2D Gaussian. 
 
-\section{From 2D to 3D: The Projection Problem}\label{Chap:assumptionsParametric}
+\section{Deprojection and 3D reconstruction}\label{Chap:assumptionsParametric}
 
-\subsection{Deprojection Process}\label{Chap:assumptionsDeprojection}
-The ratio of density to Pressure is 1 which is pretty remarkable. However this is conditional.
+%\subsection{Deprojection and 3D reconstruction}\label{Chap:assumptionsDeprojection}
+%The ratio of density to Pressure is 1 which is pretty remarkable. However this is conditional.
 
 Everything we see is a two dimensional deprojection of a three dimensional phenomena. This invariable leads to some of information. Projection is simply an integral.
 
 There is an Abel transfrom used for 
 
-\section{From Fluctuations to Turbulence: Physical Interpretation}\label{Chap:assumptionsFromFluctsToTurb}
+\section{Physical Interpretation}\label{Chap:assumptionsFromFluctsToTurb}
 
 
 
@@ -178,6 +324,8 @@ PITSZI:
 \section{Propagation and Compounding of Systematic Uncertainties}\label{Chap:assumptionsPropagationandCompoundingof SystematicUncertainties}
 
 
+
+As you can see is heavily reliant on inputs and assumptions.
 % ***************************************************
 
 

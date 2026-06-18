@@ -1,4 +1,4 @@
-\chapter[Introduction]{Scientific Landscape}
+\chapter[Introduction]{Scientific landscape}
 \label{Chap:scientificLandscape}
 \epigraph{``If you wish to create a Universe from scratch, the final ingredient would be clusters of galaxies.''}{— [Afiq Hamid 2025]}
 \section{Galaxy Clusters}\label{Chap:scientificLandscapeGalaxyClusters}
@@ -40,15 +40,17 @@ Since the sound crossing time (represented by the time it takes for pressure flu
 \begin{equation}
 	\frac{1}{\rho_g}\frac{dP}{dr} = -\frac{d\phi}{dr} = 
 	-\frac{GM(<r)}{r^2},
+	\label{eq:HE}
 \end{equation}
 \\
-where $M(<r)$ is the total mass enclosed within radius $r$, $\phi$ is the gravitational potential, $\rho_g$ is the gas density, and $P$ is Pressure. This local hydrostatic balance contributes to the cluster’s broader virialized state and provides a key foundational framework through which X-ray observations can be used to infer cluster mass. There has been overall good consensus between traditional X-ray methods using the HE assumption in finding the true cluster mass with maximum root mean square (RMS) deviation ranging from 5 \% in relaxed cores to 20 \% in the outskirts\textcolor{red}{[ref]} \textcolor{red}{[ref]}. \textcolor{blue}{However, there remains certain inherent limitations of the X-ray approach that can be complemented by other wavelengths.}
+where $M(<r)$ is the total mass enclosed within radius $r$, $\phi$ is the gravitational potential, $\rho_g$ is the gas density, and $P$ is Pressure. This local hydrostatic balance contributes to the cluster’s broader virialized state and provides a key foundational framework through which X-ray observations can be used to infer cluster mass. There has been overall good consensus between traditional X-ray methods using the HE assumption in finding the true cluster mass with maximum root mean square (RMS) deviation ranging from 5 \% in relaxed cores to 20 \% in the outskirts\textcolor{red}{[ref]} \textcolor{red}{[ref]}. \textcolor{blue}{However, there are some limitations of the X-ray method that can be complemented by other wavelengths.}
 
 \newpage
-Another important concept that emerged from the X ray regime is the empirical $\beta$-model. By applying an approximation for a self-gravitating collisionless system (originally developed for globular clusters by \textcolor{red}{[ref]}) to a radial model of galaxy and gas distribution in equilibrium within the same potential \textcolor{red}{[ref]} derived the analytic isothermal radial $\beta$ model of the ICM:
+Another important concept that emerged from the X ray regime is the analytical $\beta$-model. By applying an approximation for a self-gravitating collisionless system (originally developed for globular clusters by \textcolor{red}{[ref]}) to a radial model of galaxy and gas distribution in equilibrium within the same potential \textcolor{red}{[ref]} derived the analytic isothermal radial $\beta$ model of the ICM electron number density:
 
 \begin{equation}
 n_{gas}(r) = n_0 \left[ 1 + \left( \frac{r}{r_c} \right)^2 \right]^{-\frac{3}{2}\beta},
+	\label{eq:3DradialBeta}
 \end{equation}
 \\
 where $r_{c}$ is the radius of the cluster core and $\beta \sim 2/3$ is known as the canonical $\beta$ value \textcolor{red}{[ref]}. The profile describes a flat central core transitioning to a power-law decline at large radii. Its broad applicability across the cluster population follows naturally from the self-similar nature of galaxy clusters. While modern high-resolution observations and hydrodynamical simulations have revealed limitations of the model — particularly in its assumptions of isothermality and spherical symmetry, and its inability to capture the complexity of merging or dynamically disturbed systems — it remains a robust and widely used first approximation for the ICM radial gas density distribution \textcolor{red}{[ref]}. 
@@ -61,6 +63,7 @@ a decrement in CMB intensity at frequencies $\nu < 217$ GHz and a corresponding 
 
 \begin{equation}
 	\Delta I_{\nu} = y \frac{2 h \nu^{3}}{c^{2}} \frac{x e^{x}}{(e^{x} - 1)^{2}} \left[ x\frac{ e^{x} + 1   }{e^{x} - 1} - 4  \right],
+	\label{eq:Distortion}
 \end{equation}
 \\
 where $x = h\nu/k_BT$ is the dimensionless frequency, 
@@ -69,9 +72,10 @@ constant, and $k_B$ is Boltzmann's constant. The amplitude of the distortion is 
 
 \begin{equation}
 	y = \frac{\sigma_{T}}{m_{e}c^{2}} \int P_{e} dl,
+	\label{eq:comptony}
 \end{equation}
 \\
-where $P_{e} = n_{e}k_{B}T$ and $\sigma_{T}$ is the Thomson cross section. The Compton $y$ parameter therefore provides a direct in-situ measure of the integrated thermal pressure of the cluster along the LOS. A key advantage of the tSZ signal over $S_{X}$ is its linear dependence on electron density making it more sensitive to the low-density outskirts of the cluster towards the virial radius. Coupled with a sufficiently wide field of view (FOV), the tSZ effect is therefore particularly well suited to mapping the thermodynamic structure of the ICM on large scales and by extension cosmic baryons\textcolor{red}{[ref]}. Figure \ref{fig:multispectralComa} shows a multispectral image of the Coma cluster of galaxies from both tSZ and $S_{\mathrm{X}}$.
+where $P_{e} = n_{e}k_{B}T$ and $\sigma_{T}$ is the Thomson cross section. The Compton $y$ parameter therefore provides a direct in-situ measure of the integrated thermal pressure of the cluster along the LOS. A key advantage of the tSZ signal over $S_{X}$ is its linear dependence on electron density making it more sensitive to the low-density outskirts of the cluster towards the virial radius. Coupled with a sufficiently wide field of view (FOV), the tSZ effect is therefore more suited to mapping the thermodynamic structure of the ICM on large scales and by extension the cosmic baryon distribution\textcolor{red}{[ref]}. Figure \ref{fig:multispectralComa} shows a multispectral image of the Coma cluster of galaxies from both tSZ and $S_{\mathrm{X}}$.
 
 \begin{figure}[p]
 	\vspace*{\fill}
@@ -83,9 +87,9 @@ where $P_{e} = n_{e}k_{B}T$ and $\sigma_{T}$ is the Thomson cross section. The C
 \vspace*{\fill}
 \end{figure}
 
-\section{ICM structure and non-thermal Pressure}\label{Chap:scientificLandscapePhysicalSourceTurb}
+\section{ICM structure and non-thermal pressure}\label{Chap:scientificLandscapePhysicalSourceTurb}
 
-Notwithstanding the overview provided thus far, the ICM is in reality a complex and dynamically evolving system. The true gas conditions are in actuality far removed from the idealised equilibrium state assumed in the foundational framework described in the previous sections. A truer conceptual picture — one favoured in the present literature — models the ICM as a stratified, multiphase fluid gravitationally confined within the cluster potential well \textcolor{red}{[ref]}\textcolor{red}{[ref]}. We now briefly interrogate each of these concepts in turn.
+Notwithstanding the overview provided thus far, the ICM is in reality a complex and dynamically evolving system. The true gas conditions are in actuality far removed from the idealised equilibrium state assumed in the foundational framework of the previous sections. A truer conceptual picture — one favoured in the present literature — models the ICM as a stratified, multiphase fluid gravitationally confined within the cluster potential well \textcolor{red}{[ref]}\textcolor{red}{[ref]}. We now briefly interrogate each of these concepts in detail.
 
 \subsubsection{A fluid description of the ICM}
 
@@ -99,17 +103,18 @@ Stratification implies that there is a radial ordering of the different thermody
 
 \begin{equation}
 	N_\mathrm{BV}^2 = \frac{g}{\gamma}\frac{d}{dr}\ln{\frac{P}{\rho_{\mathrm{g}}^{\gamma}}},
+	\label{eq:BrutVaisalaFreq}
 \end{equation}
 \\
-where $g$ is the local gravitational acceleration, $\gamma$ is the adiabatic index, $P$ is the thermal pressure, $\rho$ is the gas density, and $r$ is the radial coordinate. The quantity $P/\rho^\gamma$ is proportional to the specific entropy $K$, thus $N_\mathrm{BV}^2$ also describes an entropy gradient. When $N_\mathrm{BV}^2 > 0$ — as is generally the case throughout the bulk ICM where entropy increases outward — the stratification is stable: a radially displaced gas parcel experiences a restoring buoyancy force and oscillates about its equilibrium position at frequency $N_\mathrm{BV}$ rather than convecting freely. This suppresses radial mixing and supports the propagation of internal gravity waves ($g$-modes), which are themselves a source of turbulent energy \textcolor{red}{[ref]}.
+where $g$ is the local gravitational acceleration, $\gamma$ is the adiabatic index, $P$ is the thermal pressure, $\rho$ is the gas density, and $r$ is the radial coordinate. The quantity $P/\rho^\gamma$ is proportional to the specific entropy $K$, thus $N_\mathrm{BV}^2$ also describes an entropy gradient. When $N_\mathrm{BV}^2 > 0$ — as is generally the case throughout the bulk ICM where entropy increases outward — the stratification is stable: a radially displaced gas parcel experiences a restoring buoyancy force and oscillates about its equilibrium position at frequency $N_\mathrm{BV}$ rather than convecting freely. This suppresses radial mixing while also supporting the propagation of internal gravity waves ($g$-modes) which are themselves a carriers of turbulent energy \textcolor{red}{[ref]}.
 
 \textcolor{blue}{There are some edge cases that exist beyond the purely hydrodynamic cases that can introduce exotic processes such as magneto thermal instabilities (MTI) which argue for conditions that could prove degenerative to these stable $N^2$ state \textcolor{red}{[ref]}. In this case what happens?}
 
 \subsubsection{Multiphase structure}
 
-The ICM is also not characterised by a single thermal phase. Modern observations and simulations reveal a multiphase environment in which gas spans a wide range of temperatures — from cold molecular filaments at $T \lesssim 10^2$ K to the bulk hot phase at $T \sim 10^{7}$--$10^{8}$ K — occurring within the same gravitational potential \textcolor{red}{[ref]}. This stands in sharpg contrast to the traditional picture of a uniform hot atmosphere, and draws analogy to the multiphase structure of the ISM.
+The ICM is also not characterised by a single thermal phase. Modern observations and simulations reveal a multiphase environment in which gas spans a wide range of temperatures — from cold molecular filaments at $T \lesssim 10^2$ K to the bulk hot phase at $T \sim 10^{7}$--$10^{8}$ K — occurring within the same gravitational potential \textcolor{red}{[Simonescu]}. This stands in sharp contrast to the traditional picture of a uniform hot atmosphere, and draws analogy to the multiphase structure of the more local ISM.
 
-Cold phases and filaments in the ICM develop as a result of thermal instability and chaotic cold accretion (CCA) \textcolor{red}{[ref]}. The CCA process within cluster cores is analogous to precipitation: where the local cooling time drops below the free-fall time, gas is able to condense out of the hot phase and 'rain' onto the center as cold filaments and clouds \textcolor{red}{[ref]}. A key theoretical challenge of understanding this turbulent process is trying to figure out how the cold filaments are not evaoprated back into the hot phase \textcolor{red}{[ref]}. The current candidates are a mix of anisotropic thermal conduction, unique magnetic field alignments, and heat flux buoyancy instabilities (HBI).
+Cold phases and filaments in the ICM develop as a result of thermal instability and chaotic cold accretion (CCA) \textcolor{red}{[ref]}. The CCA process within cluster cores is analogous to precipitation: where the local cooling time drops below the free-fall time, allowing for gass to condense out of the hot phase and gravitationally accrete onto the center as cold filaments and clouds \textcolor{red}{[ref]}. A key theoretical challenge of understanding this turbulent process is trying to figure out how the cold filaments are not evaoprated back into the hot phase \textcolor{red}{[ref]}. The current candidates are a mix of anisotropic thermal conduction, unique magnetic field alignments, and heat flux buoyancy instabilities (HBI).
 
 \subsection{Non-thermal pressure}
 Within the stratified, multiphase fluid described of the ICM a range of dynamical phenomena consistently occur that introduce an additional layer of complexity to the base HE assumption. These challenges come in the form of bulk motion, turbulence, cosmic rays, and magnetic fields that all contribute additional non-thermal pressure components. In reality, the total pressure support within the ICM is not provided by thermal component alone:
@@ -175,7 +180,7 @@ The cumulative effect of this multi-scale energy injection is a turbulent veloci
 \clearpage
 \section{Turbulence theory}\label{Chap:scientificLandscapeTurbulenceTheory}
 
-Turbulence is the study of irregular, chaotic fluid motion — one of the oldest unsolved problems in classical physics because of the non linear nature of its fundamental equations. In the terrestrial context it governs everything from the drag on aircraft wings to the mixing of cream in coffee. In the astrophysical context, the problem becomes even richer and more challenging: the flows are highly compressible, the scales are vast, boundary conditions are largely absent, the fluid is self-gravitating, and the presence of magnetic fields introduces additional complexity via magnetohydrodynamics (MHD). The ICM represents one of the most extreme turbulent environments in the Universe, and the true nature of its turbulent velocity field remains a big mystery.
+Turbulence is the study of irregular, chaotic fluid motion — one of the oldest unsolved problems in classical physics because of the non linear nature of its fundamental equations. In the terrestrial context it governs everything from the drag on aircraft wings to the mixing of cream in coffee. In the astrophysical context, the problem becomes even richer and more challenging: the flows are highly compressible, the scales are vast, boundary conditions are largely absent, the fluid is self-gravitating, and the presence of magnetic fields introduces additional complexity via magnetohydrodynamics (MHD). The ICM represents one of the most extreme turbulent environments in the Universe, and the true nature of its turbulent velocity field remains an open question in astrophysics.
 
 The fundamental condition that allows for turbulence is set by the Reynolds number:
 
@@ -184,7 +189,7 @@ The fundamental condition that allows for turbulence is set by the Reynolds numb
 	\label{eq:reynolds}
 \end{equation}
 \\
-where $u$ is the characteristic velocity of the flow, $L$ is the driving scale, and $\nu$ is the kinematic viscosity of the fluid. Viscosity can be thought of as the amount of restiveness of the fluid. When $\mathrm{Re} \gg 1$, inertial forces dominate and viscous dissipation is negligible on the driving scale — the necessary condition for a turbulent flow to develop. For the ICM, estimates of the hydrodynamic Reynolds number is $\mathrm{Re} \leq 100 - 10^3$ and the magnetic Reynolds number is high $\mathrm{Re_{m}} \sim 100 - 10^3$ \textcolor{red}{[ref]}. Thus if you looked at the ICM on a purely fluid basis you would see a smooth slow pouring almost laminar fluid while looking at the magnetic fields reveals a chaotic haywire configuration.
+where $u$ is the characteristic velocity of the flow, $L$ is the driving scale, and $\nu$ is the kinematic viscosity of the fluid. Viscosity can be thought of as the amount of restiveness of the fluid. When $\mathrm{Re} \gg 1$, inertial forces dominate and viscous dissipation is negligible on the driving scale — the necessary condition for a turbulent flow to develop. For the ICM, estimates of the hydrodynamic Reynolds number is in the range $\mathrm{Re} \leq 100 - 10^3$ while the magnetic Reynolds number is high $\mathrm{Re_{m}} \sim 100 - 10^3$ \textcolor{red}{[ref]}. Thus if you looked at the ICM on a purely fluid basis you would see a smooth slow pouring fluid while looking at the magnetic fields reveals a chaotic haywire configuration.
 
 \subsection{Turbulence energy cascade}
 
@@ -197,10 +202,10 @@ Of the three scales of the energy cascade, the inertial range is of particular i
 	\label{eq:teddy}
 \end{equation}
 \\
-In the inertial subrange, the assumption of a steady-state energy cascade requires that the rate at which energy enters a given scale equals the rate at which energy leaves. This energy transfer rate, or cascade flux, can be expressed as the ratio of the kinetic energy per unit mass to the eddy turnover time:
+Within the inertial subrange, the assumption of a steady-state cascade requires that the rate at which energy enters a given scale equals the rate at which energy leaves. This energy transfer rate, or cascade flux, can be expressed as the ratio of the kinetic energy per unit mass to the eddy turnover time:
 
 \begin{equation}
-	\dot{\epsilon} \sim  \frac{u_l^2}{t_\mathrm{eddy}} \sim \frac{u_l^3}{l}
+	\dot{\epsilon} \sim  \frac{u_l^2}{t_\mathrm{eddy}} \sim \frac{u_l^3}{l},
 	\label{eq:epsilon_scaling}
 \end{equation}
 \\
@@ -233,19 +238,190 @@ Additionally, the Kolmogorov cascade describes the statistics of the \textit{vel
 
 %So what the fuck are we writing here? Some more shit about turbulence? Right so sounds straight forward right? Use a telescope or spectroscopic measurement device, Observe this shit in space and constrain all the turbulence? But as people are prone to say yeah na. It is not so straightforward.
 
-\section{Mass estimation and mass calibration and mass bias}
+\section{Mass estimation and mass bias}
 
-All about that mass no treble. Some more equations about some mass enclosed within a certain radius R. So we talked alot of game on ICM physics and non thermal pressure as deviations for HE. Now we talk about their implications on mass measurements. This is the generalized (complete) mass equation derived from the full Eurler description of fluid:
+The total mass of a galaxy cluster is its most fundamental observable quantity. Together with redshift, it links observational data to theoretical predictions, enabling the cluster population to serve as a probe of both structure formation and cosmological parameters \textcolor{red}{Voit2005, Kravtsov2012, Allen2011}. Yet mass is not directly observable; it must be inferred from the thermodynamic and kinematic properties of baryonic tracers under a set of physical assumptions. The accuracy of those assumptions --- and the systematic biases they introduce --- therefore lies at the heart of cluster cosmology.
+
+In this section we describe the principal theoretical frameworks for cluster mass reconstruction, their observational implementations, and the nature of the biases that arise when the underlying assumptions are violated.
+
+\subsection{The Generalised Mass Equation}
+\label{sec:generalised_mass}
+
+The most physically complete description of the cluster mass profile is obtained by integrating the full Euler equation for an inviscid collisional gas over a spherical shell. Inclusive of all of the dynamical terms, the total mass enclosed within radius $r$ can be written as \textcolor{red}{Lau2013}
 
 \begin{equation}
-M(<R) = M_{\mathrm{therm}} + M_{\mathrm{rand}} + M_{\mathrm{rot}} + M_{\mathrm{cross}} + M_{\mathrm{stream}} + M_{\mathrm{accel}}
+	M(<r) \;=\; M_{\mathrm{therm}} + M_{\mathrm{rand}} + M_{\mathrm{rot}}
+	+ M_{\mathrm{cross}} + M_{\mathrm{stream}} + M_{\mathrm{accel}},
+	\label{eq:generalised_mass}
 \end{equation}
 \\
-This is the integrated mass equation. It is actually a subset of the generalized math equation.
+\noindent where each term represents a distinct contribution to the pressure support balancing gravity. The first term, $M_{\mathrm{therm}}$, is the hydrostatic mass arising from isotropic thermal pressure gradients. The second and third terms, $M_{\mathrm{rand}}$ and $M_{\mathrm{rot}}$, account for the additional pressure support provided by random (turbulent) and coherent rotational gas motions, respectively. The remaining terms --- $M_{\mathrm{cross}}$, $M_{\mathrm{stream}}$, and $M_{\mathrm{accel}}$ --- capture contributions from cross-stream motions, bulk inflow or outflow (streaming), and local gas acceleration, all of which become relevant during dynamically disturbed phases such as active mergers or rapid mass accretion.
+
+Equation~\ref{eq:generalised_mass} is the definitive tool for numerical simulation. In a hydrodynamical simulation, all six components can be evaluated directly from three-dimensional velocity and pressure fields, providing complete knowledge of the mass budget at any radius and point of the cluster's assembly history. This makes it invaluable for quantifying the mass bias introduced by specific physical processes: sloshing cold fronts, AGN-driven cavities, merging substructure, and large-scale accretion shocks all leave distinct signatures across these terms. Simulations consistently find that the random-motion term $M_{\mathrm{rand}}$ dominates the non-thermal correction, contributing at the level of $10$--$30\%$ of $M_\mathrm{true}$ at $R_{500}$ and growing toward the cluster outskirts, while the acceleration term $M_{\mathrm{accel}}$ becomes non-negligible only in merging systems or beyond the virial radius \textcolor{red}{Rasia2006, Nagai2007, Lau2009, Nelson2014a, Biffi2016}.
+
+Despite its completeness, Equation~\ref{eq:generalised_mass} is inaccessible to direct observation. The three-dimensional velocity field of the ICM cannot be resolved from a single line-of-sight vantage point, and even with next-generation X-ray spectroscopy \textcolor{red}{[ref]}, spatially resolved velocity measurements will remain limited to the inner cluster regions.
+
+\subsection{The Hydrostatic Mass Equation}
+\label{sec:he_mass}
+
+After several sound-crossing times ($\sim 10^9$ yr), a relaxed cluster is expected to approach hydrostatic equilibrium (HE), in which the inward gravitational force is balanced by the outward thermal pressure gradient alone. Setting all non-thermal terms in Equation~\ref{eq:generalised_mass} to zero and adopting spherical symmetry, the Euler equation reduces to the HE equation,
+
 \begin{equation}
-	M(<R) = \mathrm{Some ol bullshit}
+	\frac{1}{\rho_{\mathrm{gas}}} \frac{dP_{\mathrm{th}}}{dr}
+	= -\frac{G M_\mathrm{HE}(<r)}{r^2},
+	\label{eq:he}
 \end{equation}
 \\
+\noindent from which the purely hydrostatic mass profile follows as
+
+\begin{equation}
+	M_\mathrm{HE}(<r)
+	= -\frac{k_B T(r)\, r}{\mu m_p G}
+	\left(
+	\frac{d\ln \rho_{\mathrm{gas}}(r)}{d\ln r}
+	+ \frac{d\ln T(r)}{d\ln r}
+	\right).
+	\label{eq:he_mass}
+\end{equation}
+
+\noindent Here $k_B$ is the Boltzmann constant, $T(r)$ the gas temperature, $\mu \approx 0.6$ the mean molecular weight of an ionised plasma, $m_p$ the proton mass, and $G$ the gravitational constant. The observationally accessible quantities --- the gas density profile $\rho_{\mathrm{gas}}(r)$, obtained from the deprojection of X-ray surface brightness, and the temperature profile $T(r)$, obtained from spectral fitting --- enter directly through the logarithmic gradients.
+
+Equation~\ref{eq:he_mass} is the workhorse of X-ray cluster cosmology. Combined with the availability of spatially resolved spectroscopy from \textit{XMM-Newton} and \textit{Chandra}, it has been used to derive mass profiles for hundreds of clusters across a wide range of mass and redshift \textcolor{red}{Pointecouteau2005, Vikhlinin2006, Ettori2013}. Its principal strength is practical: it requires only two radial profiles, both measurable with current instrumentation, and returns a continuous mass profile $M(<r)$ without requiring any assumption about the form of the gravitational potential. Its principal weakness is equally clear: by construction it accounts only for thermal pressure support, and any residual non-thermal pressure contribution causes $M_\mathrm{HE}$ to systematically underestimate the true mass.
+
+\subsection{The Non-Thermal Corrected Mass Equation}
+\label{sec:nt_mass}
+
+A more complete observational estimate is obtained by retaining the dominant non-thermal contribution, namely the isotropic random gas motions (turbulence). Defining the non-thermal pressure fraction as
+
+\begin{equation}
+	f_{\mathrm{nt}}(r) \;\equiv\; \frac{P_{\mathrm{nt}}(r)}{P_{\mathrm{tot}}(r)}
+	\;=\; \frac{P_{\mathrm{nt}}(r)}{P_{\mathrm{th}}(r) + P_{\mathrm{nt}}(r)},
+	\label{eq:fnt_def}
+\end{equation}
+
+\noindent the total pressure is $P_{\mathrm{tot}} = P_{\mathrm{th}}/(1 - f_{\mathrm{nt}})$. Substituting into the equation of motion and again assuming spherical symmetry, the mass profile corrected for non-thermal pressure support is
+
+\begin{equation}
+	M(<r) = -\frac{k_B T(r)\, r}{\mu m_p G}
+	\left[
+	\frac{d\ln \rho_{\mathrm{gas}}(r)}{d\ln r}
+	+ \frac{d\ln T(r)}{d\ln r}
+	+ \frac{d\ln \bigl(1 - f_{\mathrm{nt}}(r)\bigr)^{-1}}{d\ln r}
+	\right]
+	\times \bigl(1 - f_{\mathrm{nt}}(r)\bigr)^{-1}.
+	\label{eq:nt_mass}
+\end{equation}
+
+\noindent The third logarithmic gradient term and the prefactor $(1-f_\mathrm{nt})^{-1}$ together encode the correction relative to the pure HE estimate: the gradient term accounts for the \emph{radial variation} of the non-thermal support, which introduces an additional effective pressure contribution, while the prefactor accounts for the \emph{amplitude} of the non-thermal support at radius $r$. In the limit $f_{\mathrm{nt}} \rightarrow 0$, Equation~\ref{eq:nt_mass} reduces identically to Equation~\ref{eq:he_mass}, as required. For a cluster with $f_{\mathrm{nt}} = 0.2$ at $R_{500}$ and a mild radial gradient, the corrected mass exceeds the purely hydrostatic value by $\sim 25\%$, broadly consistent with the range predicted by numerical simulations \textcolor{red}{Nelson2014a, Biffi2016} and inferred from X-ray and SZ comparisons \textcolor{red}{Eckert2019}.
+
+In practice, directly measuring $f_{\mathrm{nt}}(r)$ from observations remains extremely challenging. The ICM velocity field can currently be constrained only at the level of integrated line broadening in the cluster core (as demonstrated by \textit{Hitomi} for Perseus; \textcolor{red}{Hitomi2016}), and spatially resolved measurements at large radii must await the micro-calorimeter instruments aboard XRISM and Athena. In the absence of direct velocity data, $f_{\mathrm{nt}}(r)$ is commonly inferred indirectly --- by comparing hydrostatic gas fractions to the expected cosmic baryon fraction \textcolor{red}{Eckert2019}, by cross-calibrating X-ray and weak-lensing masses \textcolor{red}{Mahdavi2013, Hoekstra2015}, or by adopting theoretically motivated profiles calibrated from simulations \textcolor{red}{Nelson2014a}. Equation~\ref{eq:nt_mass} thus remains semi-empirical in current practice: its functional form is theoretically rigorous, but its application depends on externally supplied or simulation-derived estimates of $f_{\mathrm{nt}}$.
+
+% ------------------------------------------------------------
+\subsection{Mass Bias}
+\label{sec:mass_bias}
+
+The systematic offset between the hydrostatic mass estimate and the true mass is quantified by the \emph{hydrostatic mass bias},
+
+\begin{equation}
+	b \;\equiv\; 1 - \frac{M_{\mathrm{HE}}}{M_{\mathrm{true}}},
+	\label{eq:mass_bias}
+\end{equation}
+
+\noindent so that $b > 0$ implies an underestimate of the true mass. In the limit where non-thermal pressure is the sole source of bias, and assuming $f_\mathrm{nt}$ is slowly varying with radius, $b \approx f_{\mathrm{nt}}$. More generally, $b$ also absorbs contributions from gas temperature inhomogeneities, gas clumping, departures from spherical symmetry, and absolute X-ray temperature calibration uncertainties \textcolor{red}{Rasia2014, Pratt2019}.
+
+Numerical simulations are unanimous in predicting a non-zero and radially increasing hydrostatic bias. Studies consistently find $b \lesssim 5$--$10\%$ in cluster cores and $b \sim 20$--$30\%$ near $R_{500}$, with the amplitude depending strongly on dynamical state and mass accretion rate \textcolor{red}{Nagai2007, Nelson2014a, Biffi2016}. Observationally, the bias is most directly constrained by comparing hydrostatic masses to weak gravitational lensing masses, which are free from assumptions about the dynamical state of the gas. Such comparisons yield values in the range $1 - b \approx 0.74$--$0.95$, with systematic differences at the $\sim 10\%$ level between different lensing programmes \textcolor{red}{Mahdavi2013, Hoekstra2015, Smith2016}.
+
+The mass bias carries direct consequences for cluster cosmology. Because the cluster mass function is exponentially sensitive to mass near the high-mass end, a systematic underestimate of cluster masses shifts the inferred values of $\sigma_8$ and $\Omega_m$ \textcolor{red}{Vikhlinin2009, PlanckXX2014}. The well-known tension between the number counts of Planck SZ-selected clusters and the primary CMB constraints on $\sigma_8$ can be partially or fully resolved by invoking a hydrostatic bias of order $b \sim 0.4$--$0.6$ \textcolor{red}{PlanckXXIV2016}, a value substantially larger than simulation predictions. Whether this discrepancy reflects unmodelled non-thermal physics, an underestimate of systematics in either probe, or new physics (e.g. a non-zero summed neutrino mass) remains an open question and is one of the primary motivations for improved cluster mass calibration.
+
+\subsection{Mass Proxies and Scaling Relations}
+\label{sec:mass_proxies}
+
+While continuous mass equations of the form of Equations~\ref{eq:he_mass} and \ref{eq:nt_mass} provide physically rigorous mass profiles for individual clusters, they demand spatially resolved spectroscopic data of sufficient quality that their application is necessarily limited to a few hundred well-observed objects at most. Cosmological analyses of large cluster samples instead rely on empirically calibrated \emph{mass proxies}: global observables that correlate tightly with mass and can be measured from lower-quality or unresolved data.
+
+Under the simplifying assumption of self-similar gravitational collapse \textcolor{red}{Kaiser1986}, where the internal structure of virialised haloes is universal and determined only by the overdensity at formation, one expects simple power-law scaling relations between the cluster mass $M_\Delta$ and global ICM properties. Three mass proxies find particularly widespread application in X-ray and SZ-based surveys.
+
+\subsubsection{Mass--X-ray Luminosity}
+The X-ray bolometric luminosity scales with mass as
+\begin{equation}
+	\frac{M_{500}}{M_0} = A \left( \frac{L_X}{L_0} \right)^{\alpha} [E(z)]^{\beta},
+	\label{eq:Lx_mass}
+\end{equation}
+where $E(z) = H(z)/H_0$ encodes the self-similar redshift evolution and the expected self-similar slope is $\alpha = 3/4$ for bolometric luminosity. Because $L_X \propto n_e^2 T^{1/2} V$, the luminosity is dominated by dense core gas, making it highly sensitive to the thermodynamic state of the cluster centre. Cool-core clusters are systematically overluminous at fixed mass relative to morphologically disturbed systems, producing a large intrinsic scatter of $\sigma_{\ln M | L_X} \sim 40$--$50\%$ \textcolor{red}{Pratt2009}. The principal advantage of $L_X$ is observational accessibility: it can be measured from relatively shallow survey data with modest photon counts, making it practical for large, low signal-to-noise samples such as those from ROSAT and the forthcoming eROSITA all-sky survey.
+
+\subsubsection{Mass--X-ray Temperature}
+The spectroscopic mean temperature is related to mass via
+\begin{equation}
+	\frac{M_{500}}{M_0} = A \left( \frac{T_X}{T_0} \right)^{\alpha} [E(z)]^{\beta},
+	\label{eq:Tx_mass}
+\end{equation}
+with a self-similar prediction of $\alpha = 3/2$ following from the virial theorem. $T_X$ is less susceptible to core-state bias than $L_X$ because temperature measurements are typically performed in an annular aperture that excises the central cooling region. The resulting scatter is moderate, $\sigma_{\ln M | T_X} \sim 15$--$20\%$ \textcolor{red}{Arnaud2005}, though the measurement requires significantly higher photon counts than a luminosity estimate and becomes increasingly uncertain at high redshift where spectral bins must be widened. The hydrostatic bias enters at the calibration stage, since the normalisation $A$ is typically fixed using a reference sample whose masses are derived from the HE equation.
+
+\subsubsection{Mass--SZ Signal}
+The integrated Compton-$y$ parameter, or its X-ray surrogate $Y_X = M_\mathrm{gas} T_X$ introduced by \textcolor{red}{Kravtsov2006}, scales as
+\begin{equation}
+	\frac{M_{500}}{M_0} = A \left( \frac{Y_{\mathrm{SZ}}}{Y_0} \right)^{\alpha} [E(z)]^{\beta},
+	\label{eq:Ysz_mass}
+\end{equation}
+with a self-similar slope of $\alpha = 3/5$. The SZ signal is proportional to the total thermal energy of the ICM, $Y_{\mathrm{SZ}} \propto \int P_{\mathrm{th}}\, dV$, and is therefore a direct in-situ calorimeter of the gravitational potential energy deposited into the gas. Crucially, $Y_{\mathrm{SZ}}$ is insensitive to density inhomogeneities (it is linear in $n_e$ rather than quadratic), and the pressure profiles beyond the cluster core are largely governed by the depth of the gravitational potential rather than by the gas physics of the centre. This makes $Y_{\mathrm{SZ}}$ the lowest-scatter mass proxy currently available, with $\sigma_{\ln M | Y_\mathrm{SZ}} \lesssim 10\%$ in ideal conditions \textcolor{red}{daSilva2004, Motl2005, Kravtsov2006, Pike2014}. The practical limitations are the sensitivity and angular resolution of SZ instrumentation: at the resolution of \textit{Planck} ($\theta_\mathrm{FWHM} \sim 5'$), the SZ signal is significantly beam-diluted for clusters at intermediate and high redshift, requiring a clean aperture definition at $R_{500}$ or $R_{200}$ that can be difficult to establish for clusters in complex environments or without prior X-ray data.
+
+\subsubsection{Scatter and Bias in Scaling Relations}
+
+Each of the above proxies inherits scatter from at least three sources: intrinsic scatter in the physical relation itself (driven by the diversity of cluster formation histories and dynamical states), observational noise, and systematic biases in the mass calibration. Non-gravitational physics --- AGN feedback, cooling flows, merger-induced sloshing --- breaks the self-similar scaling at varying levels for each observable, modifying the normalisation, slope, and scatter relative to the purely gravitational prediction \textcolor{red}{LeBrun2014, Truong2018}. In particular, the slope of the $L_X$--$M$ and $Y_\mathrm{SZ}$--$M$ relations is directly affected by the mass-dependent baryon depletion discussed in Section~\ref{sec:baryon_budget}, because both $L_X$ and $Y_\mathrm{SZ}$ depend on the gas content.
+
+A further systematic that becomes critical in the context of large cluster surveys is Malmquist/Eddington bias: because surveys select preferentially the brightest (most massive) clusters at any given noise level, the observed sample is drawn from the high-scatter tail of the intrinsic distribution. Failure to correct for this selection effect can lead to a $\sim 40\%$ underestimate of the mass at a given survey observable \textcolor{red}{Giles2017}. Properly accounting for the survey selection function in the cosmological likelihood is therefore as important as the mass calibration itself.
+
+\begin{comment}
+All about that mass no treble. So up until now we talked a lot of game on ICM physics and non thermal pressure as deviations for HE. Now we talk about their implications on mass measurements. What they are for and how non thermal pressure impact them respectively. It turns out there is multiple ways of arriving at the mass of a cluster. There are the continuous methods that elaborate mass as a function of radius $M(<r)$. This is the generalized  mass equation derived from the full Euler description of fluid:
+
+\begin{equation}
+M(<r) = M_{\mathrm{therm}} + M_{\mathrm{rand}} + M_{\mathrm{rot}} + M_{\mathrm{cross}} + M_{\mathrm{stream}} + M_{\mathrm{accel}},
+\label{eq:simplifiedMass}
+\end{equation}
+\\
+It is the simulators tool that finds its home in hydrodynamical simulation. It is awesome because we have total knowledge describing all of the component physics such as sloshing cores and AGN activity for example. We can even calculate some amount of mass bias from this:
+
+\begin{equation}
+b = 1 - \frac{M_{\mathrm{HE}}}{M_{\mathrm{true}}}
+\end{equation}
+\\
+Despite the exacntness of the generalized $M(<r)$, it is complex (requires solving a series of non linear equations sensitive to numerical noise in simulation) and observationally blind (we can never be able to measure 3D velocity from our single vantage point on Earth). 
+
+Another way of arriving at the $M(<r)$ relation is the integrated mass equation. It is the observers tool derived from a solution of the Jeans equation for a collisionless system of galaxies in dynamical equilibrium:
+
+\begin{equation}
+	M(<r) = -\frac{k_B T(r) r}{\mu m_p G (1 - f_{nt}(r))} \left( \frac{d \ln \rho_{gas}(r)}{d \ln r} + \frac{d \ln T(r)}{d \ln r} + \frac{d \ln (1 - f_{nt}(r))^{-1}}{d \ln r} \right)
+\end{equation}
+\\
+It is a more simplified and practical tool that can be solved by integrating parameter data from telescopic instrumentation. However, it remains incomplete in terms of the mass bias part and relies on simplifying assumptions of spherical symmetry.
+
+In practice both equations run complementary to each other.
+
+\section*{Mass proxies}
+While continuous equations offer a physically exact window into individual cluster dynamics, they are fundamentally limited by high data demands and observational noise. A suitable alternative can be found in a list of empirically calibrated scaling relations available in X ray and tSZ. These take an incredibly complex 3D cosmic structures and compress it into a single discrete point estimate ($M_{\mathrm{500}}$ or $M_{\mathrm{vir}}$). Quick and dirty methods for a large and expansive universe. Each of these methods are suceptible to their own scatter elements. Here are some mass proxies from X ray and tSZ. Mass versus X ray luminosity:
+
+\begin{equation}
+	%M_{\Delta} \propto \frac{1}{f_{g}}L_{X}^{\frac{3}{4}}
+	\frac{M_{500}}{M_0} = A \cdot \left( \frac{L_X}{L_0} \right)^{\alpha} \cdot [E(z)]^{\beta}
+\end{equation}
+\\
+where the expected slope for $\alpha$ is blah. It has lower barrier to entry with fewer photon counts required. These are the problems with this method (high intrinsic scatter impacted by core density anomalies such as cool core). Mass versus X ray temperature:
+\begin{equation}
+	%M_{\Delta} \propto T_{X}^{\frac{3}{2}}
+	\frac{M_{500}}{M_0} = A \cdot \left( \frac{T_X}{T_0} \right)^{\alpha} \cdot [E(z)]^{\beta}
+\end{equation}
+\\
+where the expected slope for $\alpha$ is blah. These are the problems with this method (moderate scatter impacted by non thermal pressure, results). Mass versus X ray temperature:
+
+\begin{equation}
+	%M_{\Delta} \propto T_{X}^{\frac{3}{2}}
+	\frac{M_{500}}{M_0} = A \cdot \left( \frac{Y_{SZ}}{Y_0} \right)^{\alpha} \cdot [E(z)]^{\beta}
+\end{equation}
+\\
+where the expected slope for $\alpha$ is blah. This method has low intrinsic scatter and is in situ thermal energy proxy which tightly tracks the total gravitational mass. These are the problems with this method. Amount of scatter (signal faint because of poor resolution large instrument beam size and requires a clean definiton of radial cutoff $R_{500}$ and $R_{200}$ the true value of which may not clear in many cases).
+\end{comment}
+%\begin{equation}
+%	E(z) = \sqrt{\Omega_m (1+z)^3 + \Omega_\Lambda}
+%\end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % I could not find a part for this. But just keep it.
@@ -276,5 +452,7 @@ This work aims to take an observational approach to the ICM turbulence question.
 \begin{itemize}
 	\item What is the true nature of observable turbulence in the ICM.
 	\item How much of that turbulence is observable with present instrumentation. How much will become observable with near future instrumentation?
-	\item What type of improvements we can we make to remove as much bias as possible from the turbulence inference pipeline. 
-\end{itemize}led as follows: Chapter 2 looks at the present pipeline framing the current assumptions, Chapter 3 looks at some methods we have done to interrogate those assumptions, Chapter 4 introduces a new method to circumvent some of those biases. Chapter 5 presents results and discussions.
+	\item What type of improvements we can we make to remove as much bias as possible from the present methodology of turbulence inference. 
+\end{itemize}
+
+The remainder of this thesis is outlined as follows: Chapter 2 looks at the present pipeline framing the current assumptions, Chapter 3 looks at some methods we have done to interrogate those assumptions, Chapter 4 introduces a new method to circumvent some of those biases. Chapter 5 presents results and discussions.
