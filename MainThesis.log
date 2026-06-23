@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.4.7)  18 JUN 2026 20:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.4.7)  23 JUN 2026 20:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1900,32 +1900,28 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 ] (./MainThesis.toc [11
 
-]) [12] (./MainThesis.lof)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+]) [12] (./MainThesis.lof) [13
 
- [13
+] (./MainThesis.lot) [14
 
-]
-[14] (./MainThesis.lot) [15
-
-] (./PreliminaryAndBackPages/Symbols.tex [16
-
-]
+] (./PreliminaryAndBackPages/Symbols.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
-))
-[17] [18
+)) [15
 
-] (./Chapter1/scientificLandscape.tex
+] [16
+
+]
+(./Chapter1/scientificLandscape.tex
 Chapter 1.
 [1
 
 ] [2] [3]
-<Chapter1/imgs/1567218868444-COMA_ROSATvsPLANCK.pdf, id=436, 1355.0625pt x 1334
+<Chapter1/imgs/1567218868444-COMA_ROSATvsPLANCK.pdf, id=420, 1355.0625pt x 1334
 .9875pt>
 File: Chapter1/imgs/1567218868444-COMA_ROSATvsPLANCK.pdf Graphic file (type pdf
 )
@@ -1933,46 +1929,40 @@ File: Chapter1/imgs/1567218868444-COMA_ROSATvsPLANCK.pdf Graphic file (type pdf
 Package pdftex.def Info: Chapter1/imgs/1567218868444-COMA_ROSATvsPLANCK.pdf  us
 ed on input line 83.
 (pdftex.def)             Requested size: 483.0pt x 475.84888pt.
- [4] [5
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.93 
-      <./Chapter1/imgs/1567218868444-COMA_ROSATvsPLANCK.pdf>]
+ [4]
 Underfull \vbox (badness 1033) has occurred while \output is active []
 
- [6]
+ [5]
 Underfull \vbox (badness 1210) has occurred while \output is active []
 
- [7]
-[8]
-<Chapter1/imgs/clusters/bulletCluster_sq.jpg, id=471, 1003.75pt x 1003.75pt>
+ [6]
+[7] [8 <./Chapter1/imgs/1567218868444-COMA_ROSATvsPLANCK.pdf>]
+<Chapter1/imgs/clusters/bulletCluster_sq.jpg, id=454, 1003.75pt x 1003.75pt>
 File: Chapter1/imgs/clusters/bulletCluster_sq.jpg Graphic file (type jpg)
 <use Chapter1/imgs/clusters/bulletCluster_sq.jpg>
 Package pdftex.def Info: Chapter1/imgs/clusters/bulletCluster_sq.jpg  used on i
 nput line 156.
 (pdftex.def)             Requested size: 202.86005pt x 202.86005pt.
-<Chapter1/imgs/clusters/Macsj0717_sq.jpg, id=472, 1003.75pt x 1003.75pt>
+<Chapter1/imgs/clusters/Macsj0717_sq.jpg, id=455, 1003.75pt x 1003.75pt>
 File: Chapter1/imgs/clusters/Macsj0717_sq.jpg Graphic file (type jpg)
 <use Chapter1/imgs/clusters/Macsj0717_sq.jpg>
 Package pdftex.def Info: Chapter1/imgs/clusters/Macsj0717_sq.jpg  used on input
  line 161.
 (pdftex.def)             Requested size: 202.86005pt x 202.86005pt.
-<Chapter1/imgs/clusters/elgordoCluster_sq.jpg, id=473, 1003.75pt x 1003.75pt>
+<Chapter1/imgs/clusters/elgordoCluster_sq.jpg, id=456, 1003.75pt x 1003.75pt>
 File: Chapter1/imgs/clusters/elgordoCluster_sq.jpg Graphic file (type jpg)
 <use Chapter1/imgs/clusters/elgordoCluster_sq.jpg>
 Package pdftex.def Info: Chapter1/imgs/clusters/elgordoCluster_sq.jpg  used on 
 input line 167.
 (pdftex.def)             Requested size: 202.86005pt x 202.86005pt.
-<Chapter1/imgs/clusters/musketBall_sq.jpg, id=474, 1003.75pt x 1003.75pt>
+<Chapter1/imgs/clusters/musketBall_sq.jpg, id=457, 1003.75pt x 1003.75pt>
 File: Chapter1/imgs/clusters/musketBall_sq.jpg Graphic file (type jpg)
 <use Chapter1/imgs/clusters/musketBall_sq.jpg>
 Package pdftex.def Info: Chapter1/imgs/clusters/musketBall_sq.jpg  used on inpu
 t line 172.
 (pdftex.def)             Requested size: 202.86005pt x 202.86005pt.
  [9
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2}) 
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1983,7 +1973,7 @@ gs/clusters/Macsj0717_sq.jpg> <./Chapter1/imgs/clusters/elgordoCluster_sq.jpg>
 
 
 ] [11]
-<Chapter1/imgs/tCascade.pdf, id=492, 795.72281pt x 565.36218pt>
+<Chapter1/imgs/tCascade.pdf, id=476, 795.72281pt x 565.36218pt>
 File: Chapter1/imgs/tCascade.pdf Graphic file (type pdf)
 <use Chapter1/imgs/tCascade.pdf>
 Package pdftex.def Info: Chapter1/imgs/tCascade.pdf  used on input line 230.
@@ -1991,7 +1981,7 @@ Package pdftex.def Info: Chapter1/imgs/tCascade.pdf  used on input line 230.
  [12
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3}) 
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -2001,10 +1991,10 @@ l.236 \clearpage
 ] [14] [15] [16]
 
 LaTeX Warning: Reference `sec:baryon_budget' on page 17 undefined on input line
- 369.
+ 368.
 
 
-Overfull \hbox (17.17894pt too wide) in paragraph at lines 371--372
+Overfull \hbox (17.17894pt too wide) in paragraph at lines 370--371
 []\OT1/ptm/m/n/12 (-20) A fur-ther sys-tem-atic that be-comes crit-i-cal in the
  con-text of large clus-ter sur-veys is Malmquist/Eddington
  []
@@ -2038,8 +2028,8 @@ static mass bias. \OT1/ptm/m/n/12 (-20) The three-dimensional
 
 [22] [23
 
-] [24] [25] [26] [27]
-LaTeX Font Info:    Trying to load font information for U+eus on input line 304
+] [24] [25] [26] [27] [28] [29] Excluding 'comment' comment.
+LaTeX Font Info:    Trying to load font information for U+eus on input line 344
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueus.fd
@@ -2047,47 +2037,47 @@ File: ueus.fd 2013/01/14 v3.01 Euler Script
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-eus.cfg
 File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
-) [28])
-(./Chapter3/MethodsAndProcedures.tex [29]
+) [30])
+(./Chapter3/MethodsAndProcedures.tex [31]
 
-LaTeX Warning: Citation `DumyCitationKey' on page 30 undefined on input line 14
+LaTeX Warning: Citation `DumyCitationKey' on page 32 undefined on input line 14
 .
 
-[30
+[32
 
 ]
 Chapter 3.
-[31
+[33
 
-]) (./Chapter4/Chapter4.tex [32] [33
+]) (./Chapter4/Chapter4.tex [34] [35
 
 ]
 
-LaTeX Warning: Citation `DumyCitationKey' on page 34 undefined on input line 14
+LaTeX Warning: Citation `DumyCitationKey' on page 36 undefined on input line 14
 .
 
-[34
+[36
 
 ]
 Chapter 4.
-) (./Conclusion/Conclusion.tex [35
+) (./Conclusion/Conclusion.tex [37
 
-] [36
+] [38
 
 ]
 Chapter 5.
-) (./MainThesis.bbl) [37]
+) (./MainThesis.bbl) [39]
 \openout2 = `./Appendix/Appendix.aux'.
 
- (./Appendix/Appendix.tex [38
+ (./Appendix/Appendix.tex [40
 
 
 ]
 Appendix A.
-) [39]
+) [41]
 \openout2 = `./Examples/ExampleOfCitations.aux'.
 
- (./Examples/ExampleOfCitations.tex [40
+ (./Examples/ExampleOfCitations.tex [42
 
 
 
@@ -2095,45 +2085,45 @@ Appendix A.
 ]
 Appendix B.
 
-LaTeX Warning: Citation `Cawvey2017' on page 41 undefined on input line 7.
+LaTeX Warning: Citation `Cawvey2017' on page 43 undefined on input line 7.
 
 
-LaTeX Warning: Citation `Pakzad2018' on page 41 undefined on input line 7.
+LaTeX Warning: Citation `Pakzad2018' on page 43 undefined on input line 7.
 
 
-LaTeX Warning: Citation `Adachi2007' on page 41 undefined on input line 7.
+LaTeX Warning: Citation `Adachi2007' on page 43 undefined on input line 7.
 
 
-LaTeX Warning: Citation `J.Fenwick2010' on page 41 undefined on input line 7.
+LaTeX Warning: Citation `J.Fenwick2010' on page 43 undefined on input line 7.
 
 
-LaTeX Warning: Citation `PeerlingPhD1999' on page 41 undefined on input line 7.
+LaTeX Warning: Citation `PeerlingPhD1999' on page 43 undefined on input line 7.
 
 
 
-LaTeX Warning: Citation `Panis2004' on page 41 undefined on input line 7.
+LaTeX Warning: Citation `Panis2004' on page 43 undefined on input line 7.
 
-) [41]
+) [43]
 \openout2 = `./Examples/ExampleOfCode.aux'.
 
- (./Examples/ExampleOfCode.tex [42
+ (./Examples/ExampleOfCode.tex [44
 
 
 
 
 ]
 Appendix C.
-) [43]
+) [45]
 \openout2 = `./Examples/ExampleOfEquations.aux'.
 
- (./Examples/ExampleOfEquations.tex [44
+ (./Examples/ExampleOfEquations.tex [46
 
 
 
 
 ]
 Appendix D.
-) [45
+) [47
 pdfTeX warning (ext4): destination with the same identifier (name{equation.D.4}
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -2142,19 +2132,19 @@ l.148 \include{./Examples/ExampleOfEquations}
                                              ]
 \openout2 = `./Examples/ExampleOfFigures.aux'.
 
- (./Examples/ExampleOfFigures.tex [46
+ (./Examples/ExampleOfFigures.tex [48
 
 
 
 
 ]
 Appendix E.
-<Examples/FigureUQ.jpeg, id=711, 1284.8pt x 856.19875pt>
+<Examples/FigureUQ.jpeg, id=706, 1284.8pt x 856.19875pt>
 File: Examples/FigureUQ.jpeg Graphic file (type jpg)
 <use Examples/FigureUQ.jpeg>
 Package pdftex.def Info: Examples/FigureUQ.jpeg  used on input line 15.
 (pdftex.def)             Requested size: 483.0pt x 321.87067pt.
-) [47
+) [49
 pdfTeX warning (ext4): destination with the same identifier (name{figure.E.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -2164,14 +2154,14 @@ l.149 \include{./Examples/ExampleOfFigures}
 \openout2 = `./Examples/ExampleOfFlowCharts.aux'.
 
 
-(./Examples/ExampleOfFlowCharts.tex [48
+(./Examples/ExampleOfFlowCharts.tex [50
 
 
 
 
 ]
 Appendix F.
-) [49
+) [51
 pdfTeX warning (ext4): destination with the same identifier (name{figure.F.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -2180,25 +2170,25 @@ l.150 \include{./Examples/ExampleOfFlowCharts}
                                               ]
 \openout2 = `./Examples/ExampleOfTables.aux'.
 
- (./Examples/ExampleOfTables.tex [50
+ (./Examples/ExampleOfTables.tex [52
 
 
 
 
 ]
 Appendix G.
-) [51
+) [53
 pdfTeX warning (ext4): destination with the same identifier (name{table.G.1}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.151 \include{./Examples/ExampleOfTables}
                                           ] (./PreliminaryAndBackPages/Back.tex
-[52
+[54
 
 
 
-]) [53]
+]) [55]
 \tf@toc=\write8
 \openout8 = `MainThesis.toc'.
 
@@ -2227,11 +2217,11 @@ Package rerunfilecheck Info: File `MainThesis.out' has not changed.
 (rerunfilecheck)             Checksum: 912A06A11F9BD0393EA7A57CA209B202;8972.
  ) 
 Here is how much of TeX's memory you used:
- 36129 strings out of 467533
- 642146 string characters out of 5422139
- 1237377 words of memory out of 5000000
- 63644 multiletter control sequences out of 15000+600000
- 701721 words of font info for 384 fonts, out of 8000000 for 9000
+ 36141 strings out of 467533
+ 642257 string characters out of 5422139
+ 1236972 words of memory out of 5000000
+ 63647 multiletter control sequences out of 15000+600000
+ 702154 words of font info for 390 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,15n,107p,3315b,908s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
@@ -2247,10 +2237,10 @@ mbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on MainThesis.pdf (71 pages, 3292505 bytes).
+Output written on MainThesis.pdf (71 pages, 3299022 bytes).
 PDF statistics:
- 853 PDF objects out of 1000 (max. 8388607)
- 733 compressed objects within 8 object streams
+ 848 PDF objects out of 1000 (max. 8388607)
+ 728 compressed objects within 8 object streams
  216 named destinations out of 1000 (max. 500000)
  88010 words of extra memory for PDF output out of 89155 (max. 10000000)
 

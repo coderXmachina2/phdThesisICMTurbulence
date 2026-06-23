@@ -76,7 +76,7 @@ To the first order, $\bar{S}(\theta)$ can be constructed by fitting a parametric
 \end{equation}
 \\
 where $\theta_c$ is the angular radius of the core, $S_0$ is the central surface brightness normalisation, and $\beta$ governs the slope of the outer profile. This functional form closely mirrors the three-dimensional electron density profile in Equation~\ref{eq:3DradialBeta} of which it is the LOS integral of under the conditions of Equation~\ref{eq:Sx}. A similar functional form can be applied in the tSZ regime to adapt to the cluster emission at larger scales, with the generalised Navarro Frank White (gNFW) pressure profile sometimes preferred as an alternative \textcolor{red}{[Nagai et al. 2007]}.
-
+\par\vspace{\baselineskip}\noindent
 Despite its widespread adoption, the single $\beta$-model remains inflexible in some cases where it cannot simultaneously reproduce the two component emission of a bright compact core and shallower ambient ICM brightness distribution found in cool core clusters \textcolor{red}{[ref]}. Using single $\beta$-model for this type of cluster leaves large, structured residuals in the core that bias the fluctuation map at intermediate to large scales \textcolor{red}{[ref]}, necessitating the double $\beta$-model:
 %
 \begin{equation}
@@ -88,7 +88,7 @@ Despite its widespread adoption, the single $\beta$-model remains inflexible in 
 \end{equation}
 \\
 where the parameters $\theta_{c,2}$ and $\beta_{2}$ are for the second core angular radius and slope profile, and $R$ is the relative amplitude. This model, allows each brightness component to be accounted for independently \textcolor{red}{[Mohr et al. 1999; Romero et al. 2024]} and is more suited for clusters with excess central emission embedded within an extended envelope over a single $\beta$-model.
-
+\par\vspace{\baselineskip}\noindent
 Granting even a good radial fit, both the single and double $\beta$-models carry a further limitation: they both assume spherical symmetry under projection. The observed elongation of clusters also reflects their formation history; preferential accretion along large-scale filaments, incomplete virialisation following a merger, or tidal interactions with neighboring structures \textcolor{red}{[Jing \& Suto 2002; Paz et al. 2006]}. When a circular model is applied to an intrinsically elongated cluster, the mismatch between model and data can also produce coherent large-scale residuals such as dipole or quadrupole patterns that bias large scale turbulent power \textcolor{red}{[ref]}. An adaptation for this scenario is an elliptical $\beta$-model which can be expressed as:
 %
 \begin{equation}
@@ -138,25 +138,24 @@ With the smooth model defined and the effects of spherical symmetry understood, 
 \end{equation}
 \\
 Within the space of the residuals, the key question is to evaluate the size of the fluctuations. This is carried out by taking the RMS amplitude:
-%
 \begin{equation}
 	\sigma_{\delta S}^2 = 
 	\langle |\delta S(\boldsymbol{\theta})|^2 \rangle,
 	\label{eq:RMSdef}
 \end{equation}
 \\
-which provides an intuitive summary statistic, and in an ideal noiseless observation it would reflect the true variance of the ICM surface brightness fluctuations. In practice, the observed residual field contains contributions from multiple sources summed in quadrature:
+which provides an intuitive but rudimentary statistic, and in an ideal noiseless observation it would reflect the true variance of the ICM surface brightness fluctuations. In practice, the observed residual field contains contributions from multiple sources summed in quadrature:
 
 \begin{equation}
 	\sigma_{\delta S}^2 = \sigma_{\mathrm{turb}}^2 + \sigma_{\mathrm{noise}}^2 + \sigma_{\mathrm{sys}}^2,
 	\label{eq:quadratureNoise}
 \end{equation}
 \\
-where $\sigma_{\mathrm{turb}}^2$ is the variance from genuine ICM fluctuations, $\sigma_{\mathrm{noise}}^2$ encompasses detector noise, and background fluctuations, and $\sigma_{\mathrm{sys}}^2$ captures systematic residuals from an imperfectly chosen smooth model. The third term is the most impactful: unlike statistical noise it is correlated with the input smooth model and cannot be reduced by longer integration time.
+where $\sigma_{\mathrm{turb}}^2$ is the variance from genuine ICM fluctuations, $\sigma_{\mathrm{noise}}^2$ encompasses detector noise, and background fluctuations, and $\sigma_{\mathrm{sys}}^2$ captures systematic residuals from an imperfectly chosen smooth model. The third term is the most impactful: unlike $\sigma_{\mathrm{noise}}^2$ it is correlated with the input smooth model and cannot be reduced by longer source integration time.
 
-The RMS amplitude of is therefore a necessary but insufficient diagnostic. Its fundamental limitation is that it is a spatially averaged scalar — it collapses all scale information into a single number. A cluster whose fluctuation power is concentrated at $\sim 10$ kpc scales is indistinguishable from one with identical total variance but power concentrated at $\sim 500$ kpc, even though these two configurations correspond to entirely different physical scenarios. The RMS can confirm that the residual field is non-trivially large, but it cannot characterise the \textit{nature} of that residual. This is the primary motivation for proceeding to the power spectrum, which decomposes the fluctuation variance by spatial scale and allows the injection scale, slope, and amplitude of the turbulent cascade to be measured independently.
+The RMS amplitude is therefore a necessary but insufficient diagnostic. While capable of acting goodness of fit measure for $\bar{S}$, its fundamental limitation is that it is a spatially averaged scalar — it collapses information at all scales into a single number. A cluster where fluctuation power is concentrated at $\sim 650$ kpc scales is indistinguishable from one with identical total variance but power concentrated at $\sim 50$ kpc, even though these two configurations correspond to entirely different astrophysical scenarios. The RMS can confirm that the residual field is non-trivially large, but it cannot characterise the \textit{nature} of the fluctuations. This is the primary motivation for utilizing the power spectrum, which decomposes the fluctuation variance by spatial scale and allows the injection scale, slope, and amplitude of the turbulent cascade to be resolved independently.
 
-In practice, the residual field is normalised by the smooth model to produce the fractional fluctuation field:
+In practice, the residuals are normalized by the smooth model to acquire the relative fluctuations:
 %
 \begin{equation}
 	\frac{\delta S}{\bar{S}}(\boldsymbol{\theta}) = 
@@ -165,25 +164,9 @@ In practice, the residual field is normalised by the smooth model to produce the
 	\label{eq:fractionalFluctuations}
 \end{equation}
 \\ %I am not sire any idea about this next part.
-this normalisation has a second consequence that is equally important for the spectral analysis: it substantially compresses the dynamic range of 
-the map. The raw residual $\delta S(\boldsymbol{\theta})$ 
-inherits the steep radial brightness gradient of the ICM — 
-a typical cluster surface brightness drops by several 
-orders of magnitude from centre to $R_{500}$ — so that the 
-central pixels dominate the Fourier transform and the outer 
-cluster contributes negligibly to the recovered power 
-spectrum. Division by $\bar{S}$ reweights the map so that 
-fluctuations at all radii contribute proportionally to the 
-power, enabling the spatial weight map $\omega(\boldsymbol{\theta})$ 
-applied in Step 3 to operate on a field whose variance is 
-already approximately uniform across the image. Bright 
-outliers — unmasked point sources, chip edge artefacts, or 
-a poorly subtracted subcluster — can corrupt this 
-normalisation and dominate the dynamic range of the 
-fractional map; rigorous masking prior to this step is 
-therefore not merely cosmetic but a prerequisite for an 
-unbiased power spectrum.
+Aside from demarcating the fluctuations as comparable relative to the cluster smooth model which is numerically a simplifying basis to take, this normalisation step also has a consequence that can be important for spectral analysis whereby it compresses the dynamic range of the input fluctuation map. Since the raw residuals $\delta S(\boldsymbol{\theta})$ inherits the surface brightness gradient of the cluster which experiences a drop from the center towards the outskirts, bias from the core can be passed into into the Fourier transform. This is certainly the case in the X-ray regime where brightness tends to drastically drop by many orders of magnitude away from the center but is less impactful in tSZ  allowing it to be safely omitted from the analysis if required.
 
+While normalization by $\bar{S}$ can expresses the fluctuations as a dimensionless fractional field with more uniform variance, it does not eliminate all potential sources of bias. If the model is insufficiently flexible enough to account for them, localized structures such as subgroups and radio galaxies can still contribute fluctuations with large amplitudes if left unaccounted for. Consequently, additional spatial weighting and masking procedures are often applied to suppress contaminated regions before estimating the fluctuation power spectrum.
 %Where to put this:
 %Work with $S_{\mathrm{X}}$ has shown example demonstrations where changing the input $\bar{S}(\theta)$ changes the magnitude of fluctuations in the corresponding power spectrum. A land mark early exploration by \textcolor{red}{[ref]} showed that a two dimensional $\beta$-model altered the recovered amplitude of the longest-wavelength perturbations by up to a factor of two relative to a spherically symmetric model. The sensitivity to model choice showed the greatest significance at scales $\geq$ 300 kpc. That is not to say that unlimited flexibility either. \textcolor{red}{[ref]} approached the construction of $\bar{S}$ by fitting a series of logarithmically spaced ellipses to the X-ray isophotes of the cool-core cluster AWM$\sim$7, finding radial surface brightness depressions in the model-subtracted residuals that were absent in simulations — a result sensitive to the assumed elliptical geometry of the model.
 
@@ -224,7 +207,7 @@ unbiased power spectrum.
 
 \subsubsection*{Masking and apodisation}
 
-The fractional fluctuation field is multiplied by a spatial weight map prior to spectral analysis,
+To further isolate fluctuations a spatial weight map is applied to via multiplication 
 %
 \begin{equation}
 	\delta S_{w}(\boldsymbol{\theta}) = 
@@ -232,13 +215,13 @@ The fractional fluctuation field is multiplied by a spatial weight map prior to 
 	\frac{\delta S}{\bar{S}}(\boldsymbol{\theta}),
 	\label{eq:weightedResiduals}
 \end{equation}
-%
-where $\omega(\boldsymbol{\theta}) \in [0,1]$ is the weight map. In its simplest form $\omega$ is a binary mask, but in practice it performs several functions simultaneously: it excludes contaminated or low signal-to-noise pixels, defines the spatial region over which the power spectrum is estimated, and tapers the map boundaries to suppress spectral leakage.
+\\
+where $\omega(\boldsymbol{\theta}) \in [0,1]$ is the weight map. In its most rudimentary form $\omega$ is a binary mask. In practice it performs several functions simultaneously. It is used to exclude contaminated or low signal-to-noise (SNR) regions, defines the relevant spatial region over which the power spectrum is estimated, and tapers the map boundaries to suppress spectral leakage.
 
-\paragraph{Point sources and astrophysical contaminants.}
+%\paragraph{Point sources and astrophysical contaminants.}
 In X-ray observations, masking is particularly critical due to the high surface density of unresolved and resolved point sources. Unmasked point sources inject power at all spatial frequencies and, if sufficiently bright, can dominate the recovered power spectrum entirely. Point sources are typically identified via source detection algorithms applied to the original image and excised with circular apertures whose radii are scaled to the local point-spread function. The residual contribution from sources below the detection threshold constitutes a faint, approximately Poissonian background that must be estimated and subtracted from the measured power spectrum separately \textcolor{red}{[ref]}.
 
-In SZ observations the point-source contamination is generally less severe, since radio and infrared sources contribute at a lower surface density in the millimetre bands. However, the Cosmic Infrared Background (CIB) — the integrated, unresolved emission from dusty star-forming galaxies at cosmological distances — constitutes a persistent diffuse contaminant whose angular power spectrum overlaps with the scales of interest for ICM fluctuation studies \textcolor{red}{[ref]}. The CIB contribution is typically characterised from Monte Carlo realisations and propagated as an additive noise term in the power spectrum covariance.
+In SZ observations the point-source contamination is generally less severe, since radio and infrared sources contribute at a lower surface density in the millimetre bands. However, the Cosmic Infrared Background (CIB) — the integrated, unresolved emission from dusty star-forming galaxies at cosmological distances — constitutes a persistent diffuse contaminant whose angular power spectrum overlaps with the scales of interest for ICM fluctuation studies \textcolor{red}{[ref]} \textcolor{red}{[ref]}. The CIB contribution is typically characterised from Monte Carlo realisations and propagated as an additive noise term in the power spectrum covariance.
 
 \paragraph{Annular region of interest.}
 Beyond point source removal, the weight map defines the spatial region submitted to spectral analysis. It is common practice to restrict the analysis to an annular aperture, excluding both the cluster core and the low signal-to-noise outskirts. The core is excluded because the smooth model is often a poor fit in the innermost regions — where AGN activity, cooling flows, and sharp brightness gradients produce residuals that are not of turbulent origin — and because any model mismatch there would contaminate the fluctuation field at all scales. The outer boundary is set where the surface brightness signal-to-noise falls below a threshold sufficient to recover fluctuations reliably, typically near $R_{500}$ for X-ray observations and somewhat beyond for SZ.
@@ -274,21 +257,78 @@ where $r_c$ is the core exclusion radius, $R_{200}$ is the outer boundary of the
 
 %\subsection{Centroid Location}\label{Chap:assumptionsSmoothSBModelCentroidLocation}
 % *******
-
+\newpage
 \section{Image Power Spectrum}\label{Chap:assumptionsImageToPowerSpectrum}
 
-We now enter into the part of methodology where spectral analysis is applied. The fundamental objective of spectral analysis remains unchanged since its inception: to decompose a complex, aggregate system into its constituent, scale-dependent parts. In his foundational experiments with physical optics, Isaac Newton utilized a glass prism as a hardware based dispersion mechanism to decompose monochromatic light into its discrete constituent colours. Astrophysics people utilize numerical Fourier analysis to decompose the content of some astrohpysical image in search of turbulence.
+We now turn to the part of the methodology in which \textit{spectral analysis} is applied. The fundamental objective of spectral analysis has remained unchanged since its inception: to decompose a complex, aggregate phenomenon into its constituent, scale-dependent parts. In his foundational experiments with physical optics, Isaac Newton used a glass prism as a hardware-based dispersion mechanism to decompose white light into its discrete constituent colours, unweaving the rainbow into a spectrum ordered by wavelength. In its present-day manifestation, astrophysicists employ numerical Fourier analysis to decompose astrophysical signals into their constituent spatial scales, continuing in this same tradition: where Newton's prism sorted light by wavelength, the Fourier transform sorts a turbulent field by the variance of its fluctuations.
+
+There are many ways to estimate a power spectrum from data. In its simplest form, the power spectrum is the squared magnitude of the Fast Fourier Transform (FFT) of a field, normalised by the survey area or solid angle:
+
+\begin{equation}
+	P(\mathbf{k}) \;=\; \frac{1}{N}\, \bigl| \widetilde{\delta}(\mathbf{k}) \bigr|^2,
+	\label{eq:ps_def}
+\end{equation}
+\\
+where $\widetilde{\delta}(\mathbf{k})$ is the Fourier transform of the (typically mean-subtracted) field $\delta(\mathbf{x})$, $\mathbf{k}$ is the Fourier wavevector, and $N$ is the area of the observed patch. Averaging $P(\mathbf{k})$ in annuli of constant $|\mathbf{k}|$ yields the azimuthally averaged power spectral density, $P(k)$: a measure of the variance of the field per logarithmic (or linear) bin in spatial frequency. This quantity is the principal observable used throughout this work to characterise the statistical properties of ICM pressure and density fluctuations.
+
+In practice, several distinct estimators are used to compute $P(k)$, each suited to particular data characteristics (sky coverage, masking, signal-to-noise regime) and each carrying its own trade-offs in bias, variance, and robustness to incomplete or irregularly sampled data. The estimators most commonly applied in the study of astrophysical and ICM turbulence are summarised below.
+
+
+\begin{itemize}
+	\item \textbf{Periodogram.} The direct FFT-based estimator of Equation~\ref{eq:ps_def} is the classical and most widely accessible method, and is computationally the cheapest. However, the standard periodogram assumes a regularly sampled, gap-free grid; it is therefore not robust to missing data, irregular sampling, or masked regions. For irregularly sampled time series or maps with significant masking, the \textbf{Lomb--Scargle periodogram} \textcolor{red}{[ref]} is frequently substituted, as it generalises the discrete Fourier transform to non-uniform sampling by fitting sinusoids directly to the unevenly spaced data rather than relying on an implicit regular grid.
+	
+	\item \textbf{Correlogram.} This method applies the FFT to the autocorrelation function (ACF) of the field rather than to the field itself, as prescribed by the Wiener--Khinchin theorem, which states that the power spectrum and the autocorrelation function form a Fourier transform pair. Because the ACF can be estimated directly from the available data pairs without requiring a complete regular grid, this approach is comparatively more tolerant of missing data than the direct periodogram. Its principal drawback is the need to apply and tune an apodising window function to the ACF before transforming, in order to suppress the spectral leakage and ringing that would otherwise result from the implicit truncation of the correlation function at large lags.
+	
+	\item \textbf{Flat-sky approximation.} For observations subtending a sufficiently small solid angle on the sky (typically $\theta \lesssim 9^\circ$ across), the curvature of the celestial sphere can be neglected and the observed patch treated as a 2D Euclidean plane. This greatly simplifies the computation of the power spectrum, since the spherical-harmonic decomposition required for full-sky analysis (as used, e.g., for CMB and large-area SZ maps) can be replaced by a standard planar Fourier transform. This approximation is well suited to single-pointing or mosaicked cluster observations, such as those from \textit{XMM-Newton}, \textit{Chandra}, or ground-based SZ interferometers and bolometer arrays, where the field of view is at most a few tens of arcminutes.
+	
+	\item \textbf{$\Delta$-variance.} Rather than decomposing the signal into a discrete set of Fourier modes, the $\Delta$-variance method \textcolor{red}{Stutzki1998, Ossenkopf2008} operates in scale space: the data are filtered with a localised kernel (most commonly a Mexican-hat or French-hat wavelet) tuned to isolate fluctuations at a specific spatial scale $\ell$, and the variance of the filtered map is computed as a function of $\ell$. This naturally handles irregular masks and gaps, since the filtering operation can be restricted to the unmasked pixels. A widely used extension, the \textcolor{red}{Arevalo2012} method, refines the choice of filter to better approximate a true band-pass in Fourier space. The principal weakness of $\Delta$-variance-type estimators is that they introduce a systematic bias when applied to steep power-law signals, because the filter kernels have non-zero response outside their nominal target scale, causing power to leak between adjacent scale bins; this bias must be explicitly modelled and corrected for, particularly for ICM pressure or density power spectra that are expected to follow a Kolmogorov-like power law over an extended inertial range.
+\end{itemize}
+
+An honourable mention should also be made of \textbf{structure function} methods, which characterise turbulence through the second-order moment of the field increments, $\langle [\delta(\mathbf{x} + \mathbf{r}) - \delta(\mathbf{x})]^2 \rangle$, as a function of separation $r$. The structure function and the power spectrum are mathematically related (for a stationary, statistically homogeneous field they form a Fourier pair, up to the relevant moment order), but the structure function is computed in real space and can therefore be more directly tolerant of complex survey geometries; it does, however, mix power from a broad range of scales into each value of $r$, making the recovery of a localised spectral index less direct than with a true power spectral estimator.
+
+Moving forward, for the remainder of this work we adopt the direct periodogram (Equation~\ref{eq:ps_def}) as our default power spectrum estimator, unless explicitly stated otherwise.
+
+% ------------------------------------------------------------
+\subsection{Instrumental Beam Effects}\label{Chap:assumptionsBeamSmoothingd}
+
+Whenever the sky is observed with a real telescope, a finite degree of blurring is unavoidably applied to the resulting image. This effect is well approximated as a convolution of the true sky signal with the instrument's point spread function (PSF), which for most radio, mm-wave, and X-ray telescopes is itself well approximated by a 2D Gaussian of width set by the beam full width at half maximum (FWHM). Because convolution in real space corresponds to multiplication in Fourier space, the observed power spectrum is related to the true underlying power spectrum by a purely multiplicative transfer function:
+
+\begin{equation}
+	P_{\mathrm{obs}}(k_{2D}) = B(k_{2D})^2\, H(k_{2D})^2\, P_{\delta y/\bar{y}}(k_{2D}),
+	\label{eq:beam_transfer}
+\end{equation}
+
+\begin{comment}
+We now enter into the part of the methodology where \textit{spectral analysis} is applied. The fundamental objective of spectral analysis remains unchanged since its inception: to decompose a complex, aggregate phenomena into its constituent, scale-dependent parts. In his foundational experiments with physical optics, Isaac Newton utilized a glass prism as a hardware based dispersion mechanism to decompose monochromatic light into its discrete constituent colors, thus unweaving the rainbow. In its present day manifestation atrophysicists utilize numerical Fourier analysis to decompose and analyze the content of astrohpysical signals to continue in the tradition of Newton.
+
+There are many ways to take the power spectrum. In its simplest terms it is the squared magnitude of the Fast Fourier Transform (FFT). In the end we und up with a measure of the amount of variance per Fourier bin which is the Power spectral density. However more subtelty can be applied for subtly different cases data and/or otherwise. Here are some commonly applied methods most related to astronomical turbulence:
+
+\begin{itemize}
+	\item Periodogram. One could say this is the traditional quick and accessible method. However, it is not robust to missing data. That is where the Lomb-Scargle Periodogram is often applied \textcolor{red}{[ref]}.
+	\item Correlogram. Applies the FFT of the Autocorrelation function (ACF) as proscribed by Wiener-Khinchin Theorem. Not as terrible with missing data but requires tuning window function
+	\item Flatsky. Suited for small sections of the sky ($\theta > 9^\circ$) treating the spherical sky as a 2D Euclidean plane simplifying computations. 
+	\item $\Delta$ variance. Operates at scale space by filtering data at various target scales rather than splitting it into distinct frequencies. Extension is the Arevalo method \textcolor{red}{[ref]}. Use a localized filter function that isolates fluctuations at a specific scales. Has problems with power law signals (systematic bias).
+	%\item Structure Function
+\end{itemize}
+
+An honourable mention can be made for structure function methods Moving forward for this body of work we are using moslty periodogram unless specified otherwise.
 
 \subsection{Instrumental Beam Effects}\label{Chap:assumptionsBeamSmoothing}
 
-Whenever the sky is observed with a radio telescope some amount of blur is applied to the image. This is analogous to an effect of convolution with a 2D Gaussian. 
+Whenever the sky is observed with a radio telescope some amount of blur is applied to the image. This is analogous to an effect of convolution with a 2D Gaussian. In the Fourier domain it is a multiplied effect:
 
+\begin{equation}
+ 	%S(\theta) = I(\theta)\circledast PSF(\theta)
+	P_{obs}(k_{2D}) = B(k_{2D})^2 H(k_{2D})^2 P_{\delta y / \bar{y}}(k_{2D})
+\end{equation}
+\\
+where $B$ represents beam smoothing and $H$ encompass every deterministic filtering effect that acts on the signal between the sky and the final map. For an instrument such as Planck $H$ is probably much closer to unity than for IRAM NIKA2 because sky effects are reduced \textcolor{red}{[ref]} but remains non negligible as the pipeline map making process can introduce these noises. 
+
+Ignoring the effects of $H$ for now I want to emphasise more on the effects of $B$. Depending on the beam resolution (FWHM) some amount attenuation in the $P_{obs}(k_{2D})$ will manifests as a power roll-off towards higher $k$ scales. This has the potential of killing the scales injection and or inertial most relevant to turbulence.
+\end{comment}
 \section{Deprojection and 3D reconstruction}\label{Chap:assumptionsParametric}
 
-%\subsection{Deprojection and 3D reconstruction}\label{Chap:assumptionsDeprojection}
-%The ratio of density to Pressure is 1 which is pretty remarkable. However this is conditional.
-
-Everything we see is a two dimensional deprojection of a three dimensional phenomena. This invariable leads to some of information. Projection is simply an integral.
+Becasue we are analyzing surface brightness everything we see is a two dimensional deprojection of a three dimensional phenomena. This invariable leads to some of information. Projection is simply an integral.
 
 There is an Abel transfrom used for 
 
@@ -323,14 +363,4 @@ PITSZI:
 
 \section{Propagation and Compounding of Systematic Uncertainties}\label{Chap:assumptionsPropagationandCompoundingof SystematicUncertainties}
 
-
-
-As you can see is heavily reliant on inputs and assumptions.
-% ***************************************************
-
-
-% ***************************************************
-
-%It is almost as if, turbulence is in the eye of the smooth model which should not be the case. This technique was first applied on Coma cluster in X ray \textcolor{red}{[ref]}. I agree that 
-
-%The question that we are trying to ask is that in order to get the best match fit we are trying to answer the question, is it a splotch ($\beta$ model), a pancake (averaged empirical sphere), an egg (averaged empirical ellipse), a series of nested eggs (isocontour fit), or strained spagetti (Low Pass Filtered image)
+As you can see is heavily reliant on inputs and assumptions. Is this a summary?
