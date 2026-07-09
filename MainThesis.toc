@@ -10,56 +10,50 @@
 \contentsline {section}{\numberline {1.2}Observables}{3}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}X-ray emission}{3}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Radio Sunyaev-Zel’dovich effect}{4}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}ICM structure and non-thermal pressure}{5}{section.1.3}%
-\contentsline {subsubsection}{A fluid description of the ICM}{5}{section*.22}%
-\contentsline {subsubsection}{Stratification}{5}{section*.23}%
-\contentsline {subsubsection}{Multiphase structure}{6}{section*.24}%
-\contentsline {subsection}{\numberline {1.3.1}Non-thermal pressure}{6}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Astrophysical sources of ICM gas motions.}{7}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.3}ICM structure and non-thermal pressure}{6}{section.1.3}%
+\contentsline {subsubsection}{A fluid description of the ICM}{6}{section*.22}%
+\contentsline {subsubsection}{Stratification}{6}{section*.23}%
+\contentsline {subsubsection}{Multiphase structure}{7}{section*.24}%
+\contentsline {subsection}{\numberline {1.3.1}Non-thermal pressure}{7}{subsection.1.3.1}%
 \contentsline {section}{\numberline {1.4}Turbulence theory}{10}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Turbulence energy cascade}{10}{subsection.1.4.1}%
-\contentsline {section}{\numberline {1.5}Mass estimation and mass bias}{13}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}The Generalised Mass Equation}{13}{subsection.1.5.1}%
-\contentsline {subsection}{\numberline {1.5.2}The Hydrostatic Mass Equation}{14}{subsection.1.5.2}%
-\contentsline {subsection}{\numberline {1.5.3}The Non-Thermal Corrected Mass Equation}{14}{subsection.1.5.3}%
-\contentsline {subsection}{\numberline {1.5.4}Mass Bias}{15}{subsection.1.5.4}%
-\contentsline {subsection}{\numberline {1.5.5}Mass Proxies and Scaling Relations}{16}{subsection.1.5.5}%
-\contentsline {subsubsection}{Mass--X-ray Luminosity}{16}{section*.25}%
-\contentsline {subsubsection}{Mass--X-ray Temperature}{16}{section*.26}%
-\contentsline {subsubsection}{Mass--SZ Signal}{17}{section*.27}%
-\contentsline {subsubsection}{Scatter and Bias in Scaling Relations}{17}{section*.28}%
+\contentsline {section}{\numberline {1.5}Mass estimation and mass bias}{14}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Generalized mass equation}{14}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Mass Proxies and Scaling Relations}{16}{subsection.1.5.2}%
+\contentsline {subsubsection}{Mass--X-ray Luminosity}{16}{section*.28}%
+\contentsline {subsubsection}{Mass--X-ray Temperature}{16}{section*.29}%
+\contentsline {subsubsection}{Mass--SZ Signal}{17}{section*.30}%
+\contentsline {subsubsection}{Scatter and Bias in Scaling Relations}{17}{section*.31}%
 \contentsline {section}{\numberline {1.6}Research objectives}{18}{section.1.6}%
 \contentsline {chapter}{\chapternumberline {2}Assumptions and Systematics of Turbulence Inference}{21}{chapter.2}%
-\contentsline {section}{\numberline {2.1}The Inference Chain: An End to End Overview}{21}{section.2.1}%
+\contentsline {section}{\numberline {2.1}An end to end overview of the inference chain}{21}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Smooth brightness model and fluctuations}{23}{section.2.2}%
-\contentsline {subsubsection}{Fluctuation map}{25}{section*.31}%
-\contentsline {paragraph}{Annular region of interest.}{27}{section*.33}%
-\contentsline {paragraph}{Apodisation.}{27}{section*.34}%
-\contentsline {section}{\numberline {2.3}Image Power Spectrum}{28}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Instrumental Beam Effects}{29}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}Deprojection and 3D reconstruction}{30}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Physical Interpretation}{30}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Propagation and Compounding of Systematic Uncertainties}{31}{section.2.6}%
-\contentsline {chapter}{\chapternumberline {3}Abbreviated title}{33}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Non Parametric Methods}{33}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Iso Contour Surface Brightness}{33}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Fourier Mode Smooth models}{33}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Ellipse models}{33}{subsection.3.1.3}%
-\contentsline {subsubsection}{Genetic Algorithms with Differential Evolution}{33}{section*.35}%
-\contentsline {subsubsection}{Bayesian Inference with emcee}{33}{section*.36}%
-\contentsline {section}{\numberline {3.2}fBm Fields and Artificial Clusters}{34}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}GCMC cluster}{34}{subsection.3.2.1}%
-\contentsline {subsubsection}{3 knob fluctuation experiment}{34}{section*.37}%
-\contentsline {chapter}{\chapternumberline {4}Abbreviated title}{37}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{37}{section.4.1}%
-\contentsline {chapter}{\chapternumberline {5}Conclusion}{39}{chapter.5}%
-\contentsline {appendix}{\chapternumberline {A}Appendix}{41}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Name of Appendix-1}{41}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Name of Appendix-2}{41}{section.A.2}%
-\contentsline {appendix}{\chapternumberline {B}Example of Citations}{43}{appendix.B}%
-\contentsline {appendix}{\chapternumberline {C}Example of Code}{45}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Find the greatest number from a list of numbers in \textit {Python}}{45}{section.C.1}%
-\contentsline {appendix}{\chapternumberline {D}Example of Equations}{47}{appendix.D}%
-\contentsline {appendix}{\chapternumberline {E}Example of Figures}{49}{appendix.E}%
-\contentsline {appendix}{\chapternumberline {F}Example of Flow Charts}{51}{appendix.F}%
-\contentsline {appendix}{\chapternumberline {G}Example of Tables}{53}{appendix.G}%
+\contentsline {subsubsection}{Fluctuation map}{25}{section*.34}%
+\contentsline {paragraph}{Apodisation.}{27}{section*.36}%
+\contentsline {section}{\numberline {2.3}Image Power Spectrum}{29}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Instrumental Beam Effects}{30}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Deprojection and 3D reconstruction}{31}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Physical Interpretation}{31}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Propagation and Compounding of Systematic Uncertainties}{32}{section.2.6}%
+\contentsline {chapter}{\chapternumberline {3}Abbreviated title}{35}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Non Parametric Methods}{35}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Iso Contour Surface Brightness}{35}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Fourier Mode Smooth models}{35}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Ellipse models}{35}{subsection.3.1.3}%
+\contentsline {subsubsection}{Genetic Algorithms with Differential Evolution}{35}{section*.37}%
+\contentsline {subsubsection}{Bayesian Inference with emcee}{35}{section*.38}%
+\contentsline {section}{\numberline {3.2}fBm Fields and Artificial Clusters}{36}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}GCMC cluster}{36}{subsection.3.2.1}%
+\contentsline {subsubsection}{3 knob fluctuation experiment}{36}{section*.39}%
+\contentsline {chapter}{\chapternumberline {4}Abbreviated title}{39}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{39}{section.4.1}%
+\contentsline {chapter}{\chapternumberline {5}Conclusion}{41}{chapter.5}%
+\contentsline {appendix}{\chapternumberline {A}Appendix}{43}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Name of Appendix-1}{43}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Name of Appendix-2}{43}{section.A.2}%
+\contentsline {appendix}{\chapternumberline {B}Example of Citations}{45}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {C}Example of Code}{47}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Find the greatest number from a list of numbers in \textit {Python}}{47}{section.C.1}%
+\contentsline {appendix}{\chapternumberline {D}Example of Equations}{49}{appendix.D}%
+\contentsline {appendix}{\chapternumberline {E}Example of Figures}{51}{appendix.E}%
+\contentsline {appendix}{\chapternumberline {F}Example of Flow Charts}{53}{appendix.F}%
+\contentsline {appendix}{\chapternumberline {G}Example of Tables}{55}{appendix.G}%
